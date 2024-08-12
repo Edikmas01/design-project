@@ -1,0 +1,20 @@
+/* reset */ 
+
+body, h1, h2, h3, h4, ul, p {
+    margin: 0 ;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* reset */ 
+
+* {
+    box-sizing: border-box;
+}
+
+main {
+    min-height: calc(100vh - 76px - 165px);
+}
