@@ -1,0 +1,388 @@
+[
+  {
+    "id": "2",
+    "title": "apartment two",
+    "description": ".",
+    "visualizations": [],
+    "blueprints": [
+      "../photo/apartments/apartment-two/blueprints/as-built-plan.png",
+      "../photo/apartments/apartment-two/blueprints/dismantling-plan.png",
+      "../photo/apartments/apartment-two/blueprints/floor-heating-plan.png",
+      "../photo/apartments/apartment-two/blueprints/floor-plan.png",
+      "../photo/apartments/apartment-two/blueprints/furniture-plan-with-dimensions.png",
+      "../photo/apartments/apartment-two/blueprints/furniture-plan.png",
+      "../photo/apartments/apartment-two/blueprints/installation-plan.png",
+      "../photo/apartments/apartment-two/blueprints/plan-after-reconstruction.png"
+    ]
+  },
+  {
+    "id": "3",
+    "title": "apartment three",
+    "description": ".",
+    "visualizations": [],
+    "blueprints": [
+      "../photo/apartments/apartment-three/blueprints/as-built-plan.png",
+      "../photo/apartments/apartment-three/blueprints/dismantling-plan.png",
+      "../photo/apartments/apartment-three/blueprints/furniture-arrangement-plan.png",
+      "../photo/apartments/apartment-three/blueprints/installation-plan.png",
+      "../photo/apartments/apartment-three/blueprints/plan-after-reconstruction.png"
+    ]
+  },
+  {
+    "id": "4",
+    "title": "apartment four",
+    "description": ".",
+    "visualizations": [],
+    "blueprints": [
+      "../photo/apartments/apartment-four/blueprints/as-built-plan.png",
+      "../photo/apartments/apartment-four/blueprints/ceiling-plan.png",
+      "../photo/apartments/apartment-four/blueprints/electrician-plan.png",
+      "../photo/apartments/apartment-four/blueprints/electrical-circuit-plan.png",
+      "../photo/apartments/apartment-four/blueprints/flooring-layout-plan.png",
+      "../photo/apartments/apartment-four/blueprints/furniture-arrangement-plan.png",
+      "../photo/apartments/apartment-four/blueprints/heating-plan-and-warm-floor.png",
+      "../photo/apartments/apartment-four/blueprints/installation-plan.png",
+      "../photo/apartments/apartment-four/blueprints/lighting-plan.png",
+      "../photo/apartments/apartment-four/blueprints/plan-after-reconstruction.png",
+      "../photo/apartments/apartment-four/blueprints/plumbing-plan.png",
+      "../photo/apartments/apartment-four/blueprints/ventilation-and-air-conditioning-plan.png"
+    ]
+  },
+  {
+    "id": "5",
+    "title": "apartment five",
+    "description": ".",
+    "visualizations": [],
+
+    "blueprints": [
+      "../photo/apartments/apartment-five/blueprints/as-built-plan.png",
+      "../photo/apartments/apartment-five/blueprints/floor-heating-plan.png",
+      "../photo/apartments/apartment-five/blueprints/furniture-plan-with-dimensions.png",
+      "../photo/apartments/apartment-five/blueprints/furniture-plan.png",
+      "../photo/apartments/apartment-five/blueprints/installation-plan.png",
+      "../photo/apartments/apartment-five/blueprints/plan-after-reconstruction.png"
+    ]
+  },
+  {
+    "id": "6",
+    "title": "apartment six",
+    "description": ".",
+    "visualizations": [],
+
+    "blueprints": [
+      "../photo/apartments/apartment-six/blueprints/as-built-plan.png",
+      "../photo/apartments/apartment-six/blueprints/ceiling-plan.png",
+      "../photo/apartments/apartment-six/blueprints/dismantling-plan.png",
+      "../photo/apartments/apartment-six/blueprints/dismantling-plan.png",
+      "../photo/apartments/apartment-six/blueprints/electrician-plan.png",
+      "../photo/apartments/apartment-six/blueprints/electrical-circuit-plan.png",
+      "../photo/apartments/apartment-six/blueprints/floor-covering-layout-plan.png",
+      "../photo/apartments/apartment-six/blueprints/furniture-arrangement-plan.png",
+      "../photo/apartments/apartment-six/blueprints/heating-plan-and-warm-floor.png",
+      "../photo/apartments/apartment-six/blueprints/installation-plan.png",
+      "../photo/apartments/apartment-six/blueprints/lighting-plan.png",
+      "../photo/apartments/apartment-six/blueprints/plan-after-reconstruction.png",
+      "../photo/apartments/apartment-six/blueprints/plumbing-plan.png",
+      "../photo/apartments/apartment-six/blueprints/ventilation-and-air-conditioning-plan.png"
+    ]
+  },
+  {
+    "id": "7",
+    "title": "apartment seven",
+    "description": ".",
+    "visualizations": [],
+    "blueprints": [
+      "../photo/apartments/apartment-seven/blueprints/as-built-plan.png",
+      "../photo/apartments/apartment-seven/blueprints/ceiling-plan.png",
+      "../photo/apartments/apartment-seven/blueprints/dismantling-plan.png",
+      "../photo/apartments/apartment-seven/blueprints/electrician-plan.png",
+      "../photo/apartments/apartment-seven/blueprints/electrical-circuit-plan.png",
+      "../photo/apartments/apartment-seven/blueprints/flooring-layout-plan.png",
+      "../photo/apartments/apartment-seven/blueprints/installation-plan.png",
+      "../photo/apartments/apartment-seven/blueprints/lighting-plan.png",
+      "../photo/apartments/apartment-seven/blueprints/plan-after-reconstruction.png",
+      "../photo/apartments/apartment-seven/blueprints/plan-of-arranging-furniture.png",
+      "../photo/apartments/apartment-seven/blueprints/plan-warm-floor.png",
+      "../photo/apartments/apartment-seven/blueprints/plumbing-plan.png",
+      "../photo/apartments/apartment-seven/blueprints/section-drawings-bathroom.png",
+      "../photo/apartments/apartment-seven/blueprints/section-drawings-bedroom.png"
+    ]
+  },
+  {
+    "id": "8",
+    "title": "apartment eigh",
+    "description": ".",
+    "visualizations": [],
+    "blueprints": [
+      "../photo/apartments/apartment-eight/blueprints/as-built-plan.png",
+      "../photo/apartments/apartment-eight/blueprints/ceiling-plan.png",
+      "../photo/apartments/apartment-eight/blueprints/dismantling-plan.png",
+      "../photo/apartments/apartment-eight/blueprints/electrician-plan-two.png",
+      "../photo/apartments/apartment-eight/blueprints/electrical-circuit-plan.png",
+      "../photo/apartments/apartment-eight/blueprints/flooring-layout-plan.png",
+      "../photo/apartments/apartment-eight/blueprints/furniture-arrangement-plan.png",
+      "../photo/apartments/apartment-eight/blueprints/heating-plan-and-warm-floor.png",
+      "../photo/apartments/apartment-eight/blueprints/installation-plan.png",
+      "../photo/apartments/apartment-eight/blueprints/lighting-plan.png",
+      "../photo/apartments/apartment-eight/blueprints/plan-after-reconstruction.png",
+      "../photo/apartments/apartment-eight/blueprints/plan-of-plumbing.png",
+      "../photo/apartments/apartment-eight/blueprints/ventilation-and-air-conditioning-plan.png"
+    ]
+  },
+  {
+    "id": "9",
+    "title": "apartment nine",
+    "description": ".",
+    "visualizations": [],
+    "blueprints": [
+      "../photo/apartments/apartment-nine/blueprints/as-built-plan.png",
+      "../photo/apartments/apartment-nine/blueprints/dismantling-plan.png",
+      "../photo/apartments/apartment-nine/blueprints/furniture-arrangement-plan-and-dimensions.png",
+      "../photo/apartments/apartment-nine/blueprints/installation-plan.png",
+      "../photo/apartments/apartment-nine/blueprints/plan-after-reconstruction.png",
+      "../photo/apartments/apartment-nine/blueprints/plan-of-arranging-furniture.png",
+      "../photo/apartments/apartment-nine/blueprints/plan-warm-floor-and-dimensions.png",
+      "../photo/apartments/apartment-nine/blueprints/plan-warm-floor.png"
+    ]
+  },
+  {
+    "id": "10",
+    "title": "apartment ten",
+    "description": ".ооооооооооооооооооооооооо",
+    "visualizations": [
+      "../public/photo/apartments/apartment-ten/visualizations/visualization-hallway-one.jpg",
+      "../public/photo/apartments/apartment-ten/visualizations/visualization-hallway-two.jpg",
+      "../public/photo/apartments/apartment-ten/visualizations/visualization-hallway-three.jpg",
+
+      "../public/photo/apartments/apartment-ten/visualizations/visualization-livingRoom-one.jpg",
+      "../public/photo/apartments/apartment-ten/visualizations/visualization-livingRoom-two.jpg",
+      "../public/photo/apartments/apartment-ten/visualizations/visualization-livingRoom-three.jpg",
+      "../public/photo/apartments/apartment-ten/visualizations/visualization-livingRoom-four.jpg",
+      "../public/photo/apartments/apartment-ten/visualizations/visualization-livingRoom-five.jpg",
+
+      "../public/photo/apartments/apartment-ten/visualizations/visualization-kitchen-one.jpg",
+      "../public/photo/apartments/apartment-ten/visualizations/visualization-kitchen-two.jpg",
+      "../public/photo/apartments/apartment-ten/visualizations/visualization-kitchen-three.jpg",
+
+      "../public/photo/apartments/apartment-ten/visualizations/visualization-kitchen-optionTwo-one.jpg",
+      "../public/photo/apartments/apartment-ten/visualizations/visualization-kitchen-optionTwo-two.jpg",
+      "../public/photo/apartments/apartment-ten/visualizations/visualization-kitchen-optionTwo-three.jpg",
+
+      "../public/photo/apartments/apartment-ten/visualizations/visualization-kitchen-optionThree-one.jpg",
+      "../public/photo/apartments/apartment-ten/visualizations/visualization-kitchen-optionThree-two.jpg",
+      "../public/photo/apartments/apartment-ten/visualizations/visualization-kitchen-optionThree-three.jpg",
+
+      "../public/photo/apartments/apartment-ten/visualizations/visualization-bedroom-one.jpg",
+      "../public/photo/apartments/apartment-ten/visualizations/visualization-bedroom-two.jpg",
+      "../public/photo/apartments/apartment-ten/visualizations/visualization-bedroom-three.jpg",
+      "../public/photo/apartments/apartment-ten/visualizations/visualization-bedroom-four.jpg",
+      "../public/photo/apartments/apartment-ten/visualizations/visualization-bedroom-five.jpg",
+      "../public/photo/apartments/apartment-ten/visualizations/visualization-bedroom-six.jpg",
+      "../public/photo/apartments/apartment-ten/visualizations/visualization-bedroom-seven.jpg",
+
+      "../public/photo/apartments/apartment-ten/visualizations/visualiyation-diningRoom-one.jpg",
+      "../public/photo/apartments/apartment-ten/visualizations/visualiyation-diningRoom-two.jpg",
+
+      "../public/photo/apartments/apartment-ten/visualizations/visualization-bathroom-one.jpg",
+      "../public/photo/apartments/apartment-ten/visualizations/visualization-bathroom-two.jpg",
+      "../public/photo/apartments/apartment-ten/visualizations/visualization-bathroom-three.jpg",
+      "../public/photo/apartments/apartment-ten/visualizations/visualization-bathroom-four.jpg",
+      "../public/photo/apartments/apartment-ten/visualizations/visualization-bathroom-five.jpg",
+      "../public/photo/apartments/apartment-ten/visualizations/visualization-bathroom-six.jpg"
+    ],
+    "blueprints": [
+      "../public/photo/apartments/apartment-ten/blueprints/png/as-built-plan.png",
+      "../public/photo/apartments/apartment-ten/blueprints/png/ceiling-plan.png",
+      "../public/photo/apartments/apartment-ten/blueprints/png/door-and-skirting-plan.png",
+      "../public/photo/apartments/apartment-ten/blueprints/png/electrical-circuit-plan.png",
+      "../public/photo/apartments/apartment-ten/blueprints/png/electrician-plan.png",
+      "../public/photo/apartments/apartment-ten/blueprints/png/floor-covering-plan.png",
+      "../public/photo/apartments/apartment-ten/blueprints/png/furniture-diagram.png",
+      "../public/photo/apartments/apartment-ten/blueprints/png/furniture-plan.png",
+      "../public/photo/apartments/apartment-ten/blueprints/png/heating-and-warm-froor-plan.png",
+      "../public/photo/apartments/apartment-ten/blueprints/png/installation-plan.png",
+      "../public/photo/apartments/apartment-ten/blueprints/png/layout-of-the-bedroom-and-walk-in-closet.png",
+      "../public/photo/apartments/apartment-ten/blueprints/png/layout-of-the-hallway-and-kitchen-living-room.png",
+      "../public/photo/apartments/apartment-ten/blueprints/png/layout-of-the-toilet.png",
+      "../public/photo/apartments/apartment-ten/blueprints/png/lighting-plan.png",
+      "../public/photo/apartments/apartment-ten/blueprints/png/plan-after-reconstruction.png",
+      "../public/photo/apartments/apartment-ten/blueprints/png/plumbing-plan.png",
+      "../public/photo/apartments/apartment-ten/blueprints/png/plumbing-specifications.png",
+      "../public/photo/apartments/apartment-ten/blueprints/png/ventilation-and-air-conditioning-plan.png"
+    ]
+  },
+  {
+    "id": "11",
+    "title": "Apartment eleven",
+    "description": ".оооооооооооооооооооооооооооооооо",
+    "visualizations": [
+      "../public/photo/apartments/apartment-eleven/Visualizations/visualization-hallway-one.png",
+      "../public/photo/apartments/apartment-eleven/Visualizations/visualization-hallway-two.png",
+      "../public/photo/apartments/apartment-eleven/Visualizations/visualization-livingRoom-one.png",
+      "../public/photo/apartments/apartment-eleven/Visualizations/visualization-livingRoom-two.png",
+      "../public/photo/apartments/apartment-eleven/Visualizations/visualization-livingRoom-three.png",
+      "../public/photo/apartments/apartment-eleven/Visualizations/visualization-kitchen-one.png",
+      "../public/photo/apartments/apartment-eleven/Visualizations/visualization-kitchen-two.png",
+      "../public/photo/apartments/apartment-eleven/Visualizations/visualization-kitchen-three.png",
+      "../public/photo/apartments/apartment-eleven/Visualizations/visualiyation-diningRoom-one.png",
+      "../public/photo/apartments/apartment-eleven/Visualizations/visualization-bedroom-one.png",
+      "../public/photo/apartments/apartment-eleven/Visualizations/visualization-bedroom-two.png",
+      "../public/photo/apartments/apartment-eleven/Visualizations/visualization-bedroom-three.png",
+      "../public/photo/apartments/apartment-eleven/Visualizations/visualization-wardrobe-one.png",
+      "../public/photo/apartments/apartment-eleven/Visualizations/visualization-wardrobe-two.png"
+    ],
+    "blueprints": [
+      "../photo/apartments/apartment-eleven/blueprints/as-built-plan.jpg",
+      "../public/photo/apartments/apartment-eleven/blueprints/ceiling-plan.png",
+      "../public/photo/apartments/apartment-eleven/blueprints/dismantling-plan.png",
+      "../public/photo/apartments/apartment-eleven/blueprints/electrical-circuit-plan.png",
+      "../public/photo/apartments/apartment-eleven/blueprints/electrician-plan.png",
+      "../public/photo/apartments/apartment-eleven/blueprints/flooring-layout-plan.png",
+      "../public/photo/apartments/apartment-eleven/blueprints/heating-plan-and-warm-floor.png",
+      "../public/photo/apartments/apartment-eleven/blueprints/installation-plan.png",
+      "../public/photo/apartments/apartment-eleven/blueprints/lighting-plan.png",
+      "../public/photo/apartments/apartment-eleven/blueprints/plan-after-reconstruction.png",
+      "../public/photo/apartments/apartment-eleven/blueprints/plan-of-arranging-furniture.png",
+      "../public/photo/apartments/apartment-eleven/blueprints/plan-of-plumbing.png",
+      "../public/photo/apartments/apartment-eleven/blueprints/ventilation-and-air-conditioning-plan.png"
+    ]
+  },
+  {
+    "id": "12",
+    "title": "apartment twelve",
+    "description": ".",
+    "blueprints": [],
+    "visualizations": [
+      "../photo/apartments/apartment-twelve/visualizations/visualization-beds-childrensRoom-one.jpg",
+      "../photo/apartments/apartment-twelve/visualizations/visualization-beds-childrensRoom-two.jpg",
+      "../photo/apartments/apartment-twelve/visualizations/visualization-childrensRoom-one.jpg",
+      "../photo/apartments/apartment-twelve/visualizations/visualization-childrensRoom-two.jpg",
+      "../photo/apartments/apartment-twelve/visualizations/visualization-childrensRoom-three.jpg",
+      "../photo/apartments/apartment-twelve/visualizations/visualization-TV-zone-childrensRoom-one.jpg",
+      "../photo/apartments/apartment-twelve/visualizations/visualization-TV-zone-childrensRoom-two.jpg",
+      "../photo/apartments/apartment-twelve/visualizations/visualization-workingArea-childrensRoom-one.jpg",
+      "../photo/apartments/apartment-twelve/visualizations/visualization-workingArea-childrensRoom-two.jpg",
+      "../photo/apartments/apartment-twelve/visualizations/visualization–playArea–childrensRoom.jpg"
+    ]
+  },
+  {
+    "id": "13",
+    "title": "apartment-thirteen",
+    "description": ".",
+    "visualizations": [],
+    "blueprints": [
+      "../photo/apartments/apartment-thirteen/blueprints/as-built-plan.png",
+      "../photo/apartments/apartment-thirteen/blueprints/dismantling-plan.png",
+      "../photo/apartments/apartment-thirteen/blueprints/electrical-plan.png",
+      "../photo/apartments/apartment-thirteen/blueprints/electrical-circuit-plan.png",
+      "../photo/apartments/apartment-thirteen/blueprints/floor-heating-plan.png",
+      "../photo/apartments/apartment-thirteen/blueprints/flooring-layout-plan.png",
+      "../photo/apartments/apartment-thirteen/blueprints/furniture-arrangement-plan-with-dimensions.png",
+      "../photo/apartments/apartment-thirteen/blueprints/furniture-arrangement-plan.png",
+      "../photo/apartments/apartment-thirteen/blueprints/installation-plan.png",
+      "../photo/apartments/apartment-thirteen/blueprints/lighting-plan.png",
+      "../photo/apartments/apartment-thirteen/blueprints/plan-after-reconstruction.png",
+      "../photo/apartments/apartment-thirteen/blueprints/plumbing-plan.png",
+      "../photo/apartments/apartment-thirteen/blueprints/section-drawings-bedroom.png",
+      "../photo/apartments/apartment-thirteen/blueprints/section-drawings-children.png",
+      "../photo/apartments/apartment-thirteen/blueprints/section-drawings-hallway.png",
+      "../photo/apartments/apartment-thirteen/blueprints/sectional-drawings-bathrooms.png"
+    ]
+  },
+  {
+    "id": "14",
+    "title": " apartment-fourteen ",
+    "description": ".",
+    "visualizations": [],
+
+    "blueprints": [
+      "../photo/apartments/apartment-fourteen/blueprints/as-built-plan.png",
+      "../photo/apartments/apartment-fourteen/blueprints/ceiling-plan.png",
+      "../photo/apartments/apartment-fourteen/blueprints/electrical-circuit-plan.png",
+      "../photo/apartments/apartment-fourteen/blueprints/electrician-plan.png",
+      "../photo/apartments/apartment-fourteen/blueprints/flooring-plan.png",
+      "../photo/apartments/apartment-fourteen/blueprints/installation-plan.png",
+      "../photo/apartments/apartment-fourteen/blueprints/lighting-plan.png",
+      "../photo/apartments/apartment-fourteen/blueprints/plan-after-reconstruction.png",
+      "../photo/apartments/apartment-fourteen/blueprints/plan-doors-and-plinths.png",
+      "../photo/apartments/apartment-fourteen/blueprints/plan-of-arranging-furniture.png",
+      "../photo/apartments/apartment-fourteen/blueprints/plan-warm-floor.png",
+      "../photo/apartments/apartment-fourteen/blueprints/plumbing-plan.png",
+      "../photo/apartments/apartment-fourteen/blueprints/ventilation-and-air-conditioning-plan.png",
+      "../photo/apartments/apartment-fourteen/blueprints/wall-decoration-plan.png"
+    ]
+  },
+  {
+    "id": "15",
+    "title": "apartment-fifteen",
+    "description": ".",
+    "visualizations": [],
+    "blueprints": [
+      "../photo/apartments/apartment-fifteen/blueprints/as-built-plan.png",
+      "../photo/apartments/apartment-fifteen/blueprints/ceiling-plan.png",
+      "../photo/apartments/apartment-fifteen/blueprints/dismantling-plan.png",
+      "../photo/apartments/apartment-fifteen/blueprints/electrical-circuit-plan.png",
+      "../photo/apartments/apartment-fifteen/blueprints/electrician-plan.png",
+      "../photo/apartments/apartment-fifteen/blueprints/electrical-plan-with-dimensions.png",
+      "../photo/apartments/apartment-fifteen/blueprints/floor-heating-plan.png",
+      "../photo/apartments/apartment-fifteen/blueprints/floor-heating-plan-with-dimensions.png",
+      "../photo/apartments/apartment-fifteen/blueprints/flooring-layout-plan.png",
+      "../photo/apartments/apartment-fifteen/blueprints/furniture-arrangement-plan.png",
+      "../photo/apartments/apartment-fifteen/blueprints/installation-plan.png",
+      "../photo/apartments/apartment-fifteen/blueprints/lighting-plan.png",
+      "../photo/apartments/apartment-fifteen/blueprints/lighting-plan-with-dimensions.png",
+      "../photo/apartments/apartment-fifteen/blueprints/plan-after-reconstruction.png",
+      "../photo/apartments/apartment-fifteen/blueprints/plumbing-plan.png",
+      "../photo/apartments/apartment-fifteen/blueprints/plumbing-plan-with-dimensions.png",
+      "../photo/apartments/apartment-fifteen/blueprints/section-drawings-bedroom.png",
+      "../photo/apartments/apartment-fifteen/blueprints/section-drawings-children.png",
+      "../photo/apartments/apartment-fifteen/blueprints/section-drawings-hallway.png",
+      "../photo/apartments/apartment-fifteen/blueprints/section-drawings-kitchen.png",
+      "../photo/apartments/apartment-fifteen/blueprints/sectional-drawings-bathrooms.png"
+    ]
+  },
+  {
+    "id": "16",
+    "title": "apartment-sixteen",
+    "description": ".",
+    "visualizations": [],
+    "blueprints": [
+      "../photo/apartments/apartment-sixteen/blueprints/as-built-plan.png",
+      "../photo/apartments/apartment-sixteen/blueprints/dismantling-plan.png",
+      "../photo/apartments/apartment-sixteen/blueprints/floor-heating-plan.png",
+      "../photo/apartments/apartment-sixteen/blueprints/floor-heating-plan-two.png",
+      "../photo/apartments/apartment-sixteen/blueprints/furniture-arrangement-plan.png",
+      "../photo/apartments/apartment-sixteen/blueprints/furniture-arrangement-plan-two.png",
+      "../photo/apartments/apartment-sixteen/blueprints/installation-plan.png",
+      "../photo/apartments/apartment-sixteen/blueprints/plan-after-reconstruction.png"
+    ]
+  },
+  {
+    "id": "17",
+    "title": " apartment-seventeen",
+    "description": ".",
+    "visualizations": [],
+    "blueprints": [
+      "../photo/apartments/apartment-seventeen/blueprints/as-built-plan.png",
+      "../photo/apartments/apartment-seventeen/blueprints/dismantling-plan.png",
+      "../photo/apartments/apartment-seventeen/blueprints/floor-heating-plan.png",
+      "../photo/apartments/apartment-seventeen/blueprints/furniture-arrangement-plan.png",
+      "../photo/apartments/apartment-seventeen/blueprints/furniture-arrangement-plan-with-dimensions.png",
+      "../photo/apartments/apartment-seventeen/blueprints/installation-plan.png",
+      "../photo/apartments/apartment-seventeen/blueprints/plan-after-reconstruction.png"
+    ]
+  },
+  {
+    "id": "18",
+    "title": "  apartment-eighteen ",
+    "description": ".",
+    "visualizations": [],
+    "blueprints": [
+      "../photo/apartments/apartment-eighteen/blueprints/as-built-plan.png",
+      "../photo/apartments/apartment-eighteen/blueprints/dismantling-plan.png",
+      "../photo/apartments/apartment-eighteen/blueprints/furniture-arrangement-plan.png",
+      "../photo/apartments/apartment-eighteen/blueprints/installation-plan.png",
+      "../photo/apartments/apartment-eighteen/blueprints/plan-after-reconstruction.png"
+    ]
+  }
+]
