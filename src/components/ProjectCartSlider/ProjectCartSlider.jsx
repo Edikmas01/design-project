@@ -1,18 +1,13 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import "./ProjectCartSlider.scss";
 import { ProjectCart } from "../ProjectCart/ProjectCart";
+import { useFetchProjects } from "../../hooks/useFetchProjects";
 
 
 export const ProjectCartSlider = () => {
   const [activeIndex, setActiveIndex] = useState(0);
-    const [projects, setProjects] = useState([]);
 
-    useEffect(() => {
-      fetch("api/projects.json")
-        .then((res) => res.json())
-        .then((data) => setProjects(data))
-        .catch((error) => console.error("Error fetching projects:", error));
-    }, []);
+  const projects = useFetchProjects();
 
   const filterProjects = projects.filter((project) => project.rank);
 
