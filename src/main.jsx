@@ -4,10 +4,10 @@ import App from "./App.jsx";
 import "./index.scss";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { Layout } from "./components/Layout/Layout.jsx";
-import { ProjectPage } from "./pages/project/ProjectPage.jsx";
-import { ServicesPage } from "./pages/ServicesPage/ServicesPage.js";
-import { HomePaga } from "./pages/HomePage/HomePage.jsx";
-import { ProjectOne } from "./pages/project/ProjectOne/ProjectOne.jsx";
+import { ProjectPage } from "./pages/ProjectPage/ProjectPage.jsx";
+import { ServicesPage } from "./pages/ServicesPage/ServicesPage.jsx";
+import { HomePage } from "./pages/HomePage/HomePage.jsx";
+import { ProjectPageOne } from "./pages/ProjectPage/ProjectPageOne/ProjectPageOne.jsx";
 import "./i18n.js";
 
 const router = createBrowserRouter([
@@ -17,7 +17,7 @@ const router = createBrowserRouter([
     children: [
       {
         index: true,
-        element: <HomePaga />,
+        element: <HomePage />,
       },
       {
         path: ":category",
@@ -28,7 +28,7 @@ const router = createBrowserRouter([
           },
           {
             path: ":projectId",
-            element: <ProjectOne />,
+            element: <ProjectPageOne />,
           },
         ],
       },

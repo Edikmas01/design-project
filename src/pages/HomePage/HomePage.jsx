@@ -1,5 +1,7 @@
-import "./HomePage.scss";
+// import "./HomePage.scss";
 
 export const HomePage = () => {
-  return <></>;
+  return <div>
+    
+  </div>;
 };
