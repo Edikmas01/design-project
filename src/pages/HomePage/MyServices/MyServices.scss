@@ -1,0 +1,80 @@
+.MyServices-cart {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; 
+  justify-content: center; 
+      position: relative;
+    margin: 0 0 50px;
+    padding: 0;
+
+}
+
+.MyServices-cart > div {
+  background-color: #fff; 
+  border: 1px solid #ddd; 
+  border-radius: 8px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 300px; 
+  text-align: center; 
+  transition: transform 0.2s, box-shadow 0.2s; 
+}
+
+.MyServices-cart > div:hover {
+  transform: translateY(-5px); 
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+}
+
+.MyServices-cart img {
+  max-width: 100%;
+  height: auto; 
+  border-radius: 8px; 
+}
+
+.MyServices-cart h2 {
+  font-size: 1.5rem; 
+  margin: 15px 0; 
+}
+
+.MyServices-cart p {
+  font-size: 1rem;
+  color: #555; 
+}
+
+.MyServices-title{
+      text-align: center; 
+  margin-bottom: 20px; 
+}
+.MyServices-text{
+      text-align: center; 
+  margin-bottom: 20px; 
+}
+
+.slider__button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+
+    &--left {
+      left: 10px;
+    }
+
+    &--right {
+      right: 10px;
+    }
+
+    &:hover {
+      background-color: #558244;
+    }
+
+    &:disabled {
+      opacity: 0.5;
+      cursor: not-allowed;
+    }
+  }

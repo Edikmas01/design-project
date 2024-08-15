@@ -1,0 +1,68 @@
+.gellore-projects {
+  padding-bottom: 50px;
+
+  .slider-body {
+    position: relative;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  .projectsCart-list {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding: 0;
+    list-style: none;
+
+    .projects-item {
+      
+      width: calc(90% / 3 - 20px);
+      box-sizing: border-box;
+      background: #ffffff;
+      border: 1px solid #eeeeee;
+
+      &:last-child {
+        margin-right: 0;
+      }
+
+      &:hover {
+        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+
+        .projects-text {
+          transform: translateY(0%);
+        }
+      }
+
+    }}
+
+  // Slider Buttons
+  .slider__button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+
+    &--left {
+      left: 10px;
+    }
+
+    &--right {
+      right: 10px;
+    }
+
+    &:hover {
+      background-color: #558244;
+    }
+
+    &:disabled {
+      opacity: 0.5;
+      cursor: not-allowed;
+    }
+  }
+}
