@@ -1,44 +1,49 @@
+.about-section {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  margin: 0 0 50px;
+}
 
-$padding-bottom: 100px;
-$padding-bottom-title: 30px;
-
-$margin-right-photo: 50px;
-$max-width-description: 450px;
-
-.about-container {
+.about-content {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  padding-bottom: $padding-bottom; 
+  position: relative;
+  z-index: 2;
+  padding: 20px;
 }
 
-.interior-title {
-  text-align: center;
-  padding-bottom: $padding-bottom-title; // Использование переменной
+.about-image {
+  flex: 0.7;
+
+  img {
+    border-radius: 10px;
+    max-width: 350px;
+  }
 }
 
-.interior-spaces {
-  display: flex;
-  align-items: flex-start;
+.about-text {
+  flex: 1;
+  color: #fff;
+  
+  h1 {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
 
+  p {
+    font-size: 16px;
+    line-height: 1.6;
+  }
 }
 
-.photo-container {
-  margin-right: $margin-right-photo; // Использование переменной
-}
-
-.photo-image {
-  width: 300px;
-  height: 360px;
-  display: block;
-  margin: 0 auto;
-}
-
-.about-description {
-  max-width: $max-width-description; // Использование переменной
-}
-
-.interior-spaces-description {
-  margin-top: 0;
-  padding-bottom: 40px;
+.about-line {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  background-color: #1b2733;
+  height: 80%;
+  width: 100%;
+  z-index: 1;
 }
