@@ -1,16 +1,35 @@
-import { useState } from "react";
+import { useState , useEffect } from "react";
 import "./ServicesPage.scss";
-import { NavLink } from "react-router-dom";
-import { services } from "../../../public/api/services";
+import { NavLink, useParams } from "react-router-dom";
 import { Modal } from "../../components/Modal/Modal";
 
 export const ServicesPage = () => {
   const [selectedService, setSelectedService] = useState(null);
+  const [ services, setServices] = useState([])
   const [modalOpen, setModalOpen] = useState(false);
+  const { id } = useParams();
 
-  const handleServiceClick = (service) => {
-    setSelectedService(service);
-    console.log("Selected service:", service);
+  useEffect(() => {
+    fetch("/public/api/services.json")
+      .then((res) => res.json())
+    .then((data) => {
+      setServices(data);
+      if (id) {
+        const service = data.find((s) => s.id === id);
+        console.log(service, "im id d[[d[d[d[d[");
+        
+        if (service) {
+          setSelectedService(service);
+        }
+      }
+    })
+  .catch((error) => console.error("Error fetching projects:", error));
+}, [id])
+  
+  
+  const handleServiceClick = (services) => {
+    setSelectedService(services);
+    console.log("Selected service:", services);
   };
 
   const handleOrderService = () => {
@@ -33,6 +52,7 @@ export const ServicesPage = () => {
             {services.map((service) => (
               <li className="option-item" key={service.id}>
                 <NavLink
+                      to={`/services/${service.id}`} 
                   className="option-item-nav"
                   onClick={() => handleServiceClick(service)}
                 >
@@ -86,3 +106,4 @@ export const ServicesPage = () => {
     </section>
   );
 };
+

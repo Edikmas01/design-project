@@ -34,8 +34,18 @@ const router = createBrowserRouter([
       },
       {
         path: "services",
-        element: <ServicesPage />,
-      },
+        children: [
+          {
+            index: true,
+            element: <ServicesPage />,
+          },
+          {
+            path: ":id",
+            element: <ServicesPage />
+            
+          }
+        ]
+      }
     ],
   },
 ]);

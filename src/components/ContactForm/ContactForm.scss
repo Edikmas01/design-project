@@ -2,10 +2,11 @@
   // max-width: 600px;
   margin: 0 auto;
   padding: 20px;
-  background-color: #4498ec;
+  background-color: #ececec;
   border-radius: 8px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   text-align: center;
+  margin: 0 0 50px;
 
   h2 {
     margin-bottom: 10px;
@@ -57,7 +58,18 @@
       }
     }
 
+   .form-group-inline {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+
+      .form-group {
+        width: 48%; 
+      }
+    }
+
     button {
+      align-self: center; 
       width: 300px;
       padding: 10px 20px;
       font-size: 16px;

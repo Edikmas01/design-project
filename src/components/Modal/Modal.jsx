@@ -1,6 +1,6 @@
 import { useState } from "react";
 import "./Modal.scss";
-import { services } from "../../../public/api/services";
+// import { services } from "../../../public/api/services";
 
 export const Modal = ({ onClose, isOpen }) => {
   const [selectedService, setSelectedService] = useState("");
@@ -83,11 +83,11 @@ export const Modal = ({ onClose, isOpen }) => {
             onChange={handleServiceChange}
           >
             <option value="">Выберите услугу</option>
-            {services.map((service) => (
+            {/* {services.map((service) => (
               <option key={service.id} value={service.title}>
                 {service.title}
               </option>
-            ))}
+            ))} */}
           </select>
         </div>
         <div className="modal-div">
