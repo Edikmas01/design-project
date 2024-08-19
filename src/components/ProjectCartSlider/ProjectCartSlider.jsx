@@ -21,6 +21,7 @@ export const ProjectCartSlider = () => {
 
   return (
     <section className="gellore-projects  site-container">
+      <h1 className="title-home">The best projects</h1>
       {filterProjects.length > 0 && (
         <div className="slider-body">
           <ul className="projectsCart-list">

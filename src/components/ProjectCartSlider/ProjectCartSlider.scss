@@ -1,6 +1,12 @@
 .gellore-projects {
   padding-bottom: 50px;
 
+  .title-home{
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    margin: 0 0 20px;
+  }
   .slider-body {
     position: relative;
     margin: 0 auto;

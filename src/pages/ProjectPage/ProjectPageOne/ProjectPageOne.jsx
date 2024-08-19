@@ -1,12 +1,17 @@
+
 import { useState, useEffect } from "react";
 import "./ProjectPageOne.scss";
 import { useParams } from "react-router-dom";
+
+import Lightbox from "yet-another-react-lightbox";
+import "yet-another-react-lightbox/styles.css";
 
 export const ProjectPageOne = () => {
   const { category, projectId } = useParams();
   const [project, setProject] = useState([]);
   const [currentVisualIndex, setCurrentVisualIndex] = useState(0);
   const [currentBlueprintIndex, setCurrentBlueprintIndex] = useState(0);
+  const [open, setOpen] = useState(false);
 
   useEffect(() => {
     fetch(`/api/${category}.json`)
@@ -26,6 +31,7 @@ export const ProjectPageOne = () => {
       })
       .catch((error) => console.error("Error fetching project:", error));
   }, [category, projectId]);
+
 
   const handleNextVisual = () => {
     setCurrentVisualIndex((prevIndex) =>
@@ -73,8 +79,20 @@ export const ProjectPageOne = () => {
                   className="img-carousel"
                   src={project.visualizations[currentVisualIndex]}
                   alt="Slide"
+                  onClick={() => setOpen(true)}
                 />
-            
+                {open && (
+                  <Lightbox
+                    open={open}
+                    close={() => setOpen(false)}
+                    slides={project.visualizations.map((src) => ({ src }))}
+                    currentIndex={currentVisualIndex}
+                    on={{
+                      clickNext: handleNextVisual,
+                      clickPrev: handlePrevVisual,
+                    }}
+                  />
+                )}
               </div>
               <button
                 className="slider__button slider__button--left"
@@ -105,7 +123,20 @@ export const ProjectPageOne = () => {
                   className="img-carousel"
                   src={project.blueprints[currentBlueprintIndex]}
                   alt="Slide"
+                  onClick={() => setOpen(true)}
                 />
+                {open && (
+                  <Lightbox
+                    open={open}
+                    close={() => setOpen(false)}
+                    slides={project.blueprints.map((src) => ({ src }))}
+                    currentIndex={currentVisualIndex}
+                    on={{
+                      clickNext: handleNextVisual,
+                      clickPrev: handlePrevVisual,
+                    }}
+                  />
+                )}
               </div>
               <button
                 className="slider__button slider__button--left"
