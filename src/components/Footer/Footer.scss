@@ -1,5 +1,7 @@
 .footer {
-  background-color: #6f865846;
+  // background-color: rgba(245, 244, 250);
+  background-color: #ececec;
+
   padding: 15px;
 
   
@@ -91,13 +93,13 @@
         justify-content: center;
         width: 44px;
         height: 44px;
-        background-color:#6f8658bb;
+        background-color:#242424bb;
         border-radius: 50%;
         transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
         &:hover,
         &:focus {
-          background-color:#6f8658;
+          background-color:#9c9c9c;
           outline: none;
         }
 

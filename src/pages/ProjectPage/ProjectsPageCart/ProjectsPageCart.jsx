@@ -19,6 +19,7 @@ export const ProjectsPageCart = () => {
 
   return (
     <section className="projectsall-section site-container ">
+      {/* <h1 className="projects-title">My projects</h1> */}
       <div className="filter-buttons">
         <button
           type="button"
@@ -67,28 +68,3 @@ export const ProjectsPageCart = () => {
     </section>
   );
 };
- 
-//  <>
-//     <ul className="projectsCart-list">
-//       {projects.map((project, index) => (
-//         <li className="projects-item" key={index}>
-//           <div className="projects-top-wrap">
-//             <img
-//               src={project.image}
-//               alt={project.title}
-//               width="370"
-//               height="294"
-//             />
-//             <p className="projects-text">
-//               {project.description}{" "}
-//               <NavLink to="/projects">Learn More...</NavLink>
-//             </p>
-//           </div>
-//           <div className="projects-div">
-//             <h2 className="projects-header">{project.title}</h2>
-//             <p className="projects-skop">{project.category}</p>
-//           </div>
-//         </li>
-//       ))}
-//     </ul>
-//   </>

@@ -1,8 +1,8 @@
 [
   {
     "id": "2",
-    "title": "apartment two",
-    "description": ".",
+    "title": "Two-Bedroom Apartment in AVINION",
+    "description": "Проект перепланировки двухкомнатной квартиры в жилом комплексе 'AVINION' общей площадью 142,5 м². В рамках проекта были выполнены чертежи демонтажа и монтажа стен, планировка теплого пола, а также план расстановки мебели.",
     "visualizations": [],
     "blueprints": [
       "../photo/apartments/apartment-two/blueprints/as-built-plan.png",
@@ -234,17 +234,17 @@
     "blueprints": [
       "../photo/apartments/apartment-eleven/blueprints/as-built-plan.jpg",
       "../public/photo/apartments/apartment-eleven/blueprints/ceiling-plan.png",
-      "../public/photo/apartments/apartment-eleven/blueprints/dismantling-plan.png",
-      "../public/photo/apartments/apartment-eleven/blueprints/electrical-circuit-plan.png",
-      "../public/photo/apartments/apartment-eleven/blueprints/electrician-plan.png",
-      "../public/photo/apartments/apartment-eleven/blueprints/flooring-layout-plan.png",
-      "../public/photo/apartments/apartment-eleven/blueprints/heating-plan-and-warm-floor.png",
-      "../public/photo/apartments/apartment-eleven/blueprints/installation-plan.png",
-      "../public/photo/apartments/apartment-eleven/blueprints/lighting-plan.png",
-      "../public/photo/apartments/apartment-eleven/blueprints/plan-after-reconstruction.png",
-      "../public/photo/apartments/apartment-eleven/blueprints/plan-of-arranging-furniture.png",
-      "../public/photo/apartments/apartment-eleven/blueprints/plan-of-plumbing.png",
-      "../public/photo/apartments/apartment-eleven/blueprints/ventilation-and-air-conditioning-plan.png"
+      "../photo/apartments/apartment-eleven/blueprints/dismantling-plan.jpg",
+      "../photo/apartments/apartment-eleven/blueprints/electrical-circuit-plan.jpgg",
+      "../photo/apartments/apartment-eleven/blueprints/electrician-plan.png",
+      "../photo/apartments/apartment-eleven/blueprints/flooring-layout-plan.png",
+      "../photo/apartments/apartment-eleven/blueprints/heating-plan-and-warm-floor.png",
+      "../photo/apartments/apartment-eleven/blueprints/installation-plan.png",
+      "../photo/apartments/apartment-eleven/blueprints/lighting-plan.png",
+      "../photo/apartments/apartment-eleven/blueprints/plan-after-reconstruction.png",
+      "../photo/apartments/apartment-eleven/blueprints/plan-of-arranging-furniture.png",
+      "../photo/apartments/apartment-eleven/blueprints/plan-of-plumbing.png",
+      "../photo/apartments/apartment-eleven/blueprints/ventilation-and-air-conditioning-plan.png"
     ]
   },
   {

@@ -121,12 +121,13 @@ h1, ul,button {
   top: 50%;
   transform: translateY(-50%); /* Центрируем линию по вертикали */
 }
-.image-container{
-  display: flex;
-  flex-direction: column;
-}
+// .image-container{
+//   display: flex;
+//   flex-direction: column;
+// }
 .img-services {
   max-width: 100%;
-  height: 500px;
+  margin-bottom: 40px;
+  // height: 500px;
 }
 

@@ -5,8 +5,8 @@ import { Link } from "react-router-dom";
 export const MyServices = () => {
   const [activeIndex, setActiveIndex] = useState(0);
   const [services, setServices] = useState([]);
-    const [loading, setLoading] = useState(true);
-    const [error, setError] = useState(null);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
 
   useEffect(() => {
     fetch("/public/api/services.json")
@@ -25,8 +25,7 @@ export const MyServices = () => {
         setError(error.message);
         setLoading(false);
       });
-  }, [])
-  
+  }, []);
 
   const handlePrevClick = () => {
     setActiveIndex(Math.max(activeIndex - 3, 0));
@@ -36,7 +35,6 @@ export const MyServices = () => {
     setActiveIndex(Math.min(activeIndex + 3, services.length - 1));
   };
 
-
   if (loading) {
     return <p>Loading services...</p>;
   }
@@ -44,7 +42,7 @@ export const MyServices = () => {
   if (error) {
     return <p>Error: {error}</p>;
   }
-  
+
   return (
     <section className="MyServices site-container">
       <h1 className="MyServices-title"> My Services</h1>

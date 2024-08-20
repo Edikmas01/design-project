@@ -1,7 +1,7 @@
 
 import { useState } from "react";
 import { useParams } from "react-router-dom";
-import { ProjectPageOne } from "./ProjectPageOne/ProjectPageOne";
+import { ProjectPageDetails } from "./ProjectPageDetails/ProjectPageDetails";
 import { ProjectsPageCart } from "./ProjectsPageCart/ProjectsPageCart";
 import { useFetchProjects } from "../../hooks/useFetchProjects";
 
@@ -21,7 +21,7 @@ export const ProjectPage = () => {
       {!selectedProject ? (
         <ProjectsPageCart handleProjectSelection={handleProjectSelection} />
       ) : (
-        <ProjectPageOne project={selectedProject} />
+        <ProjectPageDetails project={selectedProject} />
       )}
     </section>
   );

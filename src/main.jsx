@@ -7,7 +7,7 @@ import { Layout } from "./components/Layout/Layout.jsx";
 import { ProjectPage } from "./pages/ProjectPage/ProjectPage.jsx";
 import { ServicesPage } from "./pages/ServicesPage/ServicesPage.jsx";
 import { HomePage } from "./pages/HomePage/HomePage.jsx";
-import { ProjectPageOne } from "./pages/ProjectPage/ProjectPageOne/ProjectPageOne.jsx";
+import { ProjectPageDetails } from "./pages/ProjectPage/ProjectPageDetails/ProjectPageDetails.jsx";
 import "./i18n.js";
 
 const router = createBrowserRouter([
@@ -28,7 +28,7 @@ const router = createBrowserRouter([
           },
           {
             path: ":projectId",
-            element: <ProjectPageOne />,
+            element: <ProjectPageDetails />,
           },
         ],
       },
@@ -41,11 +41,10 @@ const router = createBrowserRouter([
           },
           {
             path: ":id",
-            element: <ServicesPage />
-            
-          }
-        ]
-      }
+            element: <ServicesPage />,
+          },
+        ],
+      },
     ],
   },
 ]);

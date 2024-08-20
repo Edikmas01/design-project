@@ -1,0 +1,72 @@
+
+.project-one-section {
+  margin-bottom: 50px;
+}
+
+.project-title {
+
+  margin-top: 50px;
+  font-size: 35px; 
+  font-weight: bold; 
+  color: #2c3e50;
+}
+
+.project-description-title {
+  padding: 20px;
+
+  font-size: 24px;
+   font-weight: bold;
+    color: #34495e; 
+    margin-top: 20px;
+
+}
+
+.project-description {
+  font-size: 19px;
+   color: #6a7374; 
+   margin-top: 10px;
+    line-height: 1.6;
+}
+.img-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  grid-auto-rows: 150px;
+  gap: 10px;
+}
+
+.img-carousel {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.img-carousel:hover {
+  transform: scale(1.05);
+}
+
+
+.img-carousel:nth-child(odd) {
+  grid-column: span 2;
+}
+
+.img-carousel:nth-child(3n) {
+  grid-row: span 2;
+}
+
+.img-carousel:nth-child(4n) {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+
+.img-container-blueprints {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 10px; 
+}
+
+.img-blueprints {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}

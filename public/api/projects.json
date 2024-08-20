@@ -1,65 +1,65 @@
 [
   {
     "id": "2",
-    "title": "apartment two",
-    "image": "../photo/apartments/apartment-two/blueprints/as-built-plan.png",
-    "description": ".",
+    "title": "Two-Bedroom Apartment in AVINION",
+    "image": "../photo/apartments/apartment-two/blueprints/furniture-plan.png",
+    "description": "Проект перепланировки двухкомнатной квартиры в жилом комплексе 'AVINION' общей площадью 142,5 м². В рамках проекта были выполнены чертежи демонтажа и монтажа стен, планировка теплого пола, а также план расстановки мебели.",
     "category": "apartment",
     "rank": false
   },
   {
     "id": "3",
     "title": "apartment three",
-    "image": "../photo/apartments/apartment-three/blueprints/as-built-plan.png",
-    "description": ".",
+    "image": "../photo/apartments/apartment-three/blueprints/furniture-arrangement-plan.png",
+    "description": "",
     "category": "apartment",
     "rank": false
   },
   {
     "id": "4",
     "title": "apartment four",
-    "image": "../photo/apartments/apartment-four/blueprints/as-built-plan.png",
-    "description": ".",
+    "image": "../photo/apartments/apartment-four/blueprints/flooring-layout-plan.png",
+    "description": "",
     "category": "apartment",
     "rank": false
   },
   {
     "id": "5",
     "title": "apartment five",
-    "image": "../photo/apartments/apartment-five/blueprints/as-built-plan.png",
-    "description": ".",
+    "image": "../photo/apartments/apartment-five/blueprints/furniture-plan.png",
+    "description": "",
     "category": "apartment",
     "rank": false
   },
   {
     "id": "6",
     "title": "apartment-six",
-    "image": "../photo/apartments/apartment-six/blueprints/as-built-plan.png",
-    "description": ".",
+    "image": "../photo/apartments/apartment-six/blueprints/furniture-arrangement-plan.png",
+    "description": "",
     "category": "apartment",
     "rank": false
   },
   {
     "id": "7",
     "title": "apartment-seven",
-    "image": "../photo/apartments/apartment-seven/blueprints/as-built-plan.png",
-    "description": "Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.",
+    "image": "../photo/apartments/apartment-seven/blueprints/flooring-layout-plan.png",
+    "description": "",
     "category": "apartment",
     "rank": false
   },
   {
     "id": "8",
     "title": "apartment-eigh",
-    "image": "../photo/apartments/apartment-eight/blueprints/as-built-plan.png",
-    "description": "Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.",
+    "image": "../photo/apartments/apartment-eight/blueprints/flooring-layout-plan.png",
+    "description": "",
     "category": "apartment",
     "rank": false
   },
   {
     "id": "9",
     "title": "apartment-nine",
-    "image": "../photo/apartments/apartment-nine/blueprints/as-built-plan.png",
-    "description": "Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.",
+    "image": "../photo/apartments/apartment-nine/blueprints/furniture-arrangement-plan-and-dimensions.png",
+    "description": "",
     "category": "apartment",
     "rank": false
   },
@@ -67,7 +67,7 @@
     "id": "10",
     "title": "apartment ten",
     "image": "../public/photo/apartments/apartment-ten/visualizations/visualization-livingRoom-one.jpg",
-    "description": "Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.",
+    "description": "",
     "category": "apartment",
     "rank": true
   },
@@ -75,7 +75,7 @@
     "id": "11",
     "title": "Apartment eleven",
     "image": "../public/photo/apartments/apartment-eleven/Visualizations/visualization-livingRoom-one.png",
-    "description": "Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.",
+    "description": "",
     "category": "apartment",
     "rank": true
   },
@@ -83,31 +83,32 @@
     "id": "12",
     "title": "apartment-twelve",
     "image": "../photo/apartments/apartment-twelve/visualizations/visualization-childrensRoom-two.jpg",
-    "description": "Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.",
+    "description": "",
     "category": "apartment",
     "rank": false
   },
   {
     "id": "13",
     "title": "apartment-thirteen",
-    "image": "../photo/apartments/apartment-thirteen/blueprints/as-built-plan.png",
-    "description": "Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.",
+    "image": "../photo/apartments/apartment-thirteen/blueprints/furniture-arrangement-plan.png",
+
+    "description": "",
     "category": "apartment",
     "rank": false
   },
   {
     "id": "14",
     "title": " apartment-fourteen ",
-    "image": "../photo/apartments/apartment-fourteen/blueprints/as-built-plan.png",
-    "description": "Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.",
+    "image": "../photo/apartments/apartment-fourteen/blueprints/plan-of-arranging-furniture.png",
+    "description": "",
     "category": "apartment",
     "rank": false
   },
   {
     "id": "15",
     "title": "apartment-fifteen",
-    "image": "../photo/apartments/apartment-fifteen/blueprints/as-built-plan.png",
-    "description": "Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.",
+    "image": "../photo/apartments/apartment-fifteen/blueprints/furniture-arrangement-plan.png",
+    "description": "",
     "category": "apartment",
     "rank": false
   },
@@ -116,7 +117,7 @@
     "title": "apartment-sixteen",
     "image": "../photo/apartments/apartment-sixteen/blueprints/title-page.png",
 
-    "description": "Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.",
+    "description": "",
     "category": "apartment",
     "rank": false
   },
@@ -125,15 +126,15 @@
     "title": " apartment-seventeen",
     "image": "../photo/apartments/apartment-seventeen/blueprints/title-page.png",
 
-    "description": "Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.",
+    "description": "",
     "category": "apartment",
     "rank": false
   },
   {
     "id": "18",
     "title": "  apartment-eighteen ",
-    "image": "../photo/apartments/apartment-eighteen/blueprints/as-built-plan.png",
-    "description": "Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.",
+    "image": "../photo/apartments/apartment-eighteen/blueprints/furniture-arrangement-plan.png",
+    "description": "",
     "category": "apartment",
     "rank": false
   },
@@ -141,7 +142,7 @@
     "id": "19",
     "title": "House one с проекта",
     "image": "../photo/houses/house-one/visualizations/visualization-livingRoom-one.jpg",
-    "description": "Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.",
+    "description": "",
     "category": "houses",
     "rank": false
   },
@@ -149,7 +150,7 @@
     "id": "20",
     "title": "house-two",
     "image": "../photo/houses/house-two/visualizations/visualization-modularHouse-four.jpg",
-    "description": "Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.",
+    "description": "",
     "category": "houses",
     "rank": false
   },
@@ -157,15 +158,15 @@
     "id": "21",
     "title": "House three",
     "image": "../public/photo/houses/house-three/visualizations/visualization-diningRoom.jpg",
-    "description": "Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.",
+    "description": "",
     "category": "houses",
     "rank": true
   },
   {
     "id": "22",
     "title": "house-four",
-    "image": "../photo/houses/house-four/blueprints/as-built-plan.png",
-    "description": "Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.",
+    "image": "../photo/houses/house-four/blueprints/furniture-arrangement-plan.png",
+    "description": "",
     "category": "houses",
     "rank": false
   }

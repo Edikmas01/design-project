@@ -2,6 +2,7 @@ import { useState , useEffect } from "react";
 import "./ServicesPage.scss";
 import { NavLink, useParams } from "react-router-dom";
 import { Modal } from "../../components/Modal/Modal";
+import {ContactForm} from "../../components/ContactForm/ContactForm"
 
 export const ServicesPage = () => {
   const [selectedService, setSelectedService] = useState(null);
@@ -103,6 +104,7 @@ export const ServicesPage = () => {
         </div>
       )}
       {modalOpen && <Modal onClose={handleCloseModal} isOpen={modalOpen} />}
+      <ContactForm/>
     </section>
   );
 };
