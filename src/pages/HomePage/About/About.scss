@@ -13,37 +13,57 @@
   padding: 20px;
 }
 
-.about-image {
-  flex: 0.7;
-
+.about-image{
+  flex: 0.6;
   img {
     border-radius: 10px;
     max-width: 350px;
   }
 }
 
+
 .about-text {
   flex: 1;
   color: #fff;
-  
-  h1 {
-    font-size: 18px;
+  max-height: 200px; 
+  overflow-y: auto; 
+  padding-right: 10px; 
+
+   h1 {
+    font-size: 24px;
     margin-bottom: 20px;
   }
-
   p {
-    font-size: 16px;
-    line-height: 1.6;
+    font-size: 17px;
+    line-height: 1.5;
+    margin: 0 0 10px;
   }
 }
 
+.about-text::-webkit-scrollbar {
+  width: 10px; 
+}
+
+.about-text::-webkit-scrollbar-thumb {
+  background: #888; 
+  border-radius: 10px; 
+}
+
+.about-text::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+
+.about-text::-webkit-scrollbar-track {
+  background: #1b2733; 
+  border-radius: 10px; 
+}
 .about-line {
   position: absolute;
   top: 50%;
   left: 0;
   transform: translateY(-50%);
   background-color: #1b2733;
-  height: 80%;
+  height: 75%;
   width: 100%;
   z-index: 1;
 }

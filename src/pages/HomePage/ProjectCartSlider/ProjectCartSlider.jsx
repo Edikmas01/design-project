@@ -9,7 +9,6 @@ export const ProjectCartSlider = () => {
 
 
   const projects = useFetchProjects();
-
   
   const filterProjects = projects.filter((project) => project.rank);
 

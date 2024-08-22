@@ -5,6 +5,7 @@ export const About = () => {
   return (
     <>
       <section className="about-section ">
+ 
         <div className="about-content site-container">
           <div className="about-image">
             <img src="/public/photo/about.jpg" alt="About me" />
@@ -12,17 +13,25 @@ export const About = () => {
           <div className="about-text">
             <h1>About me</h1>
             <p>
-              We create bespoke and beautiful interior spaces that reflect your
-              personality We create bespoke and beautiful interior spaces that
-              reflect your personalityWe create bespoke and beautiful interior
-              spaces that reflect your personalityWe create bespoke and
-              beautiful interior spaces that reflect your personalityWe create
-              bespoke and beautiful interior spaces that reflect your
-              personalityWe create bespoke and beautiful interior spaces that
-              reflect your personalityWe create bespoke and beautiful interior
-              spaces that reflect your personalityWe create bespoke and
-              beautiful interior spaces that reflect your personalityWe create
-              bespoke and beautiful interior
+              Меня зовут [Имя дизайнера], и я — молодой и амбициозный дизайнер
+              интерьера. В свои 22 года я уже успела получить диплом бакалавра и
+              продолжаю своё обучение на магистра по градостроению. Моё
+              образование дополняется рядом курсов по дизайну, которые помогли
+              мне развить уникальное чувство стиля и пространства.
+            </p>
+            <p>
+              Уже более двух лет я занимаюсь созданием интерьеров для квартир,
+              домов и коммерческих помещений. В своей работе я стремлюсь не
+              просто создавать красивые пространства, но и воплощать в жизнь
+              мечты и идеи моих клиентов, учитывая их уникальные потребности и
+              желания.
+            </p>
+            <p>
+              Каждый проект для меня — это возможность раскрыть потенциал
+              пространства и сделать его комфортным, функциональным и
+              эстетически привлекательным. Я убеждена, что грамотно
+              спроектированный интерьер может улучшить качество жизни, и я с
+              радостью помогу вам достичь этого.
             </p>
           </div>
         </div>
