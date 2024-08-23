@@ -1,46 +1,94 @@
 [
   {
     "id": "1",
-    "title": "redevelopment project1",
-    "description": "Once upon a time in a quaint ",
-    "price": "150$ for ",
-    "plen": ["plen 1"],
-    "image": "../photo/apartments/apartment-eight/blueprints/as-built-plan.png"
+    "title": "Проект перепланированя",
+    "description": "",
+    "price": "1$ for м²",
+    "plen": [
+      "Обмернsй план помешения",
+      "План демонтожа",
+      "План монтожа",
+      "План после реконструкции",
+      "План растановки мебели"
+    ],
+    "image": [
+      "../photo/apartments/apartment-three/blueprints/as-built-plan.png",
+      "../photo/apartments/apartment-three/blueprints/dismantling-plan.png",
+       "../photo/apartments/apartment-three/blueprints/installation-plan.png",
+       "../photo/apartments/apartment-three/blueprints/plan-after-reconstruction.png",
+       "../photo/apartments/apartment-three/blueprints/furniture-arrangement-plan.png"
+
+    ]
   },
   {
     "id": "2",
-    "title": "redevelopment project2",
-    "description":
-      "Once upon a time in a quaint little village nestled between rolling hills",
-    "price": "50",
-    "plen": ["plen 1", "plen 2"],
-    "image": "../photo/apartments/apartment-eight/blueprints/as-built-plan.png"
+    "title": "Технический проект",
+    "description": "",
+    "price": "1$ for м²",
+    "plen": [
+      "Включает в себя чертежи из 'Проекта пересланировани'",
+      "План сантехники",
+      "План электрики",
+      "План Електро цепей",
+      "План вентеляции и кондиционирования",
+      "План теплого пола и радиаторов",
+      "План напольного покрытия",
+      "План дверей и плинтусов",
+      "План потолка"
+    ],
+    "image": [
+      "../photo/apartments/apartment-eight/blueprints/as-built-plan.png",
+      "../photo/apartments/apartment-eight/blueprints/ceiling-plan.png",
+      "../photo/apartments/apartment-eight/blueprints/dismantling-plan.png",
+      "../photo/apartments/apartment-eight/blueprints/electrician-plan-two.png",
+      "../photo/apartments/apartment-eight/blueprints/electrical-circuit-plan.png",
+      "../photo/apartments/apartment-eight/blueprints/flooring-layout-plan.png",
+      "../photo/apartments/apartment-eight/blueprints/furniture-arrangement-plan.png",
+      "../photo/apartments/apartment-eight/blueprints/heating-plan-and-warm-floor.png",
+      "../photo/apartments/apartment-eight/blueprints/installation-plan.png",
+      "../photo/apartments/apartment-eight/blueprints/lighting-plan.png",
+      "../photo/apartments/apartment-eight/blueprints/plan-after-reconstruction.png",
+      "../photo/apartments/apartment-eight/blueprints/plan-of-plumbing.png",
+      "../photo/apartments/apartment-eight/blueprints/ventilation-and-air-conditioning-plan.png"
+    ]
   },
   {
     "id": "3",
-    "title": "redevelopment project3",
-    "description":
-      "Once upon a time in a quaint little village nestled between rolling hills, there lived a community of people who cherished simplicity.",
-    "price": "300",
-    "plen": ["plen 1", "plen 2", "plen 3"],
-    "image": "../photo/apartments/apartment-eight/blueprints/as-built-plan.png"
+    "title": "Дизайн прокут",
+    "description": "",
+    "price": "1$ for м²",
+    "plen": [
+      "Включает в себя все чертежи из 'Проекта пересланировани' и 'Технический проект'",
+      "Чертжи спецификации материалов",
+      "Чертежи развертки",
+      "Визуализаци"
+    ],
+    "image":[
+      "../photo/houses/house-one/visualizations/visualization-livingRoom-two.jpg"
+    ]
   },
   {
     "id": "4",
-    "title": "redevelopment project4",
-    "description":
-      "Once upon a time in a quaint little village nestled between rolling hills, there lived a community of people who cherished simplicity. The village was surrounded by lush greenery, ",
+    "title": "Визуализаци",
+    "description": "Для дизайнеров, сотруднечиство",
     "price": "100",
-    "plen": ["plen 1", "plen 2", "plen 3", "plen 4"],
-    "image": "../photo/apartments/apartment-eight/blueprints/as-built-plan.png"
-  },
-  {
-    "id": "5",
-    "title": "redevelopment project5",
-    "description":
-      "Once upon a time in a quaint little village nestled between rolling hills, there lived a community of people who cherished simplicity. The village was surrounded by lush greenery, and the air was filled with the sweet fragrance of blooming flowers. Every morning, the villagers would gather at the t",
-    "price": "200",
-    "plen": ["plen 1", "plen 2", "plen 3", "plen 4", "plen 5"],
-    "image": "../photo/apartments/apartment-eight/blueprints/as-built-plan.png"
+    "plen": ["Сщздание визуализаций"],
+    "image": [
+      "../photo/houses/house-one/visualizations/visualization-livingRoom-one.jpg",
+      "../photo/houses/house-one/visualizations/visualization-livingRoom-two.jpg",
+      "../photo/houses/house-one/visualizations/visualization-livingRoom-three.jpg",
+      "../photo/houses/house-one/visualizations/visualization-livingRoom-four.jpg",
+      "../photo/houses/house-one/visualizations/visualization-livingRoom-five.jpg",
+      "../photo/houses/house-one/visualizations/visualization-bedroom-one.jpg",
+      "../photo/houses/house-one/visualizations/visualization-bedroom-two.jpg",
+      "../photo/houses/house-one/visualizations/visualization-bedroom-three.jpg",
+      "../photo/houses/house-one/visualizations/visualization-TVzones-in-bedroom.jpg",
+      "../photo/houses/house-one/visualizations/visualization-bedroomsTwo-one.jpg",
+      "../photo/houses/house-one/visualizations/visualization-bedroomsTwo-two.jpg",
+      "../photo/houses/house-one/visualizations/visualization-bedsideArea-bedroomTwo.jpg",
+      "../photo/houses/house-one/visualizations/visualiyation-makeupAreas-bedroomTwo-one.jpg",
+      "../photo/houses/house-one/visualizations/visualiyation-makeupAreas-bedroomTwo-two.jpg",
+      "../photo/houses/house-one/visualizations/visualization-TVzones-in-bedroomTwo.jpg"
+    ]
   }
 ]

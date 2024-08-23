@@ -1,50 +1,78 @@
-import { useState , useEffect } from "react";
+import { useState, useEffect } from "react";
 import "./ServicesPage.scss";
-import { NavLink, useParams } from "react-router-dom";
+import { Link, NavLink, useParams } from "react-router-dom";
 import { Modal } from "../../components/Modal/Modal";
-import {ContactForm} from "../../components/ContactForm/ContactForm"
+import { ContactForm } from "../../components/ContactForm/ContactForm";
+import { ProjectCartSlider } from "../../components/ProjectCartSlider/ProjectCartSlider";
+
+const getContent = (item) => {
+  switch (true) {
+    case item.includes("Включает в себя чертежи из 'Проекта пересланировани'"):
+      return <Link to="/services/1"> {item}</Link>;
+    case item.includes(
+      "Включает в себя все чертежи из 'Проекта пересланировани' и 'Технический проект'"
+    ):
+      return <Link to="/services/2"> {item}</Link>;
+    default:
+      return item;
+  }
+};
 
 export const ServicesPage = () => {
   const [selectedService, setSelectedService] = useState(null);
-  const [ services, setServices] = useState([])
+  const [services, setServices] = useState([]);
   const [modalOpen, setModalOpen] = useState(false);
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const { id } = useParams();
 
   useEffect(() => {
     fetch("/public/api/services.json")
       .then((res) => res.json())
-    .then((data) => {
-      setServices(data);
-      if (id) {
-        const service = data.find((s) => s.id === id);
-        console.log(service, "im id d[[d[d[d[d[");
-        
-        if (service) {
-          setSelectedService(service);
+      .then((data) => {
+        setServices(data);
+        if (id) {
+          const service = data.find((s) => s.id === id);
+          if (service) {
+            setSelectedService(service);
+          }
         }
-      }
-    })
-  .catch((error) => console.error("Error fetching projects:", error));
-}, [id])
-  
-  
+      })
+      .catch((error) => console.error("Error fetching projects:", error));
+  }, [id]);
+
   const handleServiceClick = (services) => {
     setSelectedService(services);
-    console.log("Selected service:", services);
+    setCurrentImageIndex(0);
   };
 
   const handleOrderService = () => {
-    console.log("Order service button clicked");
     setModalOpen(true);
   };
 
   const handleCloseModal = () => {
-    console.log("Modal closed");
     setModalOpen(false);
   };
 
+  const handleNextImage = () => {
+    if (selectedService && selectedService.image.length > 0) {
+      setCurrentImageIndex(
+        (prevIndex) => (prevIndex + 1) % selectedService.image.length
+      );
+    }
+  };
+
+  const handlePrevImage = () => {
+    if (selectedService && selectedService.image.length > 0) {
+      setCurrentImageIndex(
+        (prevIndex) =>
+          (prevIndex - 1 + selectedService.image.length) %
+          selectedService.image.length
+      );
+    }
+  };
+
   return (
-    <section className="service-section ">
+    <section className="service-section">
       <div className="option">
         <div className="beckgroundImg"></div>
         <div className="oooo">
@@ -53,7 +81,7 @@ export const ServicesPage = () => {
             {services.map((service) => (
               <li className="option-item" key={service.id}>
                 <NavLink
-                      to={`/services/${service.id}`} 
+                  to={`/services/${service.id}`}
                   className="option-item-nav"
                   onClick={() => handleServiceClick(service)}
                 >
@@ -82,7 +110,7 @@ export const ServicesPage = () => {
               : "Click on a service to see its description"}
           </p>
           {selectedService && (
-            <h3 className="price">Price: {selectedService.price}м²</h3>
+            <h3 className="price">Price: {selectedService.price}</h3>
           )}
         </div>
         {selectedService && (
@@ -91,21 +119,49 @@ export const ServicesPage = () => {
             <ul className="includes-list">
               {selectedService.plen.map((item, index) => (
                 <li key={index} className="includes-item">
-                  {item}
+                  {getContent(item)}
                 </li>
               ))}
             </ul>
           </div>
         )}
       </div>
-      {selectedService && (
-        <div className="image-container site-container">
-          <img className="img-services" src={selectedService.image} alt="" />
-        </div>
-      )}
+      {selectedService ? (
+        selectedService.id === "3" ? (
+          <ProjectCartSlider />
+        ) : (
+          <>
+            <h1 className="imege-title">Примеры работ</h1>
+            <div className="image-container site-container">
+              <div className="slider">
+                {selectedService.image.length > 0 && (
+                  <img
+                    className="img-services"
+                    src={selectedService.image[currentImageIndex]}
+                    alt={`Service ${selectedService.title} - Slide ${
+                      currentImageIndex + 1
+                    }`}
+                  />
+                )}
+                <button
+                  onClick={handlePrevImage}
+                  className="slider-button prev"
+                >
+                  ←
+                </button>
+                <button
+                  onClick={handleNextImage}
+                  className="slider-button next"
+                >
+                  →
+                </button>
+              </div>
+            </div>
+          </>
+        )
+      ) : null}
       {modalOpen && <Modal onClose={handleCloseModal} isOpen={modalOpen} />}
-      <ContactForm/>
+      <ContactForm />
     </section>
   );
 };
-

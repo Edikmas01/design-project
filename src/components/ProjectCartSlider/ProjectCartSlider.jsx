@@ -1,15 +1,13 @@
-import {useState} from "react";
+import { useState } from "react";
 import "./ProjectCartSlider.scss";
-import { ProjectCart } from "../../../components/ProjectCart/ProjectCart";
-import { useFetchProjects } from "../../../hooks/useFetchProjects";
-
+import { ProjectCart } from "../ProjectCart/ProjectCart";
+import { useFetchProjects } from "../../hooks/useFetchProjects";
 
 export const ProjectCartSlider = () => {
   const [activeIndex, setActiveIndex] = useState(0);
 
-
   const projects = useFetchProjects();
-  
+
   const filterProjects = projects.filter((project) => project.rank);
 
   const handlePrevClick = () => {
@@ -30,8 +28,7 @@ export const ProjectCartSlider = () => {
               .slice(activeIndex, activeIndex + 3)
               .map((project, index) => (
                 <li className="projects-item" key={index}>
-                  <ProjectCart project={project} /> 
-
+                  <ProjectCart project={project} />
                 </li>
               ))}
           </ul>

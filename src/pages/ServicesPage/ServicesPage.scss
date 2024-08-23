@@ -59,6 +59,27 @@ h1, ul,button {
   padding-bottom: 20px;
 }
 
+.option-bnt {
+  text-align: center;
+  color: #333; 
+  padding: 15px 65px;
+  background-color: #cecccc;
+  border-radius: 10px;
+  border: none;
+    top: calc(25% + 2rem + 25px + 1.5rem + 70px);
+  cursor: pointer;
+
+}
+
+.option-bnt:hover,
+.option-bnt:focus {
+  background-color: #969395;
+  color: #ffffff;
+   box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 10px;
+}
+
+
 .option-item-nav:hover,
 .option-item-nav:focus{
   color: #6F8658;
@@ -131,3 +152,47 @@ h1, ul,button {
   // height: 500px;
 }
 
+.imege-title{
+  display: flex;
+  justify-content: center;
+margin: 0 0 25px;
+}  
+
+.slider {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.img-services {
+  max-width: 95%;
+  max-height: 600px;
+  // height: auto;
+}
+
+.slider-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+    color: #333; 
+  background-color: #cecccc;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.slider-button:hover:focus{
+   background-color: #969395;
+  color: #ffffff;
+}
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}

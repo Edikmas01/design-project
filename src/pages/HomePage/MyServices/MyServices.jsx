@@ -54,7 +54,9 @@ export const MyServices = () => {
         {services.slice(activeIndex, activeIndex + 3).map((service) => (
           <div key={service.id} className="service-card">
             <Link to={`/services/${service.id}`} className="service-link">
-              <img src={service.image} alt={service.title} />
+              {service.image.length > 0 && (
+                <img src={service.image[0]} alt={service.title} />
+              )}
               <h2>{service.title}</h2>
               <p>{service.description}</p>
             </Link>
