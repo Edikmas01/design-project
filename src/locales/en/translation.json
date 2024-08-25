@@ -58,6 +58,7 @@
   "servicesPage": {
     "title": "Services",
     "btn": "order service",
+    "selectService":"Select a service",
     "text": "Click on a service to see its description",
     "price": "Price",
     "includes": "includes",

@@ -6,18 +6,16 @@ import { ContactForm } from "../../components/ContactForm/ContactForm";
 import { ProjectCartSlider } from "../../components/ProjectCartSlider/ProjectCartSlider";
 import { useTranslation } from "react-i18next";
 
-const getContent = (item) => {
+const getContent = (item, t) => {
   switch (true) {
-    case item.includes("Включает в себя чертежи из 'Проекта пересланировани'"):
+    case item.includes(t("servicesPage.service.2.plen.0")):
       return (
         <Link to="/services/1" className="link">
           {" "}
           {item}
         </Link>
       );
-    case item.includes(
-      "Включает в себя все чертежи из 'Проекта пересланировани' и 'Технический проект'"
-    ):
+    case item.includes(t("servicesPage.service.3.plen.0")):
       return (
         <Link to="/services/2" className="link">
           {" "}
@@ -52,10 +50,6 @@ export const ServicesPage = () => {
       .catch((error) => console.error("Error fetching projects:", error));
   }, [id]);
 
-  const title = t(`servicesPage.service.${services.id}.title`);
-  const description = t(`servicesPage.service.${services.id}.description`);
-  const plen = t(`servicesPage.service.${services.id}.plen`);
-
   const handleServiceClick = (services) => {
     setSelectedService(services);
     setCurrentImageIndex(0);
@@ -87,6 +81,22 @@ export const ServicesPage = () => {
     }
   };
 
+  const title = selectedService
+    ? t(`servicesPage.service.${selectedService.id}.title`)
+    : "";
+
+  const description = selectedService
+    ? t(`servicesPage.service.${selectedService.id}.description`, {
+        returnObjects: true,
+      })
+    : [];
+  
+  const plen = selectedService
+    ? t(`servicesPage.service.${selectedService.id}.plen`, {
+        returnObjects: true,
+      })
+    : [];
+
   return (
     <section className="service-section ">
       <div className="service-option">
@@ -101,7 +111,7 @@ export const ServicesPage = () => {
                   className="option-item-nav"
                   onClick={() => handleServiceClick(service)}
                 >
-                  {service.title}
+                  {t(`servicesPage.service.${service.id}.title`)}
                 </NavLink>
               </li>
             ))}
@@ -117,13 +127,13 @@ export const ServicesPage = () => {
       </div>
 
       <h1 className="description-title">
-        {selectedService ? selectedService.title : "Select a service"}
+        {selectedService ? title : t("servicesPage.selectService")}
       </h1>
       <div className="description-and-price site-container">
         <div className="description">
           {selectedService ? (
             <ul className="description-list">
-              {selectedService.description.map((item, index) => (
+              {description.map((item, index) => (
                 <li key={index} className="description-item">
                   {item}
                 </li>
@@ -142,9 +152,9 @@ export const ServicesPage = () => {
           <div className="includes">
             <h3 className="includes-title">{t("servicesPage.includes")}</h3>
             <ul className="includes-list">
-              {selectedService.plen.map((item, index) => (
+              {plen.map((item, index) => (
                 <li key={index} className="includes-item">
-                  {getContent(item)}
+                  {getContent(item, t)}
                 </li>
               ))}
             </ul>

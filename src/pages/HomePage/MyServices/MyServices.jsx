@@ -12,13 +12,11 @@ const truncateDescription = (description = '', maxLength) => {
 
 
 export const MyServices = () => {
-  const [activeIndex, setActiveIndex] = useState(0);
   const [services, setServices] = useState([]);
+  const [activeIndex, setActiveIndex] = useState(0);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 const { t } = useTranslation();
-
-
 
   useEffect(() => {
     fetch("/public/api/services.json")
@@ -64,37 +62,49 @@ const { t } = useTranslation();
       <h1 className="MyServices-title">{t("myServices.title")}</h1>
       <p className="MyServices-text">{t("myServices.text")}</p>
       <div className="MyServices-cart">
-        {services.slice(activeIndex, activeIndex + 3).map((service) => (
-          <div key={service.id} className="service-card">
-            <Link to={`/services/${service.id}`} className="service-link link">
-              {service.image.length > 0 && (
-                <img src={service.image[0]} alt={service.title} />
-              )}
-              <h2>{service.title}</h2>
-
-              <p>
-                {truncateDescription(
-                  service.description,
-                  Math.floor(service.description.length / 2)
-                )}{" "}
-                <Link to={`/services/${service.id}`}>
-                  {t("myServices.learnMore")}...
-                </Link>
-              </p>
-            </Link>
-          </div>
-        ))}
+        {services.slice(activeIndex, activeIndex + 3).map((service) => {
+          const title = t(`servicesPage.service.${service.id}.title`);
+          const description = t(
+            `servicesPage.service.${service.id}.description`,
+            {
+              returnObjects: true,
+            }
+          );
+          return (
+            <div key={service.id} className="service-card">
+              <Link
+                to={`/services/${service.id}`}
+                className="service-link link"
+              >
+                {service.image && service.image.length > 0 && (
+                  <img src={service.image[0]} alt={title} />
+                )}
+                <h2>{title}</h2>
+                <p>
+                  {truncateDescription(
+                    description.join(" "),
+                    Math.floor(description.join(" ").length / 2)
+                  )}{" "}
+                  <Link to={`/services/${service.id}`}>
+                    {t("myServices.learnMore")}...
+                  </Link>
+                </p>
+              </Link>
+            </div>
+          );
+        })}
         <button
           className="slider__button slider__button--left"
           onClick={handlePrevClick}
+          disabled={activeIndex === 0}
         >
-          ←{" "}
+          ←
         </button>
         <button
           className="slider__button slider__button--right"
           onClick={handleNextClick}
+          disabled={activeIndex >= services.length - 3}
         >
-          {" "}
           →
         </button>
       </div>

@@ -7,14 +7,13 @@ export const Modal = ({ onClose, isOpen }) => {
   const [services, setServices] = useState([]);
   const { t } = useTranslation();
 
+  useEffect(() => {
+    fetch("/public/api/services.json")
+      .then((res) => res.json())
+      .then((data) => setServices(data))
+      .catch((error) => console.error("Error fetching projects:", error));
+  }, []);
 
- useEffect(() => {
-   fetch("/public/api/services.json")
-     .then((res) => res.json())
-     .then((data) => setServices(data))
-     .catch((error) => console.error("Error fetching projects:", error));
- }, []);
-  
   const handleServiceChange = (e) => {
     setSelectedService(e.target.value);
   };
@@ -95,11 +94,14 @@ export const Modal = ({ onClose, isOpen }) => {
               onChange={handleServiceChange}
             >
               <option value=""> {t("modal.service")}</option>
-              {services.map((service) => (
-                <option key={service.id} value={service.title}>
-                  {service.title}
-                </option>
-              ))}
+              {services.map((service) => {
+                const title = t(`servicesPage.service.${service.id}.title`);
+                return (
+                  <option key={service.id} value={service.title}>
+                    {title}
+                  </option>
+                );
+              })}
             </select>
           </div>
           <div className="modal-div">

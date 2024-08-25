@@ -60,6 +60,7 @@
   "servicesPage": {
     "title": "Dienste",
     "btn": "Dienstleistung bestellen",
+    "selectService": "Wählen Sie einen Dienst aus",
     "text": "Klicken Sie auf eine Dienstleistung, um ihre Beschreibung anzuzeigen",
     "price": "Preis",
     "includes": "beinhaltet",
