@@ -2,9 +2,11 @@ import { useState } from "react";
 import { ProjectCart } from "../../../components/ProjectCart/ProjectCart";
 import "./ProjectsPageCart.scss";
 import { useFetchProjects } from "../../../hooks/useFetchProjects";
+import { useTranslation } from "react-i18next";
 
 export const ProjectsPageCart = () => {
   const [selectedCategory, setselectedCategory] = useState("all");
+const { t } = useTranslation();
 
   const projects = useFetchProjects();
 
@@ -28,7 +30,7 @@ export const ProjectsPageCart = () => {
           }`}
           onClick={() => handleCategoryClick("all")}
         >
-          All Projects
+          {t("projectsPageCart.allProjects")}
         </button>
         <button
           type="button"
@@ -37,7 +39,7 @@ export const ProjectsPageCart = () => {
           }`}
           onClick={() => handleCategoryClick("houses")}
         >
-          House
+          {t("projectsPageCart.house")}
         </button>
         <button
           type="button"
@@ -46,7 +48,7 @@ export const ProjectsPageCart = () => {
           }`}
           onClick={() => handleCategoryClick("apartment")}
         >
-          Apartment
+          {t("projectsPageCart.apartment")}
         </button>
         <button
           type="button"
@@ -55,7 +57,7 @@ export const ProjectsPageCart = () => {
           }`}
           onClick={() => handleCategoryClick("business")}
         >
-          Business
+          {t("projectsPageCart.business")}
         </button>
       </div>
       <ul className="projectsCart-list">

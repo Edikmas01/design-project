@@ -1,10 +1,20 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import "./Modal.scss";
-// import { services } from "../../../public/api/services";
+import { useTranslation } from "react-i18next";
 
 export const Modal = ({ onClose, isOpen }) => {
   const [selectedService, setSelectedService] = useState("");
+  const [services, setServices] = useState([]);
+  const { t } = useTranslation();
 
+
+ useEffect(() => {
+   fetch("/public/api/services.json")
+     .then((res) => res.json())
+     .then((data) => setServices(data))
+     .catch((error) => console.error("Error fetching projects:", error));
+ }, []);
+  
   const handleServiceChange = (e) => {
     setSelectedService(e.target.value);
   };
@@ -24,11 +34,11 @@ export const Modal = ({ onClose, isOpen }) => {
         </svg> */}
           x
         </button>
-        <h3 className="modal-title">Залиште свої дані, ми вам передзвонимо</h3>
+        <h3 className="modal-title">{t("modal.title")} </h3>
         <form className="modal-form">
           <div className="modal-div">
             <label htmlFor="user-name" className="form-label">
-              Ім'я
+              {t("modal.name")}
             </label>
             <div className="imput-wrap">
               <input
@@ -44,7 +54,7 @@ export const Modal = ({ onClose, isOpen }) => {
           </div>
           <div className="modal-div">
             <label htmlFor="user-tel" className="form-label">
-              Телефон
+              {t("modal.phone")}
             </label>
             <div className="imput-wrap">
               <input
@@ -60,7 +70,7 @@ export const Modal = ({ onClose, isOpen }) => {
           </div>
           <div className="modal-div">
             <label htmlFor="user-email" className="form-label">
-              Пошта
+              {t("modal.e-mail")}
             </label>
             <div className="imput-wrap">
               <input
@@ -76,7 +86,7 @@ export const Modal = ({ onClose, isOpen }) => {
           </div>
           <div className="modal-div">
             <label htmlFor="service-select" className="form-label">
-              Выбрать услугу
+              {t("modal.service")}
             </label>
             <select
               id="service-select"
@@ -84,17 +94,17 @@ export const Modal = ({ onClose, isOpen }) => {
               value={selectedService}
               onChange={handleServiceChange}
             >
-              <option value="">Выберите услугу</option>
-              {/* {services.map((service) => (
-              <option key={service.id} value={service.title}>
-                {service.title}
-              </option>
-            ))} */}
+              <option value=""> {t("modal.service")}</option>
+              {services.map((service) => (
+                <option key={service.id} value={service.title}>
+                  {service.title}
+                </option>
+              ))}
             </select>
           </div>
           <div className="modal-div">
             <label htmlFor="user-text" className="form-label">
-              Коментар
+              {t("modal.message")}
             </label>
             <textarea
               name="user-text"
@@ -113,15 +123,15 @@ export const Modal = ({ onClose, isOpen }) => {
               value="true"
             />
             <label htmlFor="agree" id="agree-label" className="chec-text">
-              Погоджуюся з розсилкою та приймаю &nbsp;
+              {t("modal.agree")}&nbsp;
               <a href="" className="chec-link">
-                Умови договору
+                {t("modal.conditions")}
               </a>
             </label>
           </div>
 
           <button type="submit" className="form-btn">
-            Відправити
+            {t("modal.btn")}
           </button>
         </form>
       </div>

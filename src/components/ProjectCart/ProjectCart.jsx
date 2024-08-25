@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import "./ProjectCart.scss";
+import { useTranslation } from "react-i18next";
 
 const truncateDescription = (description, maxLength) => {
   if (description.length > maxLength) {
@@ -8,19 +9,26 @@ const truncateDescription = (description, maxLength) => {
   return description;
 };
 export const ProjectCart = ({project}) => {
-  const { image, title, description, category, id } = project
-  
-  const maxLength = Math.floor(description.length / 2); 
+  const { t } = useTranslation();
+  const { image, category, id } = project;
+
+const title = t(`projectDetails.projects.${id}.title`);
+const description = t(`projectDetails.projects.${id}.description`);
+// const category = t(`projectCart.projects.${id}.category`);
+
+const maxLength = description ? Math.floor(description.length / 2) : 0;
   const truncatedDescription = truncateDescription(description, maxLength);
   
   return (
     <div>
-      <Link to={`/${category}/${id}`}>
+      <Link to={`/${category}/${id}`} className="link">
         <div className="projects-top-wrap">
           <img src={image} alt={title} width="380" height="360" />
           <p className="projects-text">
             {truncatedDescription}{" "}
-            <Link to={`/${category}/${id}`}>Learn More...</Link>
+            <Link to={`/${category}/${id}`} className="link">
+              {t("projectCart.learnMore")}...
+            </Link>
           </p>
         </div>
         <div className="projects-div">

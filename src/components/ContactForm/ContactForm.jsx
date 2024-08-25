@@ -1,15 +1,19 @@
 import "./ContactForm.scss";
+import { useTranslation } from "react-i18next";
+
 
 
 export const ContactForm = () => {
+  const { t } = useTranslation();
+
   return (
     <section className="contact-form-container ">
       <div className="site-container">
-        <h1>Contact us</h1>
-        <p>Any questions? We are here to help! Contact me now.</p>
+        <h1>{t("contactForm.title")}</h1>
+        <p>{t("contactForm.text")}</p>
         <form action="" className="contact-form">
           <div className="form-group ">
-            <label htmlFor="name">Name *</label>
+            <label htmlFor="name">{t("contactForm.name")}*</label>
             <input
               type="text"
               id="name"
@@ -19,7 +23,7 @@ export const ContactForm = () => {
           </div>
           <div className="form-group-inline">
             <div className="form-group ">
-              <label htmlFor="email">E-mail *</label>
+              <label htmlFor="email">{t("contactForm.e-mail")}*</label>
               <input
                 type="email"
                 id="email"
@@ -28,7 +32,7 @@ export const ContactForm = () => {
               />
             </div>
             <div className="form-group ">
-              <label htmlFor="phone">Phone number *</label>
+              <label htmlFor="phone">{t("contactForm.phone")}*</label>
               <input
                 type="phone"
                 id="phone"
@@ -38,14 +42,14 @@ export const ContactForm = () => {
             </div>
           </div>
           <div className="form-group ">
-            <label htmlFor="message">Message *</label>
+            <label htmlFor="message">{t("contactForm.message")}*</label>
             <textarea
               id="message"
               placeholder="Enter your message "
               required
             ></textarea>
           </div>
-          <button type="submit">contact</button>
+          <button type="submit">{t("contactForm.contact")}</button>
         </form>
       </div>
     </section>

@@ -1,0 +1,231 @@
+{
+  "heder": {
+    "home": "Home",
+    "projects": "Projekte",
+    "services": "Dienstleistungen"
+  },
+
+  "hero": {
+    "title": "Willkommen im Studio",
+    "subtitle": "Innenarchitektur",
+    "description": "Wir schaffen maßgeschneiderte und wunderschöne Innenräume, die Ihre Persönlichkeit widerspiegeln",
+    "orderButton": "Bestellservice"
+  },
+  "about": {
+    "title": "Über mich",
+    "introduction": "  Mein Name ist [Name des Designers], und ich bin eine junge und ambitionierte Innenarchitektin. Mit 22 Jahren habe ich bereits meinen Bachelor-Abschluss gemacht und setze mein Studium im Bereich Stadtplanung fort. Meine Ausbildung wird durch verschiedene Designkurse ergänzt, die mir geholfen haben, ein einzigartiges Gespür für Stil und Raum zu entwickeln.",
+    "experience": "Seit über zwei Jahren gestalte ich Innenräume für Wohnungen, Häuser und Geschäftsräume. In meiner Arbeit strebe ich nicht nur danach, schöne Räume zu schaffen, sondern auch die Träume und Ideen meiner Kunden zu verwirklichen, indem ich ihre einzigartigen Bedürfnisse und Wünsche berücksichtige.",
+    "mission": "Jedes Projekt ist für mich eine Gelegenheit, das Potenzial eines Raumes zu entfalten und ihn komfortabel, funktional und ästhetisch ansprechend zu gestalten. Ich bin überzeugt, dass ein gut gestaltetes Interieur die Lebensqualität verbessern kann, und freue mich darauf, Ihnen dabei zu helfen, dies zu erreichen."
+  },
+  "contactForm": {
+    "title": "Kontaktieren Sie uns",
+    "text": "Haben Sie Fragen? Wir helfen Ihnen gerne weiter! Kontaktieren Sie mich jetzt.",
+    "name": "Name",
+    "e-mail": "E-mail",
+    "phone": "Telefonnummer",
+    "message": "Kommentar",
+    "contact": "kontakt"
+  },
+  "modal": {
+    "title": "Hinterlassen Sie Ihre Daten, wir rufen Sie zurück",
+    "name": "Name",
+    "phone": "Telefonnummer",
+    "e-mail": "E-mail",
+    "service": "Dienst auswählen",
+    "message": "Kommentar",
+    "agree": "Ich stimme zu und akzeptiere den Newsletter",
+    "conditions": "Vertragsbedingungen",
+    "btn": "Senden"
+  },
+
+  "projectCartSlider": {
+    "title": "Die besten Projekte"
+  },
+  "myServices": {
+    "title": "Meine Services",
+    "text": "Wir bieten eine breite Palette von Dienstleistungen im Bereich Innenarchitektur, die auf Ihre individuellen ästhetischen und funktionalen Bedürfnisse zugeschnitten sind.",
+    "learnMore": "Mehr erfahren"
+  },
+  "projectPageDetails": {
+    "descriptionTitle": "Beschreibung dieses Projekts",
+    "visualizationTitle": "Visualisierung dieses Projektdesigns",
+    "technicalTitle": "Technische Zeichnungen Projektdesign"
+  },
+  "projectsPageCart": {
+    "allProjects": "Alle Projekte",
+    "house": "Häuser",
+    "apartment": "Wohnungen",
+    "business": "Geschäft"
+  },
+  "servicesPage": {
+    "title": "Dienste",
+    "btn": "Dienstleistung bestellen",
+    "text": "Klicken Sie auf eine Dienstleistung, um ihre Beschreibung anzuzeigen",
+    "price": "Preis",
+    "includes": "beinhaltet",
+    "works": "Arbeitsbeispiele",
+    "service": {
+      "1": {
+        "title": "Projekt Umgestaltung",
+        "description": [
+          "Wir schaffen Räume, die wirklich für Sie funktionieren. Unser Team von Fachleuten bietet optimale Lösungen für die Umgestaltung, damit Ihr Zuhause funktional und gemütlich wird.",
+          "Wir bieten einen individuellen Ansatz für jeden Kunden und sind bereit, zusätzliche Arbeiten zu besprechen, um Ihren Raum perfekt zu machen."
+        ],
+        "plen": [
+          "Messplan des Raums",
+          "Demontageplan",
+          "Montageplan",
+          "Plan nach der Renovierung",
+          "Möbelaufstellungsplan"
+        ]
+      },
+      "2": {
+        "title": "Technisches Projekt",
+        "description": [
+          "Schaffen Sie einen sicheren und modernen Raum mit unserem technischen Projekt! Wir bieten ein umfassendes Set an technischer Dokumentation, die für die Durchführung von Renovierungs- und Bauarbeiten auf höchstem Niveau erforderlich ist.",
+          "Wir sind bereit, eine maßgeschneiderte technische Lösung für Ihr Projekt zu entwickeln und alle zusätzlichen Wünsche zu berücksichtigen, damit Ihr Raum all Ihren Anforderungen entspricht."
+        ],
+        "plen": [
+          "Beinhaltet Zeichnungen aus dem 'Umgestaltungsprojekt'",
+          "Sanitärplan",
+          "Elektroplan",
+          "Schaltkreiseplan",
+          "Belüftungs- und Klimaanlagenplan",
+          "Fußbodenheizung- und Heizkörperplan",
+          "Bodenbelagsplan",
+          "Tür- und Sockelleistenplan",
+          "Deckenplan"
+        ]
+      },
+      "3": {
+        "title": "Designprojekt",
+        "description": [
+          "Verwandeln Sie Ihren Raum in ein Kunstwerk mit unserem Designprojekt! Wir erstellen einzigartige und stilvolle Innenräume, die Ihren Geschmäckern und Bedürfnissen entsprechen. Das Designprojekt umfasst ein vollständiges Paket von Zeichnungen und Visualisierungen, damit Sie Ihre Vision leicht vorstellen und umsetzen können.",
+          "Wir bieten einen individuellen Ansatz für jeden Kunden, um den perfekten Raum zu schaffen, der Ihren Stil und Ihre Vorlieben widerspiegelt. Wir sind bereit, alle zusätzlichen Wünsche zu berücksichtigen und umfassende Unterstützung in allen Phasen des Projekts zu bieten."
+        ],
+        "plen": [
+          "Beinhaltet alle Zeichnungen aus dem 'Umgestaltungsprojekt' und dem 'Technischen Projekt'",
+          "Zeichnungen der Material-Spezifikationen",
+          "Ausführungszeichnungen",
+          "Visualisierungen"
+        ]
+      },
+      "4": {
+        "title": "Visualisierungen",
+        "description": ["Für die Zusammenarbeit mit dem Designer"],
+        "plen": ["Erstellung von Visualisierungen"]
+      }
+    }
+  },
+  "projectDetails": {
+    "learnMore": "Mehr erfahren",
+    "projects": {
+      "2": {
+        "title": "Zwei-Zimmer-Wohnung in AVINION",
+        "description": "Das Umbauprojekt einer Zwei-Zimmer-Wohnung im Wohnkomplex 'AVINION' mit einer Gesamtfläche von 142,5 m². Im Rahmen des Projekts wurden die Pläne für den Abriss und den Bau von Wänden, die Verlegung der Fußbodenheizung und die Möblierungspläne erstellt.",
+        "category": "Wohnung"
+      },
+      "3": {
+        "title": "Zwei-Zimmer-Wohnung in AVINION",
+        "description": "Projekt zur Umgestaltung einer Zwei-Zimmer-Wohnung im Wohnkomplex 'AVINION' mit einer Gesamtfläche von 48 m². Das Projekt umfasste Demontage- und Montagezeichnungen von Wänden sowie einen Möbelaufstellungsplan.",
+        "category": "Wohnung"
+      },
+      "4": {
+        "title": "Zwei-Zimmer-Wohnung in AVINION",
+        "description": "Projekt zur Umgestaltung einer Zwei-Zimmer-Wohnung im Wohnkomplex 'AVINION' mit einer Gesamtfläche von 66 m². Das Projekt umfasste Zeichnungen für Demontage und Montage von Wänden, Elektro- und Beleuchtungspläne, Planung der Fußbodenheizung und Bodenbelag, Sanitär-, Klimaanlagen- und Lüftungspläne sowie einen Möbelaufstellungsplan.",
+        "category": "Wohnung"
+      },
+      "5": {
+        "title": "Zwei-Zimmer-Wohnung in AVINION",
+        "description": "Projekt zur Umgestaltung einer Zwei-Zimmer-Wohnung im Wohnkomplex 'AVINION' mit einer Gesamtfläche von 50 m². Das Projekt umfasste Zeichnungen für Demontage und Montage von Wänden, Planung der Fußbodenheizung sowie einen Möbelaufstellungsplan.",
+        "category": "Wohnung"
+      },
+      "6": {
+        "title": "Zwei-Zimmer-Wohnung in AVINION",
+        "description": "Projekt zur Umgestaltung einer Zwei-Zimmer-Wohnung im Wohnkomplex 'AVINION' mit einer Gesamtfläche von 51 m². Das Projekt umfasste Zeichnungen für Demontage und Montage von Wänden, Elektro- und Beleuchtungspläne, Planung der Fußbodenheizung und Bodenbelag, Sanitär-, Klimaanlagen- und Lüftungspläne sowie einen Möbelaufstellungsplan.",
+        "category": "Wohnung"
+      },
+      "7": {
+        "title": "Zwei-Zimmer-Wohnung in AVINION",
+        "description": "Projekt zur Umgestaltung einer Zwei-Zimmer-Wohnung im Wohnkomplex 'AVINION' mit einer Gesamtfläche von 48 m². Das Projekt umfasste Zeichnungen für Demontage und Montage von Wänden, Elektro- und Beleuchtungspläne, Planung der Fußbodenheizung und Bodenbelag, Sanitär-, Klimaanlagen- und Lüftungspläne sowie einen Möbelaufstellungsplan. Außerdem wurden im Projekt detaillierte Aufrisse der Schlafzimmer und des Badezimmers erstellt.",
+        "category": "Wohnung"
+      },
+      "8": {
+        "title": "Ein-Zimmer-Wohnung in AVINION",
+        "description": "Projekt zur Umgestaltung einer Ein-Zimmer-Wohnung im Wohnkomplex 'AVINION' mit einer Gesamtfläche von 44,5 m². Das Projekt umfasste Zeichnungen für Demontage und Montage von Wänden, Elektro- und Beleuchtungspläne, Planung der Fußbodenheizung und Bodenbelag, Sanitär-, Klimaanlagen- und Lüftungspläne sowie einen Möbelaufstellungsplan.",
+        "category": "Wohnung"
+      },
+      "9": {
+        "title": "Wohnung in AVINION",
+        "description": "Projekt zur Umgestaltung einer Ein-Zimmer-Wohnung im Wohnkomplex 'AVINION' mit einer Gesamtfläche von 97 m². Das Projekt umfasste Zeichnungen für Demontage und Montage von Wänden, Planung der Fußbodenheizung sowie einen Möbelaufstellungsplan.",
+        "category": "Wohnung"
+      },
+      "10": {
+        "title": "Projekt für eine Zwei-Zimmer-Wohnung im Wohnkomplex 'AVINION'",
+        "description": "Dieses Projekt zur Umgestaltung einer Zwei-Zimmer-Wohnung im Wohnkomplex 'AVINION' mit einer Gesamtfläche von 48 m² umfasst eine breite Palette an durchgeführten Arbeiten. Im Rahmen des Projekts wurden Zeichnungen für Demontage und Montage von Wänden, Deckenplan, Elektro- und Beleuchtungspläne, Planung der Fußbodenheizung und Bodenbelag erstellt. Detaillierte Schemata für Sanitäranlagen, Klimaanlage, Belüftung und Möbelaufstellung wurden entwickelt, ebenso wie Zeichnungen und Spezifikationen für Möbel und sanitäre Einrichtungen. Zusätzlich wurden Innenvisualisierungen erstellt, die mehrere Gestaltungsoptionen für die Räume, ein Wohnzimmer mit einer gemütlichen Entspannungszone und einem Bereich für Gästeempfang sowie eine Küche in zwei verschiedenen Layouts zeigen. Die Visualisierung des Badezimmers zeigte einen Raum mit einem praktischen Waschbereich, und der Flur wurde als stilvoller und funktionaler Raum dargestellt.",
+        "category": "Wohnung"
+      },
+      "11": {
+        "title": "Projekt für eine Ein-Zimmer-Wohnung im Wohnkomplex 'AVINION'",
+        "description": "In diesem Projekt für eine Ein-Zimmer-Wohnung mit einer Fläche von 50 m² wurde ein umfassendes Leistungsspektrum an Planungsarbeiten durchgeführt. Es wurden Zeichnungen für Demontage und Montage von Wänden erstellt, sowie Planungen für Bodenbeläge und Fußbodenheizung durchgeführt. Zusätzlich wurden Elektro- und Beleuchtungspläne, Möbelaufstellungsdiagramme, Sanitärpläne sowie Systeme für Klimaanlage und Belüftung vorbereitet. Die Innenvisualisierungen umfassen zwei Gestaltungsmöglichkeiten für das Schlafzimmer, ein Wohnzimmer mit einem gemütlichen TV-Bereich, eine Küche, einen stilvollen Flur und ein Ankleidezimmer. Jeder Raum wurde mit Blick auf Komfort und Funktionalität durchdacht, um eine harmonische und moderne Atmosphäre in der Wohnung zu schaffen.",
+        "category": "Wohnung"
+      },
+      "12": {
+        "title": "Wohnung in AVINION",
+        "description": "Projekt zur Visualisierung eines Kinderzimmers für zwei Kinder. Im Projekt wurden verschiedene Bereiche des Zimmers organisiert, darunter ein Arbeitsbereich, ein Spielbereich, ein TV-Bereich, ein Schlafzimmer und ein Kleiderschrank.",
+        "category": "Wohnung"
+      },
+      "13": {
+        "title": "Ein-Zimmer-Wohnung in AVINION",
+        "description": "Projekt zur Umgestaltung einer Zwei-Zimmer-Wohnung im Wohnkomplex 'AVINION' mit einer Gesamtfläche von 50 m². Das Projekt umfasste Zeichnungen für Demontage und Montage von Wänden, Elektro- und Beleuchtungspläne, Planung der Fußbodenheizung und Bodenbelag, Sanitär-, Klimaanlagen- und Lüftungspläne sowie einen Möbelaufstellungsplan. Zusätzlich wurden Aufrisse für den Flur, die Schlafzimmer, die Küche und das Badezimmer erstellt.",
+        "category": "Wohnung"
+      },
+      "14": {
+        "title": "Ein-Zimmer-Wohnung in AVINION",
+        "description": "Projekt zur Umgestaltung einer Zwei-Zimmer-Wohnung im Wohnkomplex 'AVINION' mit einer Gesamtfläche von 50 m². Das Projekt umfasste Zeichnungen für Demontage und Montage von Wänden, Deckenplan, Elektro- und Beleuchtungspläne, Planung der Fußbodenheizung und Bodenbelag, Sanitär-, Klimaanlagen- und Lüftungspläne sowie Möbelaufstellungs- und Wandverkleidungspläne.",
+        "category": "Wohnung"
+      },
+      "15": {
+        "title": "Zwei-Zimmer-Wohnung in AVINION",
+        "description": "Projekt zur Umgestaltung einer Zwei-Zimmer-Wohnung im Wohnkomplex 'AVINION' mit einer Gesamtfläche von 96 m². Das Projekt umfasste Zeichnungen für Demontage und Montage von Wänden, Deckenplan, Elektro- und Beleuchtungspläne, Planung der Fußbodenheizung und Bodenbelag, Sanitärpläne und Möbelaufstellung. Zusätzlich wurden Aufrisse für die Schlafzimmer, das Arbeitszimmer, den Kleiderschrank, das Wohnzimmer, die Küche, das Badezimmer und den Flur erstellt.",
+        "category": "Wohnung"
+      },
+      "16": {
+        "title": "Wohnung in AVINION",
+        "description": "Projekt zur Umgestaltung einer Zwei-Zimmer-Wohnung im Wohnkomplex 'AVINION' mit einer Gesamtfläche von 97 m². Das Projekt umfasste Zeichnungen für Demontage und Montage von Wänden, Planung der Fußbodenheizung und Möbelaufstellung.",
+        "category": "Wohnung"
+      },
+      "17": {
+        "title": "Wohnung in AVINION",
+        "image": "../photo/apartments/apartment-seventeen/blueprints/title-page.png",
+        "description": "Projekt zur Umgestaltung einer Zwei-Zimmer-Wohnung im Wohnkomplex 'AVINION' mit einer Gesamtfläche von 50 m². Das Projekt umfasste Zeichnungen für Demontage und Montage von Wänden, Planung der Fußbodenheizung und Möbelaufstellung.",
+        "category": "Wohnung"
+      },
+      "18": {
+        "title": "Ein-Zimmer-Wohnung in AVINION",
+        "description": "Projekt zur Umgestaltung einer Ein-Zimmer-Wohnung im Wohnkomplex 'AVINION' mit einer Gesamtfläche von 48.6 m². Das Projekt umfasste Zeichnungen für Demontage und Montage von Wänden sowie den Plan für die Möbelaufstellung.",
+        "category": "Wohnung"
+      },
+      "19": {
+        "title": "Moderne Gemütliches Haus",
+        "description": "Dieses Hausprojekt verkörpert die Harmonie von modernem Design und Komfort. Die Innenvisualisierungen zeigen einen stilvollen und funktionalen Raum, der ideal für komfortables Wohnen geeignet ist. Das Wohnzimmer, das für Familienentspannung und Unterhaltung geschaffen wurde, verfügt über eine gemütliche TV-Ecke und einen Bereich zum Entspannen. Zwei Schlafzimmer beeindrucken ebenfalls mit durchdachtem Design: Jedes ist mit einer TV-Ecke und einem geräumigen Kleiderschrank ausgestattet. Besonderes Augenmerk wurde auf einen der Räume gelegt, in dem eine elegante Schminkecke entworfen wurde, die einen Hauch von Luxus und persönlichem Komfort hinzufügt. Dieses Haus ist die perfekte Kombination aus Gemütlichkeit und Funktionalität im modernen Stil.",
+        "category": "Haus"
+      },
+      "20": {
+        "title": "Kompaktes Modulhaus: Komfort und Funktionalitätь",
+        "description": "Dieses Visualisierungsprojekt demonstriert einen modernen Ansatz für die Gestaltung eines kompakten modularen Hauses, das Gemütlichkeit und Funktionalität perfekt vereint. Das Äußere des Hauses ist in einem minimalistischen Stil gestaltet und betont seine Modernität und Einfachheit. Im Inneren des Hauses wird ein durchdachtes Layout präsentiert : Eine Küche mit Essbereich schafft einen gemütlichen Raum zum Kochen und Essen, und das Badezimmer und die Toilette vereinen Komfort und Stil. Eine Sitzecke mit einem TV-Bereich und einem Sofa, das auch als Schlafbereich dient, macht dieses Zuhause zu einem idealen Ort Wahl für diejenigen, die Wert auf Komfort in einem kompakten Format legen.",
+        "category": "Haus"
+      },
+      "21": {
+        "title": "Dreigeschossiges Reihenhaus: Moderner Wohnraum",
+        "description": "Dieses Projekt für ein dreigeschossiges Reihenhaus mit einer Fläche von 160 m² vereint moderne Lösungen mit detaillierter Ausarbeitung aller Elemente. Das Projekt umfasst Zeichnungen für den Abriss und die Montage von Wänden sowie Pläne für Decken, Fußleisten und Türen. Besonderes Augenmerk wurde auf elektrische Pläne, elektrische Schaltkreise und Beleuchtung gelegt, ebenso wie auf die Planung des Bodenbelags und der Fußbodenheizung. Auch Pläne für die Anordnung von Möbeln und Sanitäranlagen wurden erstellt, und für die Badezimmer wurden Aufrisse angefertigt. Zusätzlich wurden Spezifikationen für Beleuchtungskörper und sanitäre Elemente erstellt. Die Visualisierungen umfassen eine stilvolle Küche mit einer Insel, die auch als Essbereich dient, ein gemütliches Wohnzimmer mit TV-Ecke und Sofa sowie ein elegantes Treppenhaus, das das Wohnzimmer mit den anderen Etagen des Hauses verbindet. Dieses Reihenhaus bietet Funktionalität und elegantes Design und schafft einen komfortablen Raum für modernes Wohnen.",
+        "category": "Haus"
+      },
+      "22": {
+        "title": "Dreigeschossiges Reihenhaus: Zeichnungen für Funktionalen Raum",
+        "description": "Das Projekt für ein dreigeschossiges Reihenhaus mit einer Fläche von 180 m² umfasst ein umfassendes Set von Zeichnungen, die eine funktionale und bequeme Nutzung des Raums gewährleisten. Das Projekt beinhaltet Zeichnungen für den Abriss und die Montage von Wänden, Möbelanordnung sowie Beleuchtungspläne, die alle Besonderheiten der Räume berücksichtigen. Diese Zeichnungen bilden die Grundlage für ein effektives und harmonisches Interieur, das perfekt für ein modernes Reihenhaus geeignet ist.",
+        "category": "Haus"
+      }
+    }
+  }
+}

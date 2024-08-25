@@ -3,6 +3,7 @@ import "./ProjectPageDetails.scss";
 import { useParams } from "react-router-dom";
 import Lightbox from "yet-another-react-lightbox";
 import "yet-another-react-lightbox/styles.css";
+import { useTranslation } from "react-i18next";
 
 export const ProjectPageDetails = () => {
   const { category, projectId } = useParams();
@@ -10,6 +11,7 @@ export const ProjectPageDetails = () => {
   const [lightboxOpen, setLightboxOpen] = useState(false);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [currentGallery, setCurrentGallery] = useState(null);
+const { t } = useTranslation();
 
   useEffect(() => {
     fetch(`/api/${category}.json`)
@@ -29,6 +31,10 @@ export const ProjectPageDetails = () => {
       })
       .catch((error) => console.error("Error fetching project:", error));
   }, [category, projectId]);
+
+
+const title = t(`projectDetails.projects.${project.id}.title`);
+const description = t(`projectDetails.projects.${project.id}.description`);
 
   const openLightbox = (gallery, index) => {
     setCurrentGallery(gallery);
@@ -54,18 +60,20 @@ export const ProjectPageDetails = () => {
   };
 
   if (!project) {
-    return <div>Проект не найден</div>;
+    return <div>Project not found</div>;
   }
 
   return (
     <section className="project-one-section site-container">
-      <h1 className="project-title">{project.title}</h1>
-      <h3 className="project-description-title">Description of this project</h3>
-      <p className="project-description">{project.description}</p>
+      <h1 className="project-title">{title}</h1>
+      <h3 className="project-description-title">
+        {t("projectPageDetails.descriptionTitle")}
+      </h3>
+      <p className="project-description">{description}</p>
       {project.visualizations && project.visualizations.length > 0 && (
         <>
           <h3 className="project-description-title">
-            Visualization of this project design
+            {t("projectPageDetails.visualizationTitle")}
           </h3>
           <div className="img-container">
             {project.visualizations.map((src, index) => (
@@ -83,7 +91,7 @@ export const ProjectPageDetails = () => {
       {project.blueprints && project.blueprints.length > 0 && (
         <>
           <h3 className="project-description-title">
-            Technical drawings project design
+            {t("projectPageDetails.technicalTitle")}
           </h3>
           <div className="img-container-blueprints">
             {project.blueprints.map((src, index) => (

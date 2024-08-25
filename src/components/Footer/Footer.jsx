@@ -34,7 +34,7 @@ export const Footer = () => {
           </ul>
         </div>
         <div className="join">
-          <h3 className="join__title">Join in mi </h3>
+          <h3 className="join__title">Join me</h3>
           <ul className="join-soc__list">
             <li className="join-soc__item">
               <a href="" className="join-soc__link">

@@ -1,6 +1,7 @@
  
 .service-section{
-  margin-bottom: 50px;}
+  margin-bottom: 50px;
+}
 
 .beckgroundImg {
   position: absolute;
@@ -21,7 +22,7 @@
   opacity: 0.8;
 } 
 
-.option{
+.service-option{
   margin-bottom: 110px;
   padding-right: 25%;
   position: relative;
@@ -30,24 +31,26 @@
   align-items: flex-end; 
 }
 
-.option-title{
-  padding-bottom: 15px;
-  font-size: 24px;
-  margin-bottom: 20px;
 
-}
 
 h1, ul,button {
   position: relative;
 }
-.oooo{
-  padding-top: 5%;
+.option{
+    padding-top: 5%;
     text-align: center;
 }
+
+.option-title{
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
 .option-list {
   list-style-type: none; 
   padding: 0;
 }
+
 .option-item-nav {
   text-decoration: none;
   color: black;
@@ -59,27 +62,6 @@ h1, ul,button {
   padding-bottom: 20px;
 }
 
-.option-bnt {
-  text-align: center;
-  color: #333; 
-  padding: 15px 65px;
-  background-color: #cecccc;
-  border-radius: 10px;
-  border: none;
-    top: calc(25% + 2rem + 25px + 1.5rem + 70px);
-  cursor: pointer;
-
-}
-
-.option-bnt:hover,
-.option-bnt:focus {
-  background-color: #969395;
-  color: #ffffff;
-   box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.12);
-  border-radius: 10px;
-}
-
-
 .option-item-nav:hover,
 .option-item-nav:focus{
   color: #6F8658;
@@ -90,62 +72,99 @@ h1, ul,button {
   position: absolute;
   left: 0;
 } 
-.option-item:hover,
-.option-item:focus{
+
+.option-item:hover{
   color: #6F8658;
 }
 
+.option-bnt {
+  text-align: center;
+  color: #333; 
+  padding: 15px 65px;
+  background-color: #cecccc;
+  border-radius: 10px;
+  border: none;
+    top: calc(25% + 2rem + 25px + 1.5rem + 70px);
+  cursor: pointer;
+}
 
+.option-bnt:hover,
+.option-bnt:focus {
+  background-color: #969395;
+  color: #ffffff;
+   box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 10px;
+}
+
+////////////////
 
 .description-and-price {
   display: flex;
   justify-content: center; 
-  align-items: center; 
-  margin: 0 auto;  
-  padding-bottom: 60px;
+  align-items: flex-start; 
+  margin: 0 auto;
+  padding: 40px 0px; 
+}
 
+.description {
+  max-width: 70%; 
+  line-height: 2;
+  font-size: 17px; 
+  margin-right: 40px;
+}
+
+.description-list{
+  list-style-type: none; 
+}
+.description-title {
+  text-align: center;
 }
 
 
-.description-title{
-  display: flex;
-  justify-content: center; 
-  padding-bottom:40px;
-  margin: 0;
+.price{margin: 15px;}
+
+.description-text {
+  margin: 20px; 
+  font-size: 18px;
+  color: #333; 
+}
+//////
+/// 
+.includes {
+  font-size: 18px; 
+  color: #333; 
+  padding-left: 20px; 
+  border-left: 2px solid #ddd; 
 }
 
-.description-text{
-  margin-bottom: 50px;
-}
-
-.includes{
-  margin-left: 50px;
+.includes-title {
+  margin-bottom: 15px; 
+  font-weight: bold; 
 }
 
 .includes-list {
-  list-style-type: none;
-  // padding-left: 0; 
+  list-style-type: none; 
+  padding: 0; 
+margin: 0;
 }
-.includes-title{
-  margin-bottom: 5px;
-}
+
 .includes-item {
-  margin-bottom: 10px;
-  position: relative; /* Сделаем позицию относительной */
-  padding-left: 25px; /* Добавляем отступ слева для текста */
+  margin-bottom: 12px; 
+  position: relative; 
+  padding-left: 30px; 
+  line-height: 1.5; 
 }
 
 .includes-item::before {
-  content: "\2014";
+  content: "\2014"; 
   position: absolute;
   left: 0;
   top: 50%;
-  transform: translateY(-50%); /* Центрируем линию по вертикали */
+  transform: translateY(-50%); 
+  color: #666; 
 }
-// .image-container{
-//   display: flex;
-//   flex-direction: column;
-// }
+
+/////////////////
 .img-services {
   max-width: 100%;
   margin-bottom: 40px;
@@ -164,7 +183,6 @@ margin: 0 0 25px;
   align-items: center;
   justify-content: center;
 }
-
 
 .img-services {
   max-width: 95%;

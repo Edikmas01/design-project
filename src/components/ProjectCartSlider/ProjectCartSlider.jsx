@@ -2,9 +2,12 @@ import { useState } from "react";
 import "./ProjectCartSlider.scss";
 import { ProjectCart } from "../ProjectCart/ProjectCart";
 import { useFetchProjects } from "../../hooks/useFetchProjects";
+import { useTranslation } from "react-i18next";
 
 export const ProjectCartSlider = () => {
   const [activeIndex, setActiveIndex] = useState(0);
+const { t } = useTranslation();
+
 
   const projects = useFetchProjects();
 
@@ -20,7 +23,7 @@ export const ProjectCartSlider = () => {
 
   return (
     <section className="gellore-projects  site-container">
-      <h1 className="title-home">The best projects</h1>
+      <h1 className="title-home">{t("projectCartSlider.title")}</h1>
       {filterProjects.length > 0 && (
         <div className="slider-body">
           <ul className="projectsCart-list">

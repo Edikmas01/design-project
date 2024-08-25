@@ -4,15 +4,26 @@ import { Link, NavLink, useParams } from "react-router-dom";
 import { Modal } from "../../components/Modal/Modal";
 import { ContactForm } from "../../components/ContactForm/ContactForm";
 import { ProjectCartSlider } from "../../components/ProjectCartSlider/ProjectCartSlider";
+import { useTranslation } from "react-i18next";
 
 const getContent = (item) => {
   switch (true) {
     case item.includes("Включает в себя чертежи из 'Проекта пересланировани'"):
-      return <Link to="/services/1"> {item}</Link>;
+      return (
+        <Link to="/services/1" className="link">
+          {" "}
+          {item}
+        </Link>
+      );
     case item.includes(
       "Включает в себя все чертежи из 'Проекта пересланировани' и 'Технический проект'"
     ):
-      return <Link to="/services/2"> {item}</Link>;
+      return (
+        <Link to="/services/2" className="link">
+          {" "}
+          {item}
+        </Link>
+      );
     default:
       return item;
   }
@@ -24,6 +35,7 @@ export const ServicesPage = () => {
   const [modalOpen, setModalOpen] = useState(false);
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const { id } = useParams();
+  const { t } = useTranslation();
 
   useEffect(() => {
     fetch("/public/api/services.json")
@@ -39,6 +51,10 @@ export const ServicesPage = () => {
       })
       .catch((error) => console.error("Error fetching projects:", error));
   }, [id]);
+
+  const title = t(`servicesPage.service.${services.id}.title`);
+  const description = t(`servicesPage.service.${services.id}.description`);
+  const plen = t(`servicesPage.service.${services.id}.plen`);
 
   const handleServiceClick = (services) => {
     setSelectedService(services);
@@ -72,11 +88,11 @@ export const ServicesPage = () => {
   };
 
   return (
-    <section className="service-section">
-      <div className="option">
+    <section className="service-section ">
+      <div className="service-option">
         <div className="beckgroundImg"></div>
-        <div className="oooo">
-          <h1 className="option-title">Services</h1>
+        <div className="option">
+          <h1 className="option-title">{t("servicesPage.title")}</h1>
           <ul className="option-list">
             {services.map((service) => (
               <li className="option-item" key={service.id}>
@@ -95,27 +111,36 @@ export const ServicesPage = () => {
             className="option-bnt"
             onClick={() => handleOrderService()}
           >
-            order service
+            {t("servicesPage.btn")}
           </button>
         </div>
       </div>
+
       <h1 className="description-title">
         {selectedService ? selectedService.title : "Select a service"}
       </h1>
       <div className="description-and-price site-container">
         <div className="description">
-          <p className="description-text">
-            {selectedService
-              ? selectedService.description
-              : "Click on a service to see its description"}
-          </p>
+          {selectedService ? (
+            <ul className="description-list">
+              {selectedService.description.map((item, index) => (
+                <li key={index} className="description-item">
+                  {item}
+                </li>
+              ))}
+            </ul>
+          ) : (
+            <p className="description-text">{t("servicesPage.text")}</p>
+          )}
           {selectedService && (
-            <h3 className="price">Price: {selectedService.price}</h3>
+            <h3 className="price">
+              {t("servicesPage.price")}: {selectedService.price}
+            </h3>
           )}
         </div>
         {selectedService && (
           <div className="includes">
-            <h3 className="includes-title">includes</h3>
+            <h3 className="includes-title">{t("servicesPage.includes")}</h3>
             <ul className="includes-list">
               {selectedService.plen.map((item, index) => (
                 <li key={index} className="includes-item">
@@ -131,7 +156,7 @@ export const ServicesPage = () => {
           <ProjectCartSlider />
         ) : (
           <>
-            <h1 className="imege-title">Примеры работ</h1>
+            <h1 className="imege-title">{t("servicesPage.works")}</h1>
             <div className="image-container site-container">
               <div className="slider">
                 {selectedService.image.length > 0 && (

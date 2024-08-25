@@ -1,12 +1,24 @@
 import { useState, useEffect } from "react";
 import "./MyServices.scss";
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
+
+const truncateDescription = (description = '', maxLength) => {
+  if (description.length > maxLength) {
+    return description.slice(0, maxLength);
+  }
+  return description;
+};
+
 
 export const MyServices = () => {
   const [activeIndex, setActiveIndex] = useState(0);
   const [services, setServices] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
+const { t } = useTranslation();
+
+
 
   useEffect(() => {
     fetch("/public/api/services.json")
@@ -27,6 +39,11 @@ export const MyServices = () => {
       });
   }, []);
 
+
+  // const maxLength = services.description
+  //   ? Math.floor(services.description.length / 2)
+  //   : 0;
+
   const handlePrevClick = () => {
     setActiveIndex(Math.max(activeIndex - 3, 0));
   };
@@ -42,23 +59,28 @@ export const MyServices = () => {
   if (error) {
     return <p>Error: {error}</p>;
   }
-
   return (
     <section className="MyServices site-container">
-      <h1 className="MyServices-title"> My Services</h1>
-      <p className="MyServices-text">
-        We offer a wide range of interior design industry services tailored to
-        your unique aesthetic and functional needs.
-      </p>
+      <h1 className="MyServices-title">{t("myServices.title")}</h1>
+      <p className="MyServices-text">{t("myServices.text")}</p>
       <div className="MyServices-cart">
         {services.slice(activeIndex, activeIndex + 3).map((service) => (
           <div key={service.id} className="service-card">
-            <Link to={`/services/${service.id}`} className="service-link">
+            <Link to={`/services/${service.id}`} className="service-link link">
               {service.image.length > 0 && (
                 <img src={service.image[0]} alt={service.title} />
               )}
               <h2>{service.title}</h2>
-              <p>{service.description}</p>
+
+              <p>
+                {truncateDescription(
+                  service.description,
+                  Math.floor(service.description.length / 2)
+                )}{" "}
+                <Link to={`/services/${service.id}`}>
+                  {t("myServices.learnMore")}...
+                </Link>
+              </p>
             </Link>
           </div>
         ))}
