@@ -1,0 +1,155 @@
+[
+  {
+    "id": "1",
+    "title": "Проект перепланированя",
+    "demo" : [
+      "Создаем пространство, которое действительно работает для вас. Наша команда профессионалов предложит оптимальные решения для перепланировки, чтобы ваш дом стал функциональным и уютным. В проект перепланировки включены:",
+
+      "Обмерный план помещения: точные замеры для точного проектирования.",
+
+      "План демонтажа: подробная схема для безопасного и эффективного сноса ненужных конструкций.",
+
+      "План монтажа: продуманное размещение новых стен и перегородок.",
+
+      "План после реконструкции: итоговый вариант с учетом всех изменений.",
+
+      "План расстановки мебели: создаем удобные зоны для отдыха, работы и приема гостей.",
+
+      "Мы предлагаем индивидуальный подход к каждому клиенту и готовы обсудить дополнительные работы, чтобы ваше пространство стало идеальным."
+    ],
+
+    "description": [
+      "Создаем пространство, которое действительно работает для вас. Наша команда профессионалов предложит оптимальные решения для перепланировки, чтобы ваш дом стал функциональным и уютным.",
+      "Мы предлагаем индивидуальный подход к каждому клиенту и готовы обсудить дополнительные работы, чтобы ваше пространство стало идеальным."
+],
+    "price": "1$ for м²",
+    "plen": [
+      "Обмернsй план помешения",
+      "План демонтожа",
+      "План монтожа",
+      "План после реконструкции",
+      "План растановки мебели"
+    ],
+    "image": [
+      "../photo/apartments/apartment-three/blueprints/as-built-plan.png",
+      "../photo/apartments/apartment-three/blueprints/dismantling-plan.png",
+       "../photo/apartments/apartment-three/blueprints/installation-plan.png",
+       "../photo/apartments/apartment-three/blueprints/plan-after-reconstruction.png",
+       "../photo/apartments/apartment-three/blueprints/furniture-arrangement-plan.png"
+
+    ]
+  },
+  {
+    "id": "2",
+    "title": "Технический проект",
+     "demo" : [
+       "Создайте безопасное и современное пространство с помощью нашего технического проекта! Мы предлагаем полный комплекс технической документации, необходимой для выполнения ремонтных и строительных работ на высшем уровне. В технический проект входят:",
+
+       "Чертежи из 'Проекта перепланировки': включаем все чертежи для удобства и точности.",
+
+       "План сантехники: схемы разводки труб, расположение сантехнических приборов.",
+
+       "План электрики: схемы расположения розеток, выключателей и осветительных приборов.",
+
+       "План электроцепей: детали электрических цепей для безопасного использования всех устройств.",
+
+       "План вентиляции и кондиционирования: оптимальные решения для поддержания комфортного микроклимата.",
+
+       "План теплого пола и радиаторов: обеспечение равномерного и эффективного обогрева помещений.",
+
+       "План напольного покрытия: схемы раскладки всех типов напольных материалов.",
+
+       "План дверей и плинтусов: точное расположение дверных проемов и плинтусов.",
+
+       "План потолка: детали установки подвесных и натяжных потолков.",
+
+       "Мы готовы разработать индивидуальное техническое решение для вашего проекта и учесть все дополнительные пожелания, чтобы ваше пространство соответствовало всем вашим требованиям."
+     ],
+    "description": [
+      "Создайте безопасное и современное пространство с помощью нашего технического проекта! Мы предлагаем полный комплекс технической документации, необходимой для выполнения ремонтных и строительных работ на высшем уровне.",
+      "Мы готовы разработать индивидуальное техническое решение для вашего проекта и учесть все дополнительные пожелания, чтобы ваше пространство соответствовало всем вашим требованиям."
+    ],
+    "price": "1$ for м²",
+    "plen": [
+      "Включает в себя чертежи из 'Проекта пересланировани'",
+      "План сантехники",
+      "План электрики",
+      "План Електро цепей",
+      "План вентеляции и кондиционирования",
+      "План теплого пола и радиаторов",
+      "План напольного покрытия",
+      "План дверей и плинтусов",
+      "План потолка"
+    ],
+    "image": [
+      "../photo/apartments/apartment-eight/blueprints/as-built-plan.png",
+      "../photo/apartments/apartment-eight/blueprints/ceiling-plan.png",
+      "../photo/apartments/apartment-eight/blueprints/dismantling-plan.png",
+      "../photo/apartments/apartment-eight/blueprints/electrician-plan-two.png",
+      "../photo/apartments/apartment-eight/blueprints/electrical-circuit-plan.png",
+      "../photo/apartments/apartment-eight/blueprints/flooring-layout-plan.png",
+      "../photo/apartments/apartment-eight/blueprints/furniture-arrangement-plan.png",
+      "../photo/apartments/apartment-eight/blueprints/heating-plan-and-warm-floor.png",
+      "../photo/apartments/apartment-eight/blueprints/installation-plan.png",
+      "../photo/apartments/apartment-eight/blueprints/lighting-plan.png",
+      "../photo/apartments/apartment-eight/blueprints/plan-after-reconstruction.png",
+      "../photo/apartments/apartment-eight/blueprints/plan-of-plumbing.png",
+      "../photo/apartments/apartment-eight/blueprints/ventilation-and-air-conditioning-plan.png"
+    ]
+  },
+  {
+    "id": "3",
+    "title": "Дизайн проект",
+    "demo":[
+      "Превратите свое пространство в произведение искусства с нашим дизайном проектом! Мы создаем уникальные и стильные интерьеры, которые соответствуют вашим вкусам и потребностям. Дизайн проект включает в себя полный пакет чертежей и визуализаций, чтобы вы могли легко представить и реализовать свою мечту:",
+
+      "Все чертежи из 'Проекта перепланировки' и 'Технический проект': комплексная документация для удобства выполнения работ.",
+
+      "Чертежи спецификации материалов: подробные списки и схемы использования всех материалов.",
+
+      "Чертежи развертки: детальная проработка всех стен и поверхностей для идеальной отделки.",
+
+      "Визуализация: фотореалистичные изображения будущего интерьера, позволяющие увидеть конечный результат еще до начала работ.",
+
+      "Мы предлагаем индивидуальный подход к каждому клиенту, чтобы создать идеальное пространство, отражающее ваш стиль и предпочтения. Готовы учесть любые дополнительные пожелания и обеспечить комплексную поддержку на всех этапах реализации проекта."
+    ],
+    "description": [
+      "Превратите свое пространство в произведение искусства с нашим дизайном проектом! Мы создаем уникальные и стильные интерьеры, которые соответствуют вашим вкусам и потребностям. Дизайн проект включает в себя полный пакет чертежей и визуализаций, чтобы вы могли легко представить и реализовать свою мечту",
+      "Мы предлагаем индивидуальный подход к каждому клиенту, чтобы создать идеальное пространство, отражающее ваш стиль и предпочтения. Готовы учесть любые дополнительные пожелания и обеспечить комплексную поддержку на всех этапах реализации проекта."
+    ],
+    "price": "1$ for м²",
+    "plen": [
+      "Включает в себя все чертежи из 'Проекта пересланировани' и 'Технический проект'",
+      "Чертжи спецификации материалов",
+      "Чертежи развертки",
+      "Визуализаци"
+    ],
+    "image":[
+      "../photo/houses/house-one/visualizations/visualization-livingRoom-two.jpg"
+    ]
+  },
+  {
+    "id": "4",
+    "title": "Визуализаци",
+    "description": ["Для сотруднечиства с дизайнером"],
+    "price": "1$ for м²",
+    "plen": ["Cоздание  визуализаций"],
+    "image": [
+      "../photo/houses/house-one/visualizations/visualization-livingRoom-one.jpg",
+      "../photo/houses/house-one/visualizations/visualization-livingRoom-two.jpg",
+      "../photo/houses/house-one/visualizations/visualization-livingRoom-three.jpg",
+      "../photo/houses/house-one/visualizations/visualization-livingRoom-four.jpg",
+      "../photo/houses/house-one/visualizations/visualization-livingRoom-five.jpg",
+      "../photo/houses/house-one/visualizations/visualization-bedroom-one.jpg",
+      "../photo/houses/house-one/visualizations/visualization-bedroom-two.jpg",
+      "../photo/houses/house-one/visualizations/visualization-bedroom-three.jpg",
+      "../photo/houses/house-one/visualizations/visualization-TVzones-in-bedroom.jpg",
+      "../photo/houses/house-one/visualizations/visualization-bedroomsTwo-one.jpg",
+      "../photo/houses/house-one/visualizations/visualization-bedroomsTwo-two.jpg",
+      "../photo/houses/house-one/visualizations/visualization-bedsideArea-bedroomTwo.jpg",
+      "../photo/houses/house-one/visualizations/visualiyation-makeupAreas-bedroomTwo-one.jpg",
+      "../photo/houses/house-one/visualizations/visualiyation-makeupAreas-bedroomTwo-two.jpg",
+      "../photo/houses/house-one/visualizations/visualization-TVzones-in-bedroomTwo.jpg"
+    ]
+  }
+]

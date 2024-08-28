@@ -27,7 +27,7 @@ const maxLength = description ? Math.floor(description.length / 2) : 0;
           <p className="projects-text">
             {truncatedDescription}{" "}
             <Link to={`/${category}/${id}`} className="link">
-              {t("projectCart.learnMore")}...
+              {t("projectDetails.learnMore")}...
             </Link>
           </p>
         </div>
