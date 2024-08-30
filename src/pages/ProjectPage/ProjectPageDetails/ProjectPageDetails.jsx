@@ -75,11 +75,11 @@ const description = t(`projectDetails.projects.${project.id}.description`);
           <h3 className="project-description-title">
             {t("projectPageDetails.visualizationTitle")}
           </h3>
-          <div className="img-container">
+          <div className="img-container-visualizations">
             {project.visualizations.map((src, index) => (
               <img
                 key={index}
-                className="img-carousel"
+                className="img-visualizations"
                 src={src}
                 alt={`Slide ${index}`}
                 onClick={() => openLightbox(project.visualizations, index)}

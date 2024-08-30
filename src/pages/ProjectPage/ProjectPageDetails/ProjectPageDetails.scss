@@ -27,34 +27,34 @@
    margin-top: 10px;
     line-height: 1.6;
 }
-.img-container {
+.img-container-visualizations {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
   grid-auto-rows: 150px;
   gap: 10px;
 }
 
-.img-carousel {
+.img-visualizations{
   width: 100%;
   height: 100%;
   object-fit: cover;
   transition: transform 0.3s ease;
 }
 
-.img-carousel:hover {
+.img-visualizations:hover {
   transform: scale(1.05);
 }
 
 
-.img-carousel:nth-child(odd) {
+.img-visualizations:nth-child(odd) {
   grid-column: span 2;
 }
 
-.img-carousel:nth-child(3n) {
+.img-visualizations:nth-child(3n) {
   grid-row: span 2;
 }
 
-.img-carousel:nth-child(4n) {
+.img-visualizations:nth-child(4n) {
   grid-column: span 2;
   grid-row: span 2;
 }
