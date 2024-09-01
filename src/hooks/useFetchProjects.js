@@ -4,7 +4,7 @@ export const useFetchProjects = () => {
   const [projects, setProjects] = useState([]);
 
   useEffect(() => {
-    fetch("api/projects.json")
+    fetch("https://edikmas01.github.io/design-project/api/projects.json")
       .then((res) => {
         if (!res.ok) {
           throw new Error(`HTTP error! status: ${res.status}`);
