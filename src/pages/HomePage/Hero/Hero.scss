@@ -1,3 +1,75 @@
+// .hero-container {
+//   padding-bottom: 50px;
+//   position: relative;
+
+//   .studio-background-image {
+//     background-color: #2f303a;
+//     padding-top: 150px;
+//     padding-bottom: 200px;
+//     text-align: center;
+//     background-image: linear-gradient(
+//         rgba(47, 48, 58, 0.4),
+//         rgba(47, 48, 58, 0.4)
+//       ),
+//       url("public/photo/beckground1.png");
+//     background-repeat: no-repeat;
+//     background-position: center;
+//     background-size: cover;
+//     opacity: 0.9;
+//   }
+
+
+
+//   .interior-design-title {
+//     color: #ffffff;
+//     font-size: 2rem;
+//     box-sizing: border-box;
+//     max-width: 497px;
+//     // padding: 0;
+//     margin: 0;
+//     text-align: left;
+//     white-space: pre-wrap;
+//     position: absolute;
+//     top: 25%;
+//     transform: translateY(-50%);
+//     line-height: 1.2;
+//   }
+
+//     .interior-text {
+//     color: #f8f8f8;
+//       margin: 0;
+//       padding: 0;
+//       position: absolute;
+//       // top: 35%;
+//         top: calc(25% + 2rem + 25px); 
+//       font-size: 1.5rem;
+//       max-width: 600px;
+//     }
+
+// .option-bnt {
+//   text-align: center;
+//   color: #333; 
+//   padding: 15px 65px;
+//   background-color: #cecccc;
+//   border-radius: 10px;
+// position: absolute;
+//   border: none;
+
+//     top: calc(25% + 2rem + 25px + 1.5rem + 70px);
+// }
+
+// .option-bnt:hover,
+// .option-bnt:focus {
+//   background-color: #969395;
+//   color: #ffffff;
+//   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+//     0px 2px 2px rgba(0, 0, 0, 0.12);
+//   border-radius: 10px;
+// }
+// }
+
+
+// // 
 .hero-container {
   padding-bottom: 50px;
   position: relative;
@@ -18,14 +90,11 @@
     opacity: 0.9;
   }
 
-
-
   .interior-design-title {
     color: #ffffff;
     font-size: 2rem;
     box-sizing: border-box;
     max-width: 497px;
-    // padding: 0;
     margin: 0;
     text-align: left;
     white-space: pre-wrap;
@@ -35,35 +104,213 @@
     line-height: 1.2;
   }
 
-    .interior-text {
+  .interior-text {
     color: #f8f8f8;
-      margin: 0;
-      padding: 0;
-      position: absolute;
-      // top: 35%;
-        top: calc(25% + 2rem + 25px); 
-      font-size: 1.5rem;
-      max-width: 600px;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: calc(25% + 2rem + 25px);
+    font-size: 1.5rem;
+    max-width: 600px;
+  }
+
+  .option-bnt {
+    text-align: center;
+    color: #333;
+    padding: 15px 65px;
+    background-color: #cecccc;
+    border-radius: 10px;
+    position: absolute;
+    border: none;
+    top: calc(25% + 2rem + 25px + 1.5rem + 70px);
+
+    &:hover,
+    &:focus {
+      background-color: #969395;
+      color: #ffffff;
+      box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+        0px 2px 2px rgba(0, 0, 0, 0.12);
+      border-radius: 10px;
+    }
+  }
+
+  // Медиа-запросы для адаптивности
+
+  @media screen and (max-width: 768px) {
+    .studio-background-image {
+      padding-top: 100px;
+      padding-bottom: 150px;
     }
 
-.option-bnt {
-  text-align: center;
-  color: #333; 
-  padding: 15px 65px;
-  background-color: #cecccc;
-  border-radius: 10px;
-position: absolute;
-  border: none;
+    .interior-design-title {
+      font-size: 1.8rem;
+      max-width: 400px;
+      top: 20%;
+    }
 
+    .interior-text {
+      font-size: 1.2rem;
+      max-width: 500px;
+      top: calc(20% + 2rem + 20px);
+    }
+
+    .option-bnt {
+      padding: 10px 50px;
+      top: calc(20% + 2rem + 20px + 1.2rem + 50px);
+    }
+  }
+
+  @media screen and (max-width: 375px) {
+    .studio-background-image {
+      padding-top: 80px;
+      padding-bottom: 120px;
+    }
+
+    .interior-design-title {
+      font-size: 1.5rem;
+      max-width: 300px;
+      top: 15%;
+      text-align: center;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    .interior-text {
+      font-size: 1rem;
+      max-width: 250px;
+      top: calc(15% + 1.5rem + 15px);
+      text-align: center;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    .option-bnt {
+      padding: 8px 40px;
+      top: calc(15% + 1.5rem + 15px + 1rem + 40px);
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+}
+.hero-container {
+  padding-bottom: 50px;
+  position: relative;
+
+  .studio-background-image {
+    background-color: #2f303a;
+    padding-top: 150px;
+    padding-bottom: 200px;
+    text-align: center;
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("public/photo/beckground1.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    opacity: 0.9;
+  }
+
+  .interior-design-title {
+    color: #ffffff;
+    font-size: 2rem;
+    box-sizing: border-box;
+    max-width: 497px;
+    margin: 0;
+    text-align: left;
+    white-space: pre-wrap;
+    position: absolute;
+    top: 25%;
+    transform: translateY(-50%);
+    line-height: 1.2;
+  }
+
+  .interior-text {
+    color: #f8f8f8;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: calc(25% + 2rem + 25px);
+    font-size: 1.5rem;
+    max-width: 600px;
+  }
+
+  .option-bnt {
+    text-align: center;
+    color: #333;
+    padding: 15px 65px;
+    background-color: #cecccc;
+    border-radius: 10px;
+    position: absolute;
+    border: none;
     top: calc(25% + 2rem + 25px + 1.5rem + 70px);
-}
 
-.option-bnt:hover,
-.option-bnt:focus {
-  background-color: #969395;
-  color: #ffffff;
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
-  border-radius: 10px;
-}
+    &:hover,
+    &:focus {
+      background-color: #969395;
+      color: #ffffff;
+      box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+        0px 2px 2px rgba(0, 0, 0, 0.12);
+      border-radius: 10px;
+    }
+  }
+
+  // Медиа-запросы для адаптивности
+
+  @media screen and (max-width: 768px) {
+    .studio-background-image {
+      padding-top: 100px;
+      padding-bottom: 150px;
+    }
+
+    .interior-design-title {
+      font-size: 1.8rem;
+      max-width: 400px;
+      top: 20%;
+    }
+
+    .interior-text {
+      font-size: 1.2rem;
+      max-width: 500px;
+      top: calc(20% + 2rem + 20px);
+    }
+
+    .option-bnt {
+      padding: 10px 50px;
+      top: calc(20% + 2rem + 20px + 1.2rem + 50px);
+    }
+  }
+
+  @media screen and (max-width: 375px) {
+    .studio-background-image {
+      padding-top: 80px;
+      padding-bottom: 120px;
+    }
+
+    .interior-design-title {
+      font-size: 1.5rem;
+      max-width: 300px;
+      top: 15%;
+      text-align: center;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    .interior-text {
+      font-size: 1rem;
+      max-width: 250px;
+      top: calc(15% + 1.5rem + 15px);
+      text-align: center;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    .option-bnt {
+      padding: 8px 40px;
+      top: calc(15% + 1.5rem + 15px + 1rem + 40px);
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
 }
