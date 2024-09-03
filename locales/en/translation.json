@@ -1,0 +1,231 @@
+{
+  "heder": {
+    "home": "Home",
+    "projects": "Projects",
+    "services": "Services"
+  },
+  "hero": {
+    "title": "Welcome to Studio",
+    "subtitle": "InteriorDesign",
+    "description": "We create bespoke and beautiful interior spaces that reflect your personality",
+    "orderButton": "order service"
+  },
+  "about": {
+    "title": "About me",
+    "introduction": "My name is [Designer’s Name], and I am a young and ambitious interior designer. At the age of 22, I have already earned my bachelor’s degree and am continuing my studies towards a master’s in urban planning. My education is complemented by various design courses that have helped me develop a unique sense of style and space.",
+    "experience": " For over two years, I have been creating interiors for apartments, houses, and commercial spaces. In my work, I aim not only to create beautiful spaces but also to bring my clients' dreams and ideas to life, taking into account their unique needs and desires.",
+    "mission": "Each project is an opportunity for me to unlock the potential of a space and make it comfortable, functional, and aesthetically pleasing. I believe that a well-designed interior can improve the quality of life, and I am excited to help you achieve that."
+  },
+  "contactForm": {
+    "title": "Contact us",
+    "text": "Any questions? We are here to help! Contact me now.",
+    "name": "Name",
+    "e-mail": "E-mail",
+    "phone": "Phone number",
+    "message": "Message",
+    "contact": "contact"
+  },
+  "modal": {
+    "title": "Leave your details, we will call you back",
+    "name": "Name",
+    "phone": "Phone",
+    "e-mail": "E-mail",
+    "service": "Select service",
+    "message": "Comment",
+    "agree": "I agree to the mailing list and accept",
+    "conditions": "Terms of the agreement",
+    "btn": "Send"
+  },
+  "projectCartSlider": {
+    "title": "The best projects"
+  },
+  "myServices": {
+    "title": "My Services",
+    "text": "We offer a wide range of interior design industry services tailored to your unique aesthetic and functional needs.",
+    "learnMore": "Learn More"
+  },
+  "projectPageDetails": {
+    "descriptionTitle": "Description of this project",
+    "visualizationTitle": "Visualization of this project design",
+    "technicalTitle": "Technical drawings project design"
+  },
+  "projectsPageCart": {
+    "allProjects": "All Projects",
+    "house": "Houses",
+    "apartment": "Apartments",
+    "business": "Business"
+  },
+  "servicesPage": {
+    "title": "Services",
+    "btn": "order service",
+    "selectService":"Select a service",
+    "text": "Click on a service to see its description",
+    "price": "Price",
+    "includes": "includes",
+    "works": "Examples of works",
+    "service": {
+      "1": {
+        "title": "Project Restructuring",
+        "description": [
+          "We create spaces that truly work for you. Our team of professionals will provide optimal solutions for restructuring to make your home functional and cozy.",
+          "We offer a personalized approach to each client and are ready to discuss additional work to make your space perfect."
+        ],
+        "plen": [
+          "Measurement plan of the premises",
+          "Demolition plan",
+          "Installation plan",
+          "Plan after reconstruction",
+          "Furniture layout plan"
+        ]
+      },
+      "2": {
+        "title": "Technical Project",
+        "description": [
+          "Create a safe and modern space with our technical project! We offer a comprehensive set of technical documentation needed to carry out renovation and construction work at the highest level.",
+          "We are ready to develop a customized technical solution for your project and consider all additional requests to ensure your space meets all your requirements."
+        ],
+        "plen": [
+          "Includes drawings from 'Restructuring Project'",
+          "Plumbing plan",
+          "Electrical plan",
+          "Electrical circuits plan",
+          "Ventilation and air conditioning plan",
+          "Underfloor heating and radiator plan",
+          "Floor covering plan",
+          "Doors and skirting boards plan",
+          "Ceiling plan"
+        ]
+      },
+      "3": {
+        "title": "Design Project",
+        "description": [
+          "Transform your space into a work of art with our design project! We create unique and stylish interiors that match your tastes and needs. The design project includes a complete set of drawings and visualizations, so you can easily envision and realize your dream.",
+          "We offer a personalized approach to each client to create the perfect space that reflects your style and preferences. We are ready to accommodate any additional requests and provide comprehensive support at all stages of the project."
+        ],
+        "plen": [
+          "Includes all drawings from 'Restructuring Project' and 'Technical Project'",
+          "Material specifications drawings",
+          "Elevation drawings",
+          "Visualizations"
+        ]
+      },
+      "4": {
+        "title": "Visualizations",
+        "description": ["For collaboration with the designer"],
+        "plen": ["Creation of visualizations"]
+      }
+    }
+  },
+  "projectDetails": {
+    "learnMore": "Learn More",
+    "projects": {
+      "2": {
+        "title": "Two-Bedroom Apartment in AVINION",
+        "description": "The redesign project of a two-bedroom apartment in the 'AVINION' residential complex with a total area of 142.5 m². The project included wall demolition and installation plans, underfloor heating layout, and furniture arrangement plan.",
+        "category": "apartment"
+      },
+      "3": {
+        "title": "Two-Bedroom Apartment in AVINION",
+        "description": "Project for the reconfiguration of a two-bedroom apartment in the 'AVINION' residential complex, with a total area of 48 m². The project included demolition and installation drawings of walls, as well as a furniture layout plan.",
+        "category": "apartment"
+      },
+      "4": {
+        "title": "Two-Bedroom Apartment in AVINION",
+        "description": "Project for the reconfiguration of a two-bedroom apartment in the 'AVINION' residential complex, with a total area of 66 m². The project included drawings for the demolition and installation of walls, electrical and lighting plans, underfloor heating layout and flooring arrangement, plumbing, air conditioning, and ventilation plans, as well as a furniture layout plan.",
+        "category": "apartment"
+      },
+      "5": {
+        "title": "Two-Bedroom Apartment in AVINION",
+        "description": "Project for the reconfiguration of a two-bedroom apartment in the 'AVINION' residential complex, with a total area of 50 m². The project included drawings for the demolition and installation of walls, underfloor heating layout, and a furniture layout plan.",
+        "category": "apartment"
+      },
+      "6": {
+        "title": "Two-Bedroom Apartment in AVINION",
+        "description": "Project for the reconfiguration of a two-bedroom apartment in the 'AVINION' residential complex, with a total area of 51 m². The project included drawings for the demolition and installation of walls, electrical and lighting plans, underfloor heating layout and flooring arrangement, plumbing, air conditioning, and ventilation plans, as well as a furniture layout plan.",
+        "category": "apartment"
+      },
+      "7": {
+        "title": "Two-Bedroom Apartment in AVINION",
+        "description": "Project for the reconfiguration of a two-bedroom apartment in the 'AVINION' residential complex, with a total area of 48 m². The project included drawings for the demolition and installation of walls, electrical and lighting plans, underfloor heating layout and flooring arrangement, plumbing, air conditioning, and ventilation plans, as well as a furniture layout plan. The project also included detailed elevation drawings of the bedrooms and bathroom.",
+        "category": "apartment"
+      },
+      "8": {
+        "title": "One-Bedroom Apartment in AVINION",
+        "description": "Project for the reconfiguration of a one-bedroom apartment in the 'AVINION' residential complex, with a total area of 44.5 m². The project included drawings for the demolition and installation of walls, electrical and lighting plans, underfloor heating layout and flooring arrangement, plumbing, air conditioning, and ventilation plans, as well as a furniture layout plan.",
+        "category": "apartment"
+      },
+      "9": {
+        "title": "Apartment in AVINION",
+        "description": "Project for the reconfiguration of a one-bedroom apartment in the 'AVINION' residential complex, with a total area of 97 m². The project included drawings for the demolition and installation of walls, underfloor heating layout, and a furniture layout plan.",
+        "category": "apartment"
+      },
+      "10": {
+        "title": "Two-Bedroom Apartment Project in 'AVINION' Residential Complex",
+        "description": "This project for the reconfiguration of a two-bedroom apartment in the 'AVINION' residential complex, with a total area of 48 m², encompasses a wide range of completed work. The project included preparation of drawings for the demolition and installation of walls, ceiling plan, electrical and lighting plans, underfloor heating layout and flooring arrangement. Detailed schematics were developed for plumbing, air conditioning, ventilation, and furniture arrangement, as well as drawings and specifications for furniture and plumbing fixtures. Additionally, interior visualizations were created, featuring several design options for the rooms, a living room with a cozy relaxation area and a guest reception area, and the kitchen presented in two different layouts. The bathroom visualization showcased a space with a convenient laundry area, and the hallway was depicted as a stylish and functional space.",
+        "category": "apartment"
+      },
+      "11": {
+        "title": "One-Bedroom Apartment Project in 'AVINION' Residential Complex",
+        "description": "This project for a one-bedroom apartment with an area of 50 m² included a complete range of design work. Drawings were developed for the demolition and installation of walls, flooring and underfloor heating layouts were created. Additionally, electrical and lighting plans, furniture arrangement diagrams, plumbing plans, and air conditioning and ventilation systems were prepared. Interior visualizations feature two design options for the bedroom, a living room with a cozy TV area, a kitchen, a stylish hallway, and a walk-in closet. Each space was designed with comfort and functionality in mind, creating a harmonious and modern atmosphere in the apartment.",
+        "category": "apartment"
+      },
+      "12": {
+        "title": "Apartment in AVINION",
+        "description": "Project for the visualization of a children's room for two kids. The project organized different zones within the room, including a study area, play area, TV zone, bedroom, and wardrobe.",
+        "category": "apartment"
+      },
+      "13": {
+        "title": "One-Bedroom Apartment in AVINION",
+        "description": "Project for the reconfiguration of a two-bedroom apartment in the 'AVINION' residential complex, with a total area of 50 m². The project included drawings for the demolition and installation of walls, electrical and lighting plans, underfloor heating layout and flooring arrangement, plumbing, air conditioning, and ventilation plans, as well as a furniture layout plan. Additionally, elevation drawings were created for the hallway, bedrooms, kitchen, and bathroom.",
+        "category": "apartment"
+      },
+      "14": {
+        "title": "One-Bedroom Apartment in AVINION",
+        "description": "Project for the reconfiguration of a two-bedroom apartment in the 'AVINION' residential complex, with a total area of 50 m². The project included drawings for the demolition and installation of walls, ceiling plan, electrical and lighting plans, underfloor heating layout and flooring arrangement, plumbing, air conditioning, and ventilation plans, as well as furniture arrangement and wall finishing plans.",
+        "category": "apartment"
+      },
+      "15": {
+        "title": "Two-Bedroom Apartment in AVINION",
+        "description": "Project for the reconfiguration of a two-bedroom apartment in the 'AVINION' residential complex, with a total area of 96 m². The project included drawings for the demolition and installation of walls, ceiling plan, electrical and lighting plans, underfloor heating layout and flooring arrangement, plumbing plans, and furniture arrangement. Additionally, elevation drawings were created for the bedrooms, study room, wardrobe, living room, kitchen, bathroom, and hallway.",
+
+        "category": "apartment"
+      },
+      "16": {
+        "title": "Apartment in AVINION",
+        "description": "Project for the reconfiguration of a two-bedroom apartment in the 'AVINION' residential complex, with a total area of 97 m². The project included drawings for the demolition and installation of walls, underfloor heating layout, and furniture arrangement.",
+        "category": "apartment"
+      },
+      "17": {
+        "title": "Apartment in AVINION",
+        "description": "Project for the reconfiguration of a two-bedroom apartment in the 'AVINION' residential complex, with a total area of 50 m². The project included drawings for the demolition and installation of walls, underfloor heating layout, and furniture arrangement.",
+        "category": "apartment"
+      },
+      "18": {
+        "title": "One-Bedroom Apartment in AVINION",
+        "image": "../photo/apartments/apartment-eighteen/blueprints/furniture-arrangement-plan.png",
+        "description": "Project for the reconfiguration of a one-bedroom apartment in the 'AVINION' residential complex, with a total area of 48.6 m². The project included drawings for the demolition and installation of walls, and furniture arrangement plan.",
+        "category": "apartment"
+      },
+      "19": {
+        "title": "Modern Cozy House",
+        "description": "This house project embodies the harmony of modern design and comfort. The interior visualizations showcase a stylish and functional space, perfectly suited for comfortable living. The living room, designed for family relaxation and entertainment, features a cozy TV area and space for unwinding. Two bedrooms also impress with their thoughtful design: each is equipped with a TV area and spacious storage closet. Special attention is given to one of the rooms, where an elegant makeup area is designed, adding a touch of luxury and personal comfort. This house is the perfect blend of coziness and functionality in a modern style.",
+        "category": "House"
+      },
+      "20": {
+        "title": "Compact Modular House: Comfort and Functionality",
+        "description": "This visualization project demonstrates a modern approach to the design of a compact modular home, which perfectly combines comfort and functionality. The exterior of the house is designed in a minimalist style, emphasizing its modernity and conciseness. Inside, the house has a well-thought-out layout: the kitchen with a dining area creates a cozy space for cooking and eating, and the bathroom and toilet combine convenience and style. The recreation area, equipped with a TV area and a sofa, which also serves as a place to sleep, makes this house an ideal choice for those who value comfort in a compact format.",
+        "category": "House"
+      },
+      "21": {
+        "title": "Three-Story Townhouse: Modern Living Space",
+        "description": "This project for a three-story townhouse with an area of 160 m² combines modern solutions with detailed attention to all elements. The project includes drawings for the demolition and installation of walls, as well as plans for ceilings, baseboards, and doors. Special emphasis was placed on electrical plans, electrical circuits, and lighting, as well as on the layout of flooring and underfloor heating. Plans for furniture and plumbing arrangements were also prepared, and elevations were made for the bathrooms. Additionally, specifications for lighting fixtures and plumbing elements were created. The visualizations include a stylish kitchen with an island that also serves as a dining area, a cozy living room with a TV area and sofa, and an elegant staircase connecting the living room with the other floors of the house. This townhouse offers functionality and elegant design, creating a comfortable space for modern living.",
+        "category": "House"
+      },
+      "22": {
+        "title": "Three-Story Townhouse: Drawings for Functional Space",
+        "description": "The project for a three-story townhouse with an area of 180 m² includes a comprehensive set of drawings ensuring functional and convenient use of the space. The project includes drawings for the demolition and installation of walls, furniture arrangement plans, as well as lighting plans that consider all room specifics. These drawings create the foundation for an effective and harmonious interior, perfectly suited for a modern townhouse.",
+        "category": "House"
+      }
+    }
+  }
+}
