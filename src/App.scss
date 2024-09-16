@@ -1,9 +1,19 @@
+// .site-container {
+//   max-width: 1200px; 
+//   margin: 0 auto; 
+//   // padding: 0 20px;
+// }
+
 .site-container {
-  max-width: 1200px; 
   margin: 0 auto; 
-  padding: 0 20px;
+  padding: 0 15px;
 }
 
+@media screen and (min-width: 800px) {
+   .site-container{ 
+    max-width: 1200px; 
+  padding: 0 20px;
+}}
 
 .link  {
   text-decoration: none;

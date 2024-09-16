@@ -79,3 +79,83 @@
       cursor: not-allowed;
     }
   }
+
+// @media (max-width: 600px) {
+//   .MyServices-cart {
+//     flex-direction: column;
+//     align-items: center;
+//     gap: 10px; /* Меньший отступ */
+//   }
+
+//   .MyServices-cart > div {
+//     width: 100%; /* Ширина карточки по ширине экрана */
+//     padding: 15px;
+//   }
+
+//   .MyServices-cart h2 {
+//     font-size: 1.2rem; /* Меньший размер шрифта */
+//   }
+
+//   .MyServices-cart p {
+//     font-size: 0.9rem; /* Меньший размер текста */
+//   }
+
+//   // .slider__button {
+//   //   font-size: 14px; /* Меньший размер кнопок */
+//   //   padding: 8px 16px;
+//   // // }
+// }
+
+// /* Для планшетов */
+// @media (min-width: 601px) and (max-width: 1024px) {
+//   .MyServices-cart {
+//     flex-wrap: wrap;
+//     gap: 15px; 
+//     justify-content: space-around; 
+//   }
+
+//   .MyServices-cart > div {
+//     width: 200px; 
+//     padding: 15px;
+//   }
+
+//   .MyServices-cart h2 {
+//     font-size: 1.3rem; 
+//   }
+
+//   .MyServices-cart p {
+//     font-size: 0.95rem; 
+//   }
+
+//   // .slider__button {
+//   //   font-size: 15px; 
+//   //   padding: 8px 18px;
+//   // }
+// }
+
+// /* Для десктопов и больших экранов */
+// @media (min-width: 1025px) {
+//   .MyServices-cart {
+//     flex-wrap: wrap;
+//     gap: 20px; 
+//     justify-content: center;
+//   }
+
+//   .MyServices-cart > div {
+//     width: 300px;
+//     padding: 20px;
+//   }
+
+//   .MyServices-cart h2 {
+//     font-size: 1.5rem; 
+//   }
+
+//   .MyServices-cart p {
+//     font-size: 1rem;
+//   }
+
+//   // .slider__button {
+//     // font-size: 16px; 
+//     // padding: 10px 20px;
+//   // }
+// }

@@ -7,20 +7,20 @@ export const Hero = () => {
   const [modalOpen, setModalOpen] = useState(false);
   const { t } = useTranslation();
 
-    const handleOrderService = () => {
-      console.log("Order service button clicked");
-      setModalOpen(true);
-    };
+  const handleOrderService = () => {
+    console.log("Order service button clicked");
+    setModalOpen(true);
+  };
 
-    const handleCloseModal = () => {
-      console.log("Modal closed");
-      setModalOpen(false);
-    };
+  const handleCloseModal = () => {
+    console.log("Modal closed");
+    setModalOpen(false);
+  };
 
   return (
-    <section className="hero-container">
+    <section className="hero-container ">
       <div className="studio-background-image"></div>
-      <div className="hero-content site-container">
+      <div className="hero-content site-container ">
         <h1 className="interior-design-title">
           {t("hero.title")}
           <br />

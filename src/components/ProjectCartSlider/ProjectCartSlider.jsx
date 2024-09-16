@@ -23,7 +23,7 @@ const { t } = useTranslation();
 
   return (
     <section className="gellore-projects  site-container">
-      <h1 className="title-home">{t("projectCartSlider.title")}</h1>
+      <h1 className="gellore-title">{t("projectCartSlider.title")}</h1>
       {filterProjects.length > 0 && (
         <div className="slider-body">
           <ul className="projectsCart-list">
