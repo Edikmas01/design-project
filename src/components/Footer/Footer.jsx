@@ -4,24 +4,13 @@ import "./Footer.scss";
 export const Footer = () => {
   return (
     <footer className="footer">
-      <div className="footer__box">
-        <div className="contact-war">
-          <a href="" className="f-logo">
-            <img src="../public/logo/logo.svg" alt="" className="logo" />
-          </a>
-          <address className="footer__address">
-            <a
-              href="https://goo.gl/maps/xFb1QxKYaWwcLje76"
-              target="_blank"
-              className="сontact__link-ader"
-            >
-              м. Київ, пр-т Лесі Українки, 26
-            </a>
-          </address>
-        </div>
+      <div className="footer__box ">
+        <a href="" className="f-logo">
+          <img src="../public/logo/logo.svg" alt="" className="logo" />
+        </a>
         <div className="contacts">
-          <h3 className="contacts__title">Contacts</h3>
-          <ul className="contacts__list">
+          {/* <h3 className="contacts__title">Contacts</h3> */}
+          <ul className="contacts-list">
             <li className="contacts__item">
               <a href="emailto:info@devstudio.com" className="contacts__link">
                 info@devstudio.com
@@ -42,10 +31,6 @@ export const Footer = () => {
                 to={"https://www.instagram.com/n.prkpvch?igsh=cTc2NDk3ZHRyaWJt"}
                 className="join-soc__link"
               >
-                {/* <svg className="join-soc__icon" width="20" height="20">
-                  {/* <use href="./photo/symbol-defs.svg#icon-instagram"></use> */}
-                {/* <use href="/public/photo/svg/insta.svg"></use>
-                </svg>  */}
                 <img
                   src="/public/photo/svg/insta.svg"
                   alt="Instagram"
@@ -60,10 +45,6 @@ export const Footer = () => {
                 to={"https://t.me/nastyaprokopovych"}
                 className="join-soc__link"
               >
-                {/* <svg className="join-soc__icon" width="20" height="20">
-                  <use href="/public/photo/svg/telegram_icon.svg"></use>
-                </svg> */}
-
                 <img
                   src="/public/photo/svg/telegram_icon.svg"
                   alt="Instagram"

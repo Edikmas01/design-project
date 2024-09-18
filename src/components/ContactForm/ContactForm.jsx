@@ -1,15 +1,13 @@
 import "./ContactForm.scss";
 import { useTranslation } from "react-i18next";
 
-
-
 export const ContactForm = () => {
   const { t } = useTranslation();
 
   return (
     <section className="contact-form-container ">
       <div className="site-container">
-        <h1>{t("contactForm.title")}</h1>
+        <h1 className="contactForm-title">{t("contactForm.title")}</h1>
         <p>{t("contactForm.text")}</p>
         <form action="" className="contact-form">
           <div className="form-group ">
@@ -49,7 +47,9 @@ export const ContactForm = () => {
               required
             ></textarea>
           </div>
-          <button type="submit">{t("contactForm.contact")}</button>
+          <button type="submit" className="contactForm-btn">
+            {t("contactForm.contact")}
+          </button>
         </form>
       </div>
     </section>

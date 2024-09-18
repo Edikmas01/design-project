@@ -1,12 +1,16 @@
 .contact-form-container {
   // max-width: 600px;
   margin: 0 auto;
-  padding: 20px;
+  padding: 10px 0;
   background-color: #ececec;
-  border-radius: 8px;
+  // border-radius: 8px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   text-align: center;
   margin: 0 0 50px;
+
+.contactForm-title{
+  margin: 5px;
+}
 
   h2 {
     margin-bottom: 10px;
@@ -68,9 +72,9 @@
       }
     }
 
-    button {
+    .contactForm-btn {
       align-self: center; 
-      width: 300px;
+      width: 80%;
       padding: 10px 20px;
       font-size: 16px;
       color: #fff;
@@ -85,4 +89,11 @@
       }
     }
   }
+}
+
+@media screen and (min-width: 450px) {
+     .contactForm-btn {
+      max-width: 250px;
+      font-size: 20px;
+     }
 }
