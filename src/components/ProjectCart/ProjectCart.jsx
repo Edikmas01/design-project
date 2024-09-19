@@ -39,3 +39,4 @@ const maxLength = description ? Math.floor(description.length / 2) : 0;
     </div>
   );
 };
+Updated ProjectsPageCart component: added pagination and responsive layout following the mobile-first approach. Also updated styles for the ProjectCart component.

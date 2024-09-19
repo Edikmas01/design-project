@@ -1,33 +1,35 @@
-.projectsall-section {
-  margin-bottom: 50px;
-}
-// .projects-title{
-// // text-align: center;
-// padding: 30px;
-//     font-size: 36px;
 
-// }
+.projectsall-section {
+  margin-bottom: 30px;
+  // padding: 0 15px; 
+  }
+
 .projectsCart-list {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  gap: 20px;
+  gap: 10px; 
   list-style: none;
-
+    padding: 0 15px;
+  
   .projects-item {
-    flex: 0 0 calc(20% - 20px);
-    // flex: 33.33%;
+      flex: 0 0 100%; 
+    margin-bottom: 15px;
+    padding: 10px; 
     box-sizing: border-box;
     background: #ffffff;
-    border: 1px solid #eeeeee;
+    border: 1px solid #696969;
+    border-radius: 8px; 
+
 
     &:last-child {
       margin-right: 0;
     }
 
     &:hover {
-      box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-        1px 4px 6px rgba(0, 0, 0, 0.16);
+      box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 
+                  0px 4px 4px rgba(0, 0, 0, 0.06), 
+                  1px 4px 6px rgba(0, 0, 0, 0.16);
     }
 
     &:hover .projects-text {
@@ -35,34 +37,121 @@
     }
   }
 }
+
 .filter-buttons {
   display: flex;
   justify-content: center;
-  gap: 10px;
-  margin: 50px;
-  list-style: none;
+  gap: 5px;
+  margin: 30px 0; 
+    padding: 0 15px;
+
 
   .projectPage-bnt {
-    font-family: "Roboto";
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.625;
-    text-align: center;
-    letter-spacing: 0.03em;
+    font-size: 14px; 
+    padding: 5px 10px;
     color: var(--title-color);
-    padding: 6px 22px;
     border: rgb(245, 244, 250);
     transition: background-color 300ms linear, color 300ms linear;
-    border-radius: 10px;
+    border-radius: 8px; 
 
     &:hover,
     &:focus {
-     background-color: #969395;
+      background-color: #969395;
       color: #ffffff;
-      box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-        0px 2px 2px rgba(0, 0, 0, 0.12);
-      border-radius: 9px;
+      box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+                  0px 1px 2px rgba(0, 0, 0, 0.08),
+                  0px 2px 2px rgba(0, 0, 0, 0.12);
+      border-radius: 7px;
     }
+  }
+}
+
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.pagination button {
+  background-color: #dbdbdb;
+  border: none;
+  color: #fff;
+  padding: 8px 12px;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.pagination button.active {
+  background-color: #969395;; 
+}
+
+.pagination button:disabled {
+  background-color: #969395;;
+  cursor: not-allowed;
+}
+
+.pagination button:hover:not(:disabled) {
+  background-color: #969395;; 
+}
+
+
+@media (min-width: 400px) {
+  .projectsCart-list {
+     justify-content: center;
+  .projects-item {
+    max-width: 320px; 
+  }
+}
+.filter-buttons .projectPage-bnt {
+    font-size: 16px;
+    padding: 7.5px 15px;
+    border-radius: 10px;
+  }
+}
+@media (min-width: 690px) {
+  .projectsCart-list .projects-item {
+    // flex: 0 0 calc(50% - 20px); 
+    flex: 0 0 50% ; 
+
+  }
+
+  .filter-buttons {
+    gap: 15px;
+    margin: 40px 0; 
+  }
+
+  .filter-buttons .projectPage-bnt {
+    font-size: 16px;
+    padding: 12.5px 25px;
+    border-radius: 10px;
+  }
+}
+
+
+@media (min-width: 950px) {
+  .projectsCart-list{
+    gap: 20px;
+
+     .projects-item {
+    flex: 0 0 calc(90% / 3);
+  background: #ffffff;
+  // height: 100%; 
+  }}
+
+  .filter-buttons {
+    margin: 50px 0;
+    gap: 10px;
+  }
+
+  .filter-buttons .projectPage-bnt {
+     font-family: "Roboto";
+    font-size: 16px;
+    line-height: 1.625;
+    padding: 10px 20px;
+    border: rgb(245, 244, 250);
   }
 }
