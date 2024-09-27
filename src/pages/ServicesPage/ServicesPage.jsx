@@ -132,6 +132,7 @@ export const ServicesPage = () => {
     <section className="service-section ">
       <div className="service-option">
         <div className="beckgroundImg"></div>
+
         <div className="option">
           <h1 className="option-title">{t("servicesPage.title")}</h1>
           <ul className="option-list">
@@ -156,23 +157,28 @@ export const ServicesPage = () => {
           </button>
         </div>
       </div>
+
       <div className="cont">
         <h1 className="description-title">
           {selectedService ? title : t("servicesPage.selectService")}
         </h1>
         <div className="description-and-price">
-          {selectedService && (
-            <div className="includes">
-              <h3 className="includes-title">{t("servicesPage.includes")}</h3>
-              <ul className="includes-list">
-                {plen.map((item, index) => (
-                  <li key={index} className="includes-item">
-                    {getContent(item, t)}
-                  </li>
-                ))}
-              </ul>
-            </div>
-          )}
+          {width < 900 && (
+              selectedService && (
+                <div className="includes">
+                  <h3 className="includes-title">
+                    {t("servicesPage.includes")}
+                  </h3>
+                  <ul className="includes-list">
+                    {plen.map((item, index) => (
+                      <li key={index} className="includes-item">
+                        {getContent(item, t)}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              )
+            )}
           <div className="description">
             {selectedService ? (
               <ul className="description-list">
@@ -191,6 +197,22 @@ export const ServicesPage = () => {
               </h3>
             )}
           </div>
+          {width > 900 && (
+              selectedService && (
+                <div className="includes">
+                  <h3 className="includes-title">
+                    {t("servicesPage.includes")}
+                  </h3>
+                  <ul className="includes-list">
+                    {plen.map((item, index) => (
+                      <li key={index} className="includes-item">
+                        {getContent(item, t)}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              )
+            )}
         </div>
 
         {selectedService ? (

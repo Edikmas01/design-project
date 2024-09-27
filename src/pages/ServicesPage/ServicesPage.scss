@@ -151,19 +151,20 @@ button {
   height: 1px;
   line-height: 1.5;
 }
+
 //
+
 .description-and-price {
   display: block;
   text-align: center;
   margin: 20px auto;
 }
 .description-title {
-
   font-size: 20px;
 }
 
 .description-text {
-  text-align:left;
+  text-align: left;
   font-size: 16px;
   color: #39393b;
 }
@@ -184,19 +185,16 @@ button {
   margin: 5px 0;
 }
 
-
 //
-
-
 
 .imege-title {
   display: flex;
   margin: 0 0 25px;
 }
 
-.image-container{
+.image-container {
   display: flex;
-   flex-direction: row;
+  flex-direction: row;
   overflow-x: auto;
   scroll-snap-type: x mandatory;
   -webkit-overflow-scrolling: touch;
@@ -215,37 +213,153 @@ button {
 }
 
 .img-services {
-  max-width: 100%;
+  width: 100%;
   // max-height: 600px;
-    // max-width: 100%;
-  margin: 0 0 40px
+  // max-width: 100%;
+  margin: 0 0 40px;
 }
 
-// .slider-button {
-//   // position: absolute;
-//   // top: 50%;
-//   transform: translateY(-50%);
-//   color: #333;
-//   background-color: #cecccc;
-//   border: none;
-//   padding: 10px;
-//   cursor: pointer;
-//   z-index: 1;
-// }
+@media screen and (min-width: 1010px) {
+  .beckgroundImg {
+    padding: 180px;
+  }
 
-// .slider-button:hover:focus {
-//   background-color: #969395;
-//   color: #ffffff;
-// }
+  .service-option {
+    padding-right: 20%;
+    align-items: flex-end;
+  }
 
+  .option {
+    margin: 5% 0 0 0;
+  }
+  .option-title {
+    font-size: 25px;
+  }
 
-@media screen and  (min-width: 1010px) {
-.description-title {
-  text-align: center;
-  font-size: 25px;
-}
-.description-text {
-  text-align: center;
-  font-size: 18px;
-}
+  .option-item {
+    font-size: 18px;
+    padding-left: 30px;
+    margin: 0 0 20px;
+  }
+
+  .optionServis-bnt {
+    padding: 15px 65px;
+    font-size: 15px;
+  }
+
+  .optionServis-bnt:hover,
+  .optionServis-bnt:focus {
+    background-color: #969395;
+    color: #ffffff;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.12);
+  }
+
+  ///
+
+  .description-and-price {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 0 auto;
+  }
+
+  .description-list {
+    max-width: 800px;
+    padding: 0 30px 0 0;
+  }
+
+  .description-item {
+    font-size: 20px;
+  }
+
+  .price {
+    margin: 15px;
+    font-size: 19px;
+  }
+
+  .description-title {
+    margin: 20px 0;
+    text-align: center;
+    font-size: 25px;
+  }
+
+  .description-text {
+    text-align: center;
+    font-size: 18px;
+  }
+
+  //
+
+  .includes {
+    font-size: 18px;
+    padding-left: 20px;
+    border-left: 2px solid #ddd;
+  }
+
+  .includes-title {
+    margin: 0 0 15px;
+    font-weight: bold;
+  }
+
+  .includes-item {
+    margin: 0 0 12px;
+    font-size: 18px;
+  }
+
+  .includes-item::before {
+    content: "\2014";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #666;
+  }
+
+  ///
+
+  .img-services {
+    max-width: 100%;
+    margin-bottom: 40px;
+    // height: 500px;
+  }
+
+  .imege-title {
+      margin: 50px;
+  }
+
+  .image-container {
+    position: relative;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .img-services {
+    max-height: 600px;
+  }
+
+  .slider-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #333;
+    background-color: #cecccc;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    z-index: 1;
+  }
+
+  .slider-button:hover:focus {
+    background-color: #969395;
+    color: #ffffff;
+  }
+
+  .prev {
+    left: 50px;
+  }
+
+  .next {
+    right: 50px;
+  }
 }
