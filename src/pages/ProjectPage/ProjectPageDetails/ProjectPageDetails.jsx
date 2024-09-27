@@ -1,8 +1,9 @@
-import { useState, useEffect } from "react";
 import "./ProjectPageDetails.scss";
+import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import Lightbox from "yet-another-react-lightbox";
 import "yet-another-react-lightbox/styles.css";
+import Zoom from "yet-another-react-lightbox/plugins/zoom";
 import { useTranslation } from "react-i18next";
 
 export const ProjectPageDetails = () => {
@@ -11,7 +12,7 @@ export const ProjectPageDetails = () => {
   const [lightboxOpen, setLightboxOpen] = useState(false);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [currentGallery, setCurrentGallery] = useState(null);
-const { t } = useTranslation();
+  const { t } = useTranslation();
 
   useEffect(() => {
     fetch(`/api/${category}.json`)
@@ -32,16 +33,14 @@ const { t } = useTranslation();
       .catch((error) => console.error("Error fetching project:", error));
   }, [category, projectId]);
 
-
-const title = t(`projectDetails.projects.${project.id}.title`);
-const description = t(`projectDetails.projects.${project.id}.description`);
+  const title = t(`projectDetails.projects.${project.id}.title`);
+  const description = t(`projectDetails.projects.${project.id}.description`);
 
   const openLightbox = (gallery, index) => {
     setCurrentGallery(gallery);
     setCurrentIndex(index);
     setLightboxOpen(true);
   };
-
   const closeLightbox = () => {
     setLightboxOpen(false);
     setCurrentGallery(null);
@@ -111,7 +110,11 @@ const description = t(`projectDetails.projects.${project.id}.description`);
           open={lightboxOpen}
           close={closeLightbox}
           slides={currentGallery.map((src) => ({ src }))}
-          currentIndex={currentIndex}
+          index={currentIndex}
+          plugins={[Zoom]}
+          zoom={{
+            maxZoomPixelRatio: 2,
+          }}
           on={{
             clickNext: handleNext,
             clickPrev: handlePrev,
@@ -121,4 +124,3 @@ const description = t(`projectDetails.projects.${project.id}.description`);
     </section>
   );
 };
-

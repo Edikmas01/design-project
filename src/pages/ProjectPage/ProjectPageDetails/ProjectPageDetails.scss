@@ -1,13 +1,11 @@
-
 .project-one-section {
   margin-bottom: 50px;
 }
 
 .project-title {
-
   margin-top: 50px;
-  font-size: 35px; 
-  font-weight: bold; 
+  font-size: 35px;
+  font-weight: bold;
   color: #2c3e50;
 }
 
@@ -15,18 +13,18 @@
   padding: 20px;
 
   font-size: 24px;
-   font-weight: bold;
-    color: #34495e; 
-    margin-top: 20px;
-
+  font-weight: bold;
+  color: #34495e;
+  margin-top: 20px;
 }
 
 .project-description {
   font-size: 19px;
-   color: #6a7374; 
-   margin-top: 10px;
-    line-height: 1.6;
+  color: #6a7374;
+  margin-top: 10px;
+  line-height: 1.6;
 }
+
 .img-container-visualizations {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
@@ -34,7 +32,7 @@
   gap: 10px;
 }
 
-.img-visualizations{
+.img-visualizations {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -44,7 +42,6 @@
 .img-visualizations:hover {
   transform: scale(1.05);
 }
-
 
 .img-visualizations:nth-child(odd) {
   grid-column: span 2;
@@ -61,12 +58,52 @@
 
 .img-container-blueprints {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); 
-  gap: 10px; 
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
 }
 
 .img-blueprints {
   width: 100%;
   height: auto;
   object-fit: cover;
+}
+
+@media screen and (max-width: 600px) {
+  .project-title {
+    margin-top: 30px;
+    font-size: 25px;
+  }
+
+  .project-description-title {
+    padding: 15px;
+    font-size: 21px;
+    margin-top: 10px;
+  }
+  
+
+.img-container-blueprints {
+  display: block;
+}
+
+.img-blueprints {
+  width: calc(100% / 2);
+}
+
+  .img-container-visualizations {
+    grid-template-columns: 1fr 1fr; 
+    grid-auto-rows: 120px; 
+    gap: 5px; 
+  }
+
+  .img-visualizations {
+    grid-column: span 1; 
+    grid-row: span 1; 
+  }
+
+  .img-visualizations:nth-child(odd),
+  .img-visualizations:nth-child(3n),
+  .img-visualizations:nth-child(4n) {
+    grid-column: span 1; 
+    grid-row: span 1;
+  }
 }

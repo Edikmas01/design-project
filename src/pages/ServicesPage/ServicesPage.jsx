@@ -5,6 +5,10 @@ import { Modal } from "../../components/Modal/Modal";
 import { ContactForm } from "../../components/ContactForm/ContactForm";
 import { ProjectCartSlider } from "../../components/ProjectCartSlider/ProjectCartSlider";
 import { useTranslation } from "react-i18next";
+import Lightbox from "yet-another-react-lightbox";
+import "yet-another-react-lightbox/styles.css";
+import Zoom from "yet-another-react-lightbox/plugins/zoom";
+import { useWindowSize } from "../../hooks/useWindowSize.js";
 
 const getContent = (item, t) => {
   switch (true) {
@@ -34,6 +38,10 @@ export const ServicesPage = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const { id } = useParams();
   const { t } = useTranslation();
+  const [lightboxOpen, setLightboxOpen] = useState(false);
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const [currentGallery, setCurrentGallery] = useState(null);
+  const { width } = useWindowSize();
 
   useEffect(() => {
     fetch("/public/api/services.json")
@@ -63,6 +71,29 @@ export const ServicesPage = () => {
     setModalOpen(false);
   };
 
+  const openLightbox = (gallery, index) => {
+    setCurrentGallery(gallery);
+    setCurrentIndex(index);
+    setLightboxOpen(true);
+  };
+
+  const closeLightbox = () => {
+    setLightboxOpen(false);
+    setCurrentGallery(null);
+  };
+
+  const handleNext = () => {
+    setCurrentIndex((prevIndex) =>
+      prevIndex === currentGallery.length - 1 ? 0 : prevIndex + 1
+    );
+  };
+
+  const handlePrev = () => {
+    setCurrentIndex((prevIndex) =>
+      prevIndex === 0 ? currentGallery.length - 1 : prevIndex - 1
+    );
+  };
+
   const handleNextImage = () => {
     if (selectedService && selectedService.image.length > 0) {
       setCurrentImageIndex(
@@ -90,7 +121,7 @@ export const ServicesPage = () => {
         returnObjects: true,
       })
     : [];
-  
+
   const plen = selectedService
     ? t(`servicesPage.service.${selectedService.id}.plen`, {
         returnObjects: true,
@@ -118,85 +149,119 @@ export const ServicesPage = () => {
           </ul>
           <button
             type="button"
-            className="option-bnt"
+            className="optionServis-bnt"
             onClick={() => handleOrderService()}
           >
             {t("servicesPage.btn")}
           </button>
         </div>
       </div>
-
-      <h1 className="description-title">
-        {selectedService ? title : t("servicesPage.selectService")}
-      </h1>
-      <div className="description-and-price site-container">
-        <div className="description">
-          {selectedService ? (
-            <ul className="description-list">
-              {description.map((item, index) => (
-                <li key={index} className="description-item">
-                  {item}
-                </li>
-              ))}
-            </ul>
-          ) : (
-            <p className="description-text">{t("servicesPage.text")}</p>
-          )}
+      <div className="cont">
+        <h1 className="description-title">
+          {selectedService ? title : t("servicesPage.selectService")}
+        </h1>
+        <div className="description-and-price">
           {selectedService && (
-            <h3 className="price">
-              {t("servicesPage.price")}: {selectedService.price}
-            </h3>
-          )}
-        </div>
-        {selectedService && (
-          <div className="includes">
-            <h3 className="includes-title">{t("servicesPage.includes")}</h3>
-            <ul className="includes-list">
-              {plen.map((item, index) => (
-                <li key={index} className="includes-item">
-                  {getContent(item, t)}
-                </li>
-              ))}
-            </ul>
-          </div>
-        )}
-      </div>
-      {selectedService ? (
-        selectedService.id === "3" ? (
-          <ProjectCartSlider />
-        ) : (
-          <>
-            <h1 className="imege-title">{t("servicesPage.works")}</h1>
-            <div className="image-container site-container">
-              <div className="slider">
-                {selectedService.image.length > 0 && (
-                  <img
-                    className="img-services"
-                    src={selectedService.image[currentImageIndex]}
-                    alt={`Service ${selectedService.title} - Slide ${
-                      currentImageIndex + 1
-                    }`}
-                  />
-                )}
-                <button
-                  onClick={handlePrevImage}
-                  className="slider-button prev"
-                >
-                  ←
-                </button>
-                <button
-                  onClick={handleNextImage}
-                  className="slider-button next"
-                >
-                  →
-                </button>
-              </div>
+            <div className="includes">
+              <h3 className="includes-title">{t("servicesPage.includes")}</h3>
+              <ul className="includes-list">
+                {plen.map((item, index) => (
+                  <li key={index} className="includes-item">
+                    {getContent(item, t)}
+                  </li>
+                ))}
+              </ul>
             </div>
-          </>
-        )
-      ) : null}
+          )}
+          <div className="description">
+            {selectedService ? (
+              <ul className="description-list">
+                {description.map((item, index) => (
+                  <li key={index} className="description-item">
+                    {item}
+                  </li>
+                ))}
+              </ul>
+            ) : (
+              <p className="description-text">{t("servicesPage.text")}</p>
+            )}
+            {selectedService && (
+              <h3 className="price">
+                {t("servicesPage.price")}: {selectedService.price}
+              </h3>
+            )}
+          </div>
+        </div>
+
+        {selectedService ? (
+          selectedService.id === "3" ? (
+            <ProjectCartSlider />
+          ) : (
+            <>
+              <h1 className="imege-title">{t("servicesPage.works")}</h1>
+              <div className="image-container site-container">
+                {width > 1000 ? (
+                  <div className="slider">
+                    {selectedService.image.length > 0 && (
+                      <img
+                        className="img-services"
+                        src={selectedService.image[currentImageIndex]}
+                        alt={`Service ${selectedService.title} - Slide ${
+                          currentImageIndex + 1
+                        }`}
+                      />
+                    )}
+                    <button
+                      onClick={handlePrevImage}
+                      className="slider-button prev"
+                    >
+                      ←
+                    </button>
+                    <button
+                      onClick={handleNextImage}
+                      className="slider-button next"
+                    >
+                      →
+                    </button>
+                  </div>
+                ) : (
+                  selectedService.image.map((src, index) => {
+                    return (
+                      <img
+                        key={index}
+                        className="img-services"
+                        src={src}
+                        alt={"a"}
+                        onClick={() =>
+                          openLightbox(selectedService.image, index)
+                        }
+                      />
+                    );
+                  })
+                )}
+              </div>
+            </>
+          )
+        ) : null}
+      </div>
       {modalOpen && <Modal onClose={handleCloseModal} isOpen={modalOpen} />}
       <ContactForm />
+      {lightboxOpen && (
+        <Lightbox
+          open={lightboxOpen}
+          close={closeLightbox}
+          slides={currentGallery.map((src) => ({ src }))}
+          index={currentIndex}
+          plugins={[Zoom]}
+          zoom={{
+            maxZoomPixelRatio: 2,
+          }}
+          on={{
+            clickNext: handleNext,
+            clickPrev: handlePrev,
+          }}
+        />
+      )}
     </section>
   );
 };

@@ -17,6 +17,7 @@ export const Hero = () => {
     setModalOpen(false);
   };
 
+ 
   return (
     <section className="hero-container ">
       <div className="studio-background-image"></div>
@@ -29,7 +30,7 @@ export const Hero = () => {
         <p className="interior-text">{t("hero.description")}</p>
         <button
           type="button"
-          className="option-bnt"
+          className="heroOption-bnt"
           onClick={() => handleOrderService()}
         >
           {t("hero.orderButton")}

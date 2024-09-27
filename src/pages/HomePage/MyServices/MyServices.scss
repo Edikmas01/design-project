@@ -1,61 +1,70 @@
 .MyServices-cart {
   display: flex;
   flex-wrap: wrap;
-  gap: 20px; 
-  justify-content: center; 
-      position: relative;
-    margin: 0 0 50px;
-    padding: 0;
-
+  gap: 20px;
+  justify-content: center;
+  position: relative;
+  margin: 0 0 50px;
+  padding: 0;
 }
 
 .MyServices-cart > div {
-  background-color: #fff; 
-  border: 1px solid #ddd; 
-  border-radius: 8px; 
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   padding: 20px;
-  width: 300px; 
-  text-align: center; 
-  transition: transform 0.2s, box-shadow 0.2s; 
+  width: 300px;
+  text-align: center;
+  transition: transform 0.2s, box-shadow 0.2s;
 }
 
 .MyServices-cart > div:hover {
-  transform: translateY(-5px); 
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 .MyServices-cart img {
   max-width: 100%;
-  height: auto; 
-  border-radius: 8px; 
+  height: auto;
+  border-radius: 8px;
 }
 
 .MyServices-cart h2 {
-  font-size: 1.5rem; 
-  margin: 15px 0; 
+  font-size: 1.5rem;
+  margin: 15px 0;
 }
 
 .MyServices-cart p {
   font-size: 1rem;
-  color: #555; 
+  color: #555;
 }
 
-.MyServices-title{
-      text-align: center; 
-  margin-bottom: 20px; 
+.MyServices-title {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 20px;
 }
-.MyServices-text{
-      text-align: center; 
-  margin-bottom: 20px; 
+.MyServices-text {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 15px;
 }
 
-.slider__button {
+@media screen and (min-width: 800px) {
+  .MyServices-title {
+    font-size: 30px;
+  }
+  .MyServices-text {
+    font-size: 20px;
+  }
+
+  .slider__button {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
     border: none;
-    padding: 10px 20px;
+    padding: 15px 25px;
     font-size: 16px;
     border-radius: 5px;
     cursor: pointer;
@@ -71,7 +80,6 @@
 
     &:hover {
       background-color: #969395;
-
     }
 
     &:disabled {
@@ -79,83 +87,24 @@
       cursor: not-allowed;
     }
   }
-
-// @media (max-width: 600px) {
-//   .MyServices-cart {
-//     flex-direction: column;
-//     align-items: center;
-//     gap: 10px; /* Меньший отступ */
-//   }
-
-//   .MyServices-cart > div {
-//     width: 100%; /* Ширина карточки по ширине экрана */
-//     padding: 15px;
-//   }
-
-//   .MyServices-cart h2 {
-//     font-size: 1.2rem; /* Меньший размер шрифта */
-//   }
-
-//   .MyServices-cart p {
-//     font-size: 0.9rem; /* Меньший размер текста */
-//   }
-
-//   // .slider__button {
-//   //   font-size: 14px; /* Меньший размер кнопок */
-//   //   padding: 8px 16px;
-//   // // }
-// }
-
-// /* Для планшетов */
-// @media (min-width: 601px) and (max-width: 1024px) {
-//   .MyServices-cart {
-//     flex-wrap: wrap;
-//     gap: 15px; 
-//     justify-content: space-around; 
-//   }
-
-//   .MyServices-cart > div {
-//     width: 200px; 
-//     padding: 15px;
-//   }
-
-//   .MyServices-cart h2 {
-//     font-size: 1.3rem; 
-//   }
-
-//   .MyServices-cart p {
-//     font-size: 0.95rem; 
-//   }
-
-//   // .slider__button {
-//   //   font-size: 15px; 
-//   //   padding: 8px 18px;
-//   // }
-// }
-
-// /* Для десктопов и больших экранов */
-// @media (min-width: 1025px) {
-//   .MyServices-cart {
-//     flex-wrap: wrap;
-//     gap: 20px; 
-//     justify-content: center;
-//   }
-
-//   .MyServices-cart > div {
-//     width: 300px;
-//     padding: 20px;
-//   }
-
-//   .MyServices-cart h2 {
-//     font-size: 1.5rem; 
-//   }
-
-//   .MyServices-cart p {
-//     font-size: 1rem;
-//   }
-
-//   // .slider__button {
-//     // font-size: 16px; 
-//     // padding: 10px 20px;
-//   // }
-// }
+}
+@media screen and (min-width: 980px) and (max-width: 1020px) {
+  .MyServices-cart > div {
+    padding: 15px;
+    width: 250px;
+  }
+  .slider__button {
+    padding: 10px 20px;
+    font-size: 15px;
+  }
+}
+@media screen and (min-width: 1020px) and (max-width: 1130px) {
+    .MyServices-cart > div {
+    padding: 15px;
+    width: 270px;
+  }
+  .slider__button {
+    padding: 8px 15px;
+    font-size: 15px;
+  }
+}
