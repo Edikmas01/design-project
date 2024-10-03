@@ -46,6 +46,7 @@ const paginatedProjects =
 
   return (
     <section className="projectsall-section site-container">
+
       <div className="filter-buttons">
         <button
           type="button"
@@ -84,6 +85,8 @@ const paginatedProjects =
           {t("projectsPageCart.business")}
         </button>
       </div>
+      
+      
       <ul className="projectsCart-list">
         {paginatedProjects.map((project, index) => (
           <li className="projects-item" key={index}>

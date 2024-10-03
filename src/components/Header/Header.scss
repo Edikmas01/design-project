@@ -86,7 +86,7 @@
   .language-selector {
     position: relative;
     display: inline-block;
-    // margin: 50px 0px 0;
+    margin: 50px 0px 0;
   }
 
   .language-dropdown {
@@ -197,6 +197,7 @@
     .language-selector {
       position: relative;
       display: inline-block;
+      margin: 0;
     }
 
     .language-dropdown {
@@ -238,5 +239,11 @@
       border: none;
       cursor: pointer;
     }
+  }
+}
+@media screen and (max-width: 1300px) and (min-width: 800px) {
+  .language-selector {
+    right: 10%; 
+    margin: 0;
   }
 }

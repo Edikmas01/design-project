@@ -5,6 +5,7 @@ import { useFetchProjects } from "../../hooks/useFetchProjects";
 import { useTranslation } from "react-i18next";
 
 export const ProjectCartSlider = () => {
+  console.log("ProjectCartSlider component is rendering");
   const [activeIndex, setActiveIndex] = useState(0);
 const { t } = useTranslation();
 

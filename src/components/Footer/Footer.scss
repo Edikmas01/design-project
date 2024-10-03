@@ -1,4 +1,3 @@
-
 .footer {
   background-color: #ececec;
 
@@ -82,7 +81,8 @@
     }
   }
 }
-@media screen and (min-width: 800px) {
+
+@media screen and (min-width: 500px) {
   .footer {
     padding: 15px;
 
@@ -104,8 +104,8 @@
     .contact-war,
     .contacts,
     .join {
-     margin-right:50px;
-    // gap: 50px;
+      margin-right: 50px;
+      // gap: 50px;
     }
 
     .contacts__link {

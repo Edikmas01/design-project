@@ -119,6 +119,14 @@ export const ProjectPageDetails = () => {
             clickNext: handleNext,
             clickPrev: handlePrev,
           }}
+          animation={{
+            fade: 500, 
+            easing: "ease-in-out", 
+            speed: 500,
+          }}
+          carousel={{
+            transitionDuration: 500, 
+          }}
         />
       )}
     </section>
