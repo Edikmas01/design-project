@@ -23,8 +23,8 @@ export const ServicesPage = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [currentGallery, setCurrentGallery] = useState(null);
   const { width } = useWindowSize();
-    const { id } = useParams();
-    const { t } = useTranslation();
+  const { id } = useParams();
+  const { t } = useTranslation();
 
   useEffect(() => {
     const fetchServices = async () => {
@@ -34,11 +34,10 @@ export const ServicesPage = () => {
           throw new Error(`HTTP error! Status: ${response.status}`);
         }
         const data = await response.json();
-        console.log("Fetched services:", data);
         setServices(data);
         if (id) {
           const service = data.find((s) => s.id === id);
-          console.log("Selected service after fetch:", service);
+
           if (service) {
             setSelectedService(service);
           }
@@ -50,7 +49,6 @@ export const ServicesPage = () => {
 
     fetchServices();
   }, [id]);
-
 
   const handleServiceClick = (services) => {
     setSelectedService(services);
@@ -103,10 +101,7 @@ export const ServicesPage = () => {
           t={t}
         />
         {selectedService?.id === "3" ? (
-          <>
-            {console.log("Rendering ProjectCartSlider component")}
-            <ProjectCartSlider />
-          </>
+          <ProjectCartSlider />
         ) : (
           <ServiceImagesSlader
             selectedService={selectedService}

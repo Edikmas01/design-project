@@ -64,12 +64,13 @@
         border: none;
         cursor: pointer;
       }
-
+   
+       
       .menu-link {
         margin: 30px 0 0px 0;
         font-size: 22px;
-        text-decoration: none;
-        color: #333333;
+        text-decoration: none !important;
+
 
         &:hover {
           color: #6f8658;
@@ -171,6 +172,8 @@
 
     .menu-link {
       font-weight: bold;
+        text-decoration: none !important;
+
       font-size: 18px;
 
       &:hover,
