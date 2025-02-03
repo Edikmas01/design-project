@@ -16,13 +16,30 @@ export const Modal = ({ onClose, isOpen }) => {
   });
     const [status, setStatus] = useState(""); 
   const formRef = useRef(null);
-  
+ 
   useEffect(() => {
     fetch("/public/api/services.json")
       .then((res) => res.json())
       .then((data) => setServices(data))
       .catch((error) => console.error("Error fetching projects:", error));
   }, []);
+
+  useEffect(() => {
+    
+    if (typeof document !== "undefined" && document.body) {
+      if (isOpen) {
+        document.body.classList.add("modal-open");
+      } else {
+        document.body.classList.remove("modal-open");
+      }
+    }
+
+    return () => {
+      if (typeof document !== "undefined" && document.body) {
+        document.body.classList.remove("modal-open");
+      }
+    };
+  }, [isOpen]);
 
  const handleChange = (e) => {
    setFormData({ ...formData, [e.target.name]: e.target.value });

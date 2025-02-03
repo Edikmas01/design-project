@@ -67,6 +67,9 @@
   height: auto;
   object-fit: cover;
 }
+.img-blueprints:hover {
+  transform: scale(1.05);
+}
 
 @media screen and (max-width: 600px) {
   .project-title {
