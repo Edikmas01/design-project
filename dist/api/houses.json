@@ -63,22 +63,22 @@
       "../public/photo/houses/house-three/visualizations/visualization-livingRoom-four.jpg"
     ],
     "blueprints": [
-      "../public/photo/houses/house-three/blueprints/png/as-built-plan.png",
-      "../public/photo/houses/house-three/blueprints/png/ceiling-plan.png",
-      "../public/photo/houses/house-three/blueprints/png/door-and-skirting-plan.png",
-      "../public/photo/houses/house-three/blueprints/png/electrical-circuit-plan.png",
-      "../public/photo/houses/house-three/blueprints/png/electrician-plan.png",
-      "../public/photo/houses/house-three/blueprints/png/floor-plan.png",
-      "../public/photo/houses/house-three/blueprints/png/floor-two-plan.png",
-      "../public/photo/houses/house-three/blueprints/png/furniture-plan.png",
-      "../public/photo/houses/house-three/blueprints/png/installation-plan.png",
-      "../public/photo/houses/house-three/blueprints/png/lighting-plan.png",
-      "../public/photo/houses/house-three/blueprints/png/lighting-specification.png",
-      "../public/photo/houses/house-three/blueprints/png/plan-after-reconstruction.png",
-      "../public/photo/houses/house-three/blueprints/png/plumbing-plan.png",
-      "../public/photo/houses/house-three/blueprints/png/plumbing-specification.png",
-      "../public/photo/houses/house-three/blueprints/png/wall-elevations.png",
-      "../public/photo/houses/house-three/blueprints/png/warm-floor-plan.png"
+      "../photo/houses/house-three/blueprints/as-built-plan.png",
+      "../public/photo/houses/house-three/blueprints/ceiling-plan.png",
+      "../public/photo/houses/house-three/blueprints/door-and-skirting-plan.png",
+      "../public/photo/houses/house-three/blueprints/electrical-circuit-plan.png",
+      "../public/photo/houses/house-three/blueprints/electrician-plan.png",
+      "../public/photo/houses/house-three/blueprints/floor-plan.png",
+      "../public/photo/houses/house-three/blueprints/floor-two-plan.png",
+      "../public/photo/houses/house-three/blueprints/furniture-plan.png",
+      "../public/photo/houses/house-three/blueprints/installation-plan.png",
+      "../public/photo/houses/house-three/blueprints/lighting-plan.png",
+      "../public/photo/houses/house-three/blueprints/lighting-specification.png",
+      "../public/photo/houses/house-three/blueprints/plan-after-reconstruction.png",
+      "../public/photo/houses/house-three/blueprints/plumbing-plan.png",
+      "../public/photo/houses/house-three/blueprints/plumbing-specification.png",
+      "../public/photo/houses/house-three/blueprints/wall-elevations.png",
+      "../public/photo/houses/house-three/blueprints/warm-floor-plan.png"
     ]
   },
   {
