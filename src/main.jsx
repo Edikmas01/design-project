@@ -4,7 +4,9 @@ import App from "./App.jsx";
 import "./index.scss";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { Layout } from "./components/Layout/Layout.jsx";
-import { ProjectPage } from "./pages/ProjectPage/ProjectPage.jsx";
+
+import ProjectPage from "./pages/ProjectPage/ProjectPage.jsx";
+
 import { ServicesPage } from "./pages/ServicesPage/ServicesPage.jsx";
 import { HomePage } from "./pages/HomePage/HomePage.jsx";
 import { ProjectPageDetails } from "./pages/ProjectPage/ProjectPageDetails/ProjectPageDetails.jsx";

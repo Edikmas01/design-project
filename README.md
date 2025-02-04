@@ -6,6 +6,7 @@
 
 This project is an interior designer's website with a responsive layout, available in four languages: **Russian, Ukrainian, English, and German**.
 
+[Layout in Figma](https://www.figma.com/design/86n1clFmkWrpGlHdaftOH8/Untitled?node-id=0-1&t=NC13zouDgQpWWFoy-1)
 ---
 
 ## 🔧 Technologies

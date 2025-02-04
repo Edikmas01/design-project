@@ -5,7 +5,7 @@ import { ProjectPageDetails } from "./ProjectPageDetails/ProjectPageDetails";
 import { ProjectsPageCart } from "./ProjectsPageCart/ProjectsPageCart";
 import { useFetchProjects } from "../../hooks/useFetchProjects";
 
-export const ProjectPage = () => {
+const ProjectPage = () => {
   const { projectId } = useParams();
   const [selectedProject, setSelectedProject] = useState(null);
 
@@ -26,4 +26,4 @@ export const ProjectPage = () => {
     </section>
   );
 };
-/**  */
+export default ProjectPage;
