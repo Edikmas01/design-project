@@ -9,7 +9,7 @@ export const About = () => {
       <section className="about-section ">
         <div className="about-content site-container">
           <div className="about-image">
-            <img src="/public/photo/about.jpg" alt="About me" />
+            <img src="/photo/about.jpg" alt="About me" />
           </div>
           <div className="about-text">
             <h1>{t("about.title")}</h1>

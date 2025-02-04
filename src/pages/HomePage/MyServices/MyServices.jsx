@@ -20,7 +20,7 @@ export const MyServices = () => {
 //   const { width } = useWindowSize();
 
   useEffect(() => {
-    fetch("/public/api/services.json")
+    fetch("/api/services.json")
       .then((res) => {
         if (!res.ok) {
           throw new Error("Failed to fetch services");

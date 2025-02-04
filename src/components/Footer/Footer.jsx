@@ -6,7 +6,7 @@ export const Footer = () => {
     <footer className="footer">
       <div className="footer__box ">
         <a href="" className="f-logo">
-          <img src="../public/logo/logo.svg" alt="" className="logo" />
+          <img src="/logo/logo.svg" alt="" className="logo" />
         </a>
         <div className="contacts">
           {/* <h3 className="contacts__title">Contacts</h3> */}
@@ -32,7 +32,7 @@ export const Footer = () => {
                 className="join-soc__link"
               >
                 <img
-                  src="/public/photo/svg/insta.svg"
+                  src="/photo/svg/insta.svg"
                   alt="Instagram"
                   className="join-soc__icon"
                   width="20"
@@ -46,7 +46,7 @@ export const Footer = () => {
                 className="join-soc__link"
               >
                 <img
-                  src="/public/photo/svg/telegram_icon.svg"
+                  src="/photo/svg/telegram_icon.svg"
                   alt="Instagram"
                   className="join-soc__icon"
                   width="20"

@@ -109,7 +109,7 @@ export const Header = () => {
     <header className="header">
       <div className="header-container site-container">
         <NavLink to="/">
-          <img src="../public/logo/logo.svg" alt="" className="logo" />
+          <img src="/logo/logo.svg" alt="" className="logo" />
         </NavLink>
         {width < 800 ? (
           <MobileMenu
