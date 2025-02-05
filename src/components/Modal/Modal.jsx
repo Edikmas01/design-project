@@ -18,7 +18,7 @@ export const Modal = ({ onClose, isOpen }) => {
   const formRef = useRef(null);
  
   useEffect(() => {
-    fetch("/public/api/services.json")
+    fetch("/api/services.json")
       .then((res) => res.json())
       .then((data) => setServices(data))
       .catch((error) => console.error("Error fetching projects:", error));

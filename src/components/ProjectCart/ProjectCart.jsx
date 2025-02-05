@@ -18,7 +18,10 @@ const description = t(`projectDetails.projects.${id}.description`);
 
 const maxLength = description ? Math.floor(description.length / 2) : 0;
   const truncatedDescription = truncateDescription(description, maxLength);
-  
+
+  console.log("Project image path:", image);
+  console.log("Project image path:", project);
+
   return (
     <div>
       <Link to={`/${category}/${id}`} className="link">
