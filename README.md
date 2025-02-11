@@ -1,61 +1,64 @@
-# React + Vite
-
 # 📌 Design Project
 
-## 🚀 Project Description
-
-This project is an interior designer's website with a responsive layout, available in four languages: **Russian, Ukrainian, English, and German**.
-
-[Layout in Figma](https://www.figma.com/design/86n1clFmkWrpGlHdaftOH8/Untitled?node-id=0-1&t=NC13zouDgQpWWFoy-1)
----
-
-## 🔧 Technologies
-
-- **React** (Frontend library)
-- **React Router** (Navigation between pages)
-- **SCSS** (Styling)
-- **i18next** (Localization for 4 languages)
-- **Yet Another React Lightbox** (Image gallery)
-- **EmailJS** (Form data submission)
-- **Vite** (Project bundling)
+[Live Project](https://anastasiia-interior-design.netlify.app/)  
+[Figma Design](https://www.figma.com/design/86n1clFmkWrpGlHdaftOH8/Untitled?node-id=0-1&t=u9mnCmfA3vFhOetz-1)
 
 ---
 
-## 📄 Pages
+## 🚀 Project Overview
+
+This project is a portfolio website for an interior designer, showcasing completed works and offering design services. It features an adaptive layout and supports four languages: **Russian, Ukrainian, English, and German**.
+
+---
+
+## 🔧 Technologies Used
+
+- **React** – Frontend framework
+- **React Router** – Navigation between pages
+- **SCSS** – Styling
+- **i18next** – Multi-language support
+- **Yet Another React Lightbox** – Image gallery
+- **EmailJS** – Form handling
+- **Vite** – Project bundling
+
+---
+
+## 📄 Website Structure
 
 ### **1. Header**
-- Site navigation using `react-router-dom`
-- Language switch button
+- Navigation menu using `react-router-dom`
+- Language switcher
 - Burger menu for mobile devices
 
 ### **2. Home Page**
-- **Hero section** with a greeting and service order button (opens `Modal`)
+- **Hero section** with a welcome message and service order button (`Modal` popup)
 - **"Best Projects" section** with links to detailed pages
-- **About the Designer (About)**
+- **About the Designer (About)** section
 - **Services section** (displayed as cards)
 - **Contact form**
 
 ### **3. Projects Page**
-- Project filtering ("All", "Houses", "Apartments", "Business")
-- Project cards with links to detailed information
-- Adaptive pagination for mobile devices and tablets
+- Project filtering by category: "All", "Houses", "Apartments", "Business"
+- Project cards linking to details
+- Adaptive pagination for mobile and tablet devices
 
 ### **4. Project Details Page**
-- Project description + completed work
+- Detailed project description and completed works
 - Image gallery using `Yet Another React Lightbox`
 
 ### **5. Services Page**
-- List of services + description of each
-- Detailed work showcase slider
-- Contact form
+- List of services with detailed descriptions
+- Work showcase slider
+- Contact form for inquiries
 
 ---
 
-## **Data Structure**
+## 📂 Data Structure
 
-Project data is stored in JSON files containing both general and detailed information.
+Project data is stored in JSON format, containing both general and detailed project information.
 
-### **Example of a general JSON file**:
+### **Example: General Project Data JSON**
+
 ```json
 [
   {
@@ -69,7 +72,8 @@ Project data is stored in JSON files containing both general and detailed inform
 ]
 ```
 
-### **Example of a detailed JSON file**:
+### **Example: Detailed Project Data JSON**
+
 ```json
 [
   {
@@ -87,14 +91,14 @@ Project data is stored in JSON files containing both general and detailed inform
 
 ---
 
-## **Multilingual Support**
+## 🌍 Multilingual Support
 
-The project supports four languages: **Russian, Ukrainian, English, and German**.
+The project supports **Russian, Ukrainian, English, and German**.
 
-### **Technologies Used**:
-- **i18next** – core internationalization library.
-- **react-i18next** – React integration for i18next.
-- **i18next-browser-languagedetector** – automatic language detection for users.
+### **Technologies Used:**
+- **i18next** – Core internationalization library
+- **react-i18next** – React integration for i18next
+- **i18next-browser-languagedetector** – Auto-detects user language
 
 All translations are stored in separate JSON files, making them easily expandable and editable.
 
@@ -102,7 +106,8 @@ All translations are stored in separate JSON files, making them easily expandabl
 
 ## ⚙️ Custom Hooks
 
-### **1. useFetchProjects** (Fetching project list)
+### **1. useFetchProjects (Fetching Project Data)**
+
 ```js
 import { useEffect, useState } from "react";
 
@@ -125,7 +130,8 @@ export const useFetchProjects = () => {
 };
 ```
 
-### **2. useWindowSize** (Detecting screen size)
+### **2. useWindowSize (Detecting Screen Size)**
+
 ```js
 import { useState, useEffect } from "react";
 
@@ -155,17 +161,22 @@ export const useWindowSize = () => {
 
 ## 📱 Responsive Design
 
-The project is adapted for various devices: PC, tablets, and mobile phones.
+The project is fully responsive and adapted for various devices, including PCs, tablets, and mobile phones.
+
+It follows a **mobile-first** approach, meaning styles are initially developed for mobile devices and then scaled up for larger screens.
 
 ---
 
-## 📩 Form Handling (EmailJS)
+## 📩 Contact Forms & EmailJS Integration
 
-The project uses **EmailJS** for submitting form data:
-- **Modal** – service order form.
-- **ContactForm** – feedback form.
+The project utilizes **EmailJS** for handling form submissions.
 
-### **Example of form submission handling**:
+### **Forms Included:**
+- **Modal Form** – Service order request
+- **Contact Form** – Feedback from potential clients
+
+### **Example: Handling Form Submission**
+
 ```js
 then(
   () => {
@@ -179,4 +190,11 @@ then(
 );
 ```
 
+---
+
+## 🌐 Deployment
+
+The project is deployed on **Netlify** for easy access and scalability.
+
+[Live Project](https://anastasiia-interior-design.netlify.app/)
 
