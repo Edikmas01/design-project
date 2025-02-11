@@ -3,11 +3,9 @@ import "./ServicesPage.scss";
 import { useParams } from "react-router-dom";
 import { useWindowSize } from "../../hooks/useWindowSize.js";
 import { useTranslation } from "react-i18next";
-
 import Lightbox from "yet-another-react-lightbox";
 import "yet-another-react-lightbox/styles.css";
 import Zoom from "yet-another-react-lightbox/plugins/zoom";
-
 import { ContactForm } from "../../components/ContactForm/ContactForm";
 import { Modal } from "../../components/Modal/Modal";
 import { ProjectCartSlider } from "../../components/ProjectCartSlider/ProjectCartSlider.jsx";

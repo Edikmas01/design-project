@@ -12,13 +12,16 @@ export const Footer = () => {
           {/* <h3 className="contacts__title">Contacts</h3> */}
           <ul className="contacts-list">
             <li className="contacts__item">
-              <a href="emailto:info@devstudio.com" className="contacts__link">
-                info@devstudio.com
+              <a
+                href="emailto:interiordesigner.anastasia.p@gmail.com"
+                className="contacts__link"
+              >
+                interiordesigner.anastasia.p@gmail.com
               </a>
             </li>
             <li className="contacts__item">
               <a href="tel:+380961111111" className="contacts__link">
-                +38 096 111 11 11
+                +111 111 11 11
               </a>
             </li>
           </ul>

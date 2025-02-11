@@ -26,7 +26,13 @@ const maxLength = description ? Math.floor(description.length / 2) : 0;
     <div>
       <Link to={`/${category}/${id}`} className="link">
         <div className="projects-top-wrap">
-          <img src={image} alt={title} width="380" height="360" />
+          <img
+            src={image}
+            alt={title}
+            width="380"
+            height="360"
+            loading="lazy"
+          />
           <p className="projects-text">
             {truncatedDescription}{" "}
             <Link to={`/${category}/${id}`} className="link">

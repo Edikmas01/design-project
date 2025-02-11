@@ -67,7 +67,7 @@
       .menu-link {
         margin: 30px 0 0px 0;
         font-size: 22px;
-      color: #292828e6;
+        color: #292828e6;
         // text-decoration: none !important;
 
         &:hover {
@@ -194,15 +194,25 @@
       }
     }
 
+    //// language
+
     .language-selector {
       position: relative;
       display: inline-block;
       margin: 0;
     }
 
+    .language-button {
+      background-color: #fff;
+      font-size: 16px;
+      border: none;
+      cursor: pointer;
+    }
+
     .language-dropdown {
       display: none;
       position: absolute;
+      right: 0;
       background-color: #f9f9f9;
       min-width: 160px;
       width: 100%;
@@ -232,18 +242,10 @@
     .language-selector:hover .language-dropdown {
       display: block;
     }
-
-    .language-button {
-      background-color: #fff;
-      font-size: 16px;
-      border: none;
-      cursor: pointer;
-    }
   }
 }
 @media screen and (max-width: 1300px) and (min-width: 800px) {
   .language-selector {
-    // right: 10%;
     margin: 0;
   }
 }

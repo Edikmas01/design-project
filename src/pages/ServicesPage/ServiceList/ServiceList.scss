@@ -91,8 +91,36 @@ ul,
 button {
   position: relative;
 }
-@media screen and (min-width: 1010px) {
+@media screen and (min-width: 600px) and (max-width: 1009px) {
+  .beckgroundImg {
+    padding: 140px 50px;
+  }
 
+  .service-option {
+   
+    align-items: center; 
+  }
+
+  .option {
+    margin-top: 20px;
+    padding: 10px 20px;
+    text-align: center;
+  }
+
+  .option-item {
+    font-size: 16px;
+    padding-left: 25px;
+    margin-bottom: 15px;
+  }
+
+  .optionServis-bnt {
+    padding: 12px 50px;
+    font-size: 14px;
+    margin-top: 20px; 
+  }
+}
+
+@media screen and (min-width: 1010px) {
 .beckgroundImg {
     padding: 180px;
   }

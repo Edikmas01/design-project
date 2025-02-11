@@ -82,6 +82,7 @@ export const ProjectPageDetails = () => {
                 src={src}
                 alt={`Slide ${index}`}
                 onClick={() => openLightbox(project.visualizations, index)}
+                loading="lazy"
               />
             ))}
           </div>
@@ -100,6 +101,7 @@ export const ProjectPageDetails = () => {
                 src={src}
                 alt={`Slide ${index}`}
                 onClick={() => openLightbox(project.blueprints, index)}
+                loading="lazy"
               />
             ))}
           </div>
@@ -120,12 +122,12 @@ export const ProjectPageDetails = () => {
             clickPrev: handlePrev,
           }}
           animation={{
-            fade: 500, 
-            easing: "ease-in-out", 
+            fade: 500,
+            easing: "ease-in-out",
             speed: 500,
           }}
           carousel={{
-            transitionDuration: 500, 
+            transitionDuration: 500,
           }}
         />
       )}

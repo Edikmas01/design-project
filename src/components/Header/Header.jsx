@@ -47,6 +47,7 @@ const LanguageSelector = ({ i18n }) => {
 
 const MobileMenu = ({ isMenuOpen, closeMenu, toggleMenu, i18n }) => {
   const { t } = useTranslation();
+  
   const handleOutsideClick = (e) => {
     if (e.target.classList.contains("menu-overlay")) {
       closeMenu();
@@ -66,13 +67,13 @@ const MobileMenu = ({ isMenuOpen, closeMenu, toggleMenu, i18n }) => {
           <button className="close-menu" onClick={closeMenu}>
             ×
           </button>
-          <NavLink to="/" className="menu-link">
+          <NavLink to="/" className="menu-link" onClick={closeMenu}>
             {t("heder.home")}
           </NavLink>
-          <NavLink to="/projects" className="menu-link">
+          <NavLink to="/projects" className="menu-link" onClick={closeMenu}>
             {t("heder.projects")}
           </NavLink>
-          <NavLink to="/services" className="menu-link">
+          <NavLink to="/services" className="menu-link" onClick={closeMenu}>
             {t("heder.services")}
           </NavLink>
           <LanguageSelector i18n={i18n} />
